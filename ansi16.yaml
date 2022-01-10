@@ -5,16 +5,30 @@ colorSpaceName: $colorSpaceName
 semanticClass: $semanticClass
 comment: 'Generated from the ansi16 template'
 settings:
-- settings:
-    accent: '#f97e72'
-    activeGuide: '#444251'
-    background: '#262335'
-    caret: '#241b2f'
-    findHighlight: '#D1861655'
-    foreground: ''
-    lineHighlight: ''
-    misspelling: '#fe4450'
-    selection: '#ffffff20'
+- name: Invalid
+  scope: invalid, invalid.illegal
+  settings:
+    foreground: '#FF5370'
+- name: Invalid deprecated
+  scope: invalid.deprecated
+  settings:
+    foreground: '#C792EA'
+- name: CSS ID
+  scope: source.sass
+  settings:
+    foreground: '#82AAFF'
+- name: Inserted
+  scope: markup.inserted
+  settings:
+    foreground: '#C3E88D'
+- name: Deleted
+  scope: markup.deleted
+  settings:
+    foreground: '#FF5370'
+- name: Changed
+  scope: markup.changed
+  settings:
+    foreground: '#C792EA'
 - name: GitGutter deleted
   scope: markup.deleted.git_gutter
   settings:
@@ -35,125 +49,85 @@ settings:
   scope: markup.ignored.git_gutter
   settings:
     foreground: '#ffffff59'
-- settings:
-    background: '#262335'
-    foreground: '#bbbbbb'
 - name: Text
   scope: source, text
   settings:
-    foreground: '#B4B8D0'
+    foreground: $white
 - name: Comment
   scope: comment, punctuation.definition.comment, string.quoted.docstring
   settings:
     fontStyle: italic
-    foreground: '#676E95'
+    foreground: $blackBright
 - name: Variables
   scope: variable, entity.name.variable, constant.other.placeholder
   settings:
-    foreground: '#A6ACCD'
-- name: Colors
-  scope: constant.other.color
-  settings:
-    foreground: '#ffffff'
-- name: Invalid
-  scope: invalid, invalid.illegal
-  settings:
-    foreground: '#FF5370'
-- name: Invalid deprecated
-  scope: invalid.deprecated
-  settings:
-    foreground: '#C792EA'
+    foreground: $whiteBright
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
     fontStyle: italic
-    foreground: '#C792EA'
+    foreground: $magenta
 - name: Tag
   scope: keyword.type, entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
   settings:
-    foreground: '#f07178'
+    foreground: $red
 - name: Other Variable, String Link
   scope: source.cpp meta.block variable.other, support.other.variable, string.other.link
   settings:
-    foreground: '#f07178'
+    foreground: $red
 - name: Function, Special Method
   scope: entity.name.function, variable.function
   settings:
-    foreground: '#94afeb'
+    foreground: $blue
 - name: Alt keyword
   scope: keyword.other.arrow
   settings:
-    foreground: '#f78c6c'
+    foreground: $yellow
 - name: Number, Constant
   scope: constant.numeric, constant.language, support.constant, constant.character,
     constant.escape, keyword.other.unit
   settings:
-    foreground: '#FF5370'
+    foreground: $redBright
 - name: String, Symbols, Inherited Class, Markup Heading
   scope: string, constant.other.symbol, constant.other.key, markup.heading, markup.inserted.git_gutter,
     meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
   settings:
     fontStyle: ''
-    foreground: '#C3E88D'
+    foreground: $green
 - name: Class, Support
   scope: entity.name, entity.other.inherited-class, support.type, support.class, markup.changed.git_gutter,
     support.type.sys-types
   settings:
-    foreground: '#FFCB6B'
+    foreground: $yellowBright
 - name: Support
   scope: support, support.function, keyword.other.special-method, keyword.operator,
     variable.language, string.regexp, constant.character.escape
   settings:
-    foreground: '#b9dedf'
+    foreground: $cyan
 - name: Punctuation
   scope: punctuation.definition.tag, punctuation, punctuation.definition.tag.html,
     punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded,
     keyword.other.template, keyword.other.substitution
   settings:
-    foreground: '#91f5f8'
+    foreground: $cyanBright
 - name: CSS Class and Support
   scope: source.css support.type.property-name, source.sass support.type.property-name,
     source.scss support.type.property-name, source.less support.type.property-name,
     source.stylus support.type.property-name, source.postcss support.type.property-name
   settings:
-    foreground: '#b9dedf'
+    foreground: $cyan
 - name: Keyword, Storage
   scope: keyword, storage
   settings:
-    foreground: '#C792EA'
-- name: Sub-methods
+    foreground: $magenta
+- name: JS import
   scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
   settings:
-    foreground: '#FF5370'
-- name: entity.name.method.js
-  scope: entity.name.method.js
-  settings:
-    fontStyle: italic
-    foreground: '#82AAFF'
-- name: meta.method.js
-  scope: meta.class-method.js entity.name.function.js, variable.function.constructor
-  settings:
-    foreground: '#82AAFF'
+    foreground: $cyan
 - name: CSS Classes
   scope: entity.other.attribute-name.class
   settings:
-    foreground: '#FFCB6B'
-- name: CSS ID's
-  scope: source.sass
-  settings:
-    foreground: '#82AAFF'
-- name: Inserted
-  scope: markup.inserted
-  settings:
-    foreground: '#C3E88D'
-- name: Deleted
-  scope: markup.deleted
-  settings:
-    foreground: '#FF5370'
-- name: Changed
-  scope: markup.changed
-  settings:
-    foreground: '#C792EA'
+    foreground: $yellowBright
 - name: URL
   scope: '*url*, *link*, *uri*'
   settings:
@@ -162,40 +136,35 @@ settings:
   scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
   settings:
     fontStyle: italic
-    foreground: '#82AAFF'
-- name: ES7 Bind Operator
-  scope: source.js constant.other.object.key.js string.unquoted.label.js
-  settings:
-    fontStyle: italic
-    foreground: '#FF5370'
+    foreground: $cyan
 - name: JSON Key - Level 0
   scope: source.json meta.structure.dictionary.json support.type.property-name.json
   settings:
-    foreground: '#C792EA'
+    foreground: $red
 - name: JSON Key - Level 1
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json support.type.property-name.json
   settings:
-    foreground: '#FFCB6B'
+    foreground: $yellow
 - name: JSON Key - Level 2
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     support.type.property-name.json
   settings:
-    foreground: '#F78C6C'
+    foreground: $yellowBright
 - name: JSON Key - Level 3
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
   settings:
-    foreground: '#FF5370'
+    foreground: $green
 - name: JSON Key - Level 4
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json support.type.property-name.json
   settings:
-    foreground: '#C17E70'
+    foreground: $blue
 - name: JSON Key - Level 5
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
@@ -203,7 +172,7 @@ settings:
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     support.type.property-name.json
   settings:
-    foreground: '#82AAFF'
+    foreground: $cyan
 - name: JSON Key - Level 6
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
@@ -211,7 +180,7 @@ settings:
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
   settings:
-    foreground: '#f07178'
+    foreground: $magenta
 - name: JSON Key - Level 7
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
@@ -220,7 +189,7 @@ settings:
     meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json support.type.property-name.json
   settings:
-    foreground: '#C792EA'
+    foreground: $white
 - name: JSON Key - Level 8
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
@@ -230,7 +199,7 @@ settings:
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     support.type.property-name.json
   settings:
-    foreground: '#C3E88D'
+    foreground: $whiteBright
 - name: Markdown - Plain
   scope: text.html.markdown, punctuation.definition.list_item.markdown
   settings:

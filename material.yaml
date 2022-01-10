@@ -3,3 +3,19 @@ uuid: 9a27f510-174e-42bc-b388-327485247650
 author: Chiel ten Brinke
 semanticClass: theme.dark.material-ansi16
 colorSpaceName: sRGB
+black: '#262335'
+red: '#f07178'
+green: '#c3e88d'
+yellow: '#f78c6c'
+blue: '#94afeb'
+magenta: '#c792ea'
+cyan: '#b9dedf'
+white: '#b4b8d0'
+blackBright: '#676e95'
+redBright: '#ff5370'
+greenBright: '#87de97'
+yellowBright: '#ffcb6b'
+blueBright: '#82aaff'
+magentaBright: '#c792ea'
+cyanBright: '#91f5f8'
+whiteBright: '#ffffff'
