@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 yamltotm/yamltotm.py -d material.yaml ansi16.yaml material-ansi16.tmTheme
+python3 yamltotm/yamltotm.py -d material-dark.yaml ansi16.yaml material-dark-ansi16.tmTheme
