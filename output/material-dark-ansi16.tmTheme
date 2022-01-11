@@ -101,7 +101,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ddccdd</string>
+				<string>#dddddd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -437,7 +437,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ddccdd</string>
+				<string>#dddddd</string>
 			</dict>
 		</dict>
 		<dict>
