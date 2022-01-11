@@ -7,7 +7,7 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>comment</key>
-	<string>Generated from the ansi16 template</string>
+	<string>Generated from the ansi16 template at https://github.com/chtenb/ansi16</string>
 	<key>name</key>
 	<string>ANSI 16 Terminal</string>
 	<key>semanticClass</key>
@@ -34,6 +34,199 @@
 			<dict>
 				<key>foreground</key>
 				<string>#08000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>URL</string>
+			<key>scope</key>
+			<string>*url*, *link*, *uri*</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS Class and Support</string>
+			<key>scope</key>
+			<string>source.css support.type.property-name, source.sass support.type.property-name, source.scss support.type.property-name, source.less support.type.property-name, source.stylus support.type.property-name, source.postcss support.type.property-name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#06000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS Classes</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0b000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Text</string>
+			<key>scope</key>
+			<string>source, text</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#07000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment, punctuation.definition.comment, string.quoted.docstring</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#08000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variables</string>
+			<key>scope</key>
+			<string>variable, entity.name.variable, constant.other.placeholder</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0f000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Attributes</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#05000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>keyword.type, entity.name.tag, meta.tag.sgml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#01000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Other Variable, String Link</string>
+			<key>scope</key>
+			<string>source.cpp meta.block variable.other, support.other.variable, string.other.link</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#01000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function, Special Method</string>
+			<key>scope</key>
+			<string>entity.name.function, variable.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#04000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Alt keyword</string>
+			<key>scope</key>
+			<string>keyword.other.arrow</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#03000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Number, Constant</string>
+			<key>scope</key>
+			<string>constant.numeric, constant.language, support.constant, constant.character, constant.escape, keyword.other.unit</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#09000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String, Symbols, Inherited Class</string>
+			<key>scope</key>
+			<string>string, constant.other.symbol, constant.other.key meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#02000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Class, Support</string>
+			<key>scope</key>
+			<string>entity.name, entity.other.inherited-class, support.type, support.class, support.type.sys-types</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0b000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Support</string>
+			<key>scope</key>
+			<string>support, support.function, keyword.other.special-method, keyword.operator, variable.language, string.regexp, constant.character.escape</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#06000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Punctuation</string>
+			<key>scope</key>
+			<string>punctuation.definition.tag, punctuation, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0e000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keyword, Storage</string>
+			<key>scope</key>
+			<string>keyword, storage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#05000000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -126,177 +319,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Text</string>
-			<key>scope</key>
-			<string>source, text</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#07000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Comment</string>
-			<key>scope</key>
-			<string>comment, punctuation.definition.comment, string.quoted.docstring</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#08000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Variables</string>
-			<key>scope</key>
-			<string>variable, entity.name.variable, constant.other.placeholder</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#0f000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Attributes</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#05000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Tag</string>
-			<key>scope</key>
-			<string>keyword.type, entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#01000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Other Variable, String Link</string>
-			<key>scope</key>
-			<string>source.cpp meta.block variable.other, support.other.variable, string.other.link</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#01000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Function, Special Method</string>
-			<key>scope</key>
-			<string>entity.name.function, variable.function</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#04000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Alt keyword</string>
-			<key>scope</key>
-			<string>keyword.other.arrow</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#03000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Number, Constant</string>
-			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, constant.escape, keyword.other.unit</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#09000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>String, Symbols, Inherited Class, Markup Heading</string>
-			<key>scope</key>
-			<string>string, constant.other.symbol, constant.other.key, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#02000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Class, Support</string>
-			<key>scope</key>
-			<string>entity.name, entity.other.inherited-class, support.type, support.class, markup.changed.git_gutter, support.type.sys-types</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#0b000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Support</string>
-			<key>scope</key>
-			<string>support, support.function, keyword.other.special-method, keyword.operator, variable.language, string.regexp, constant.character.escape</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#06000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Punctuation</string>
-			<key>scope</key>
-			<string>punctuation.definition.tag, punctuation, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#0e000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>CSS Class and Support</string>
-			<key>scope</key>
-			<string>source.css support.type.property-name, source.sass support.type.property-name, source.scss support.type.property-name, source.less support.type.property-name, source.stylus support.type.property-name, source.postcss support.type.property-name</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#06000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Keyword, Storage</string>
-			<key>scope</key>
-			<string>keyword, storage</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#05000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>JS import</string>
 			<key>scope</key>
 			<string>entity.name.module.js, variable.import.parameter.js, variable.other.class.js</string>
@@ -304,28 +326,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#06000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>CSS Classes</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name.class</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#0b000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>URL</string>
-			<key>scope</key>
-			<string>*url*, *link*, *uri*</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
 			</dict>
 		</dict>
 		<dict>

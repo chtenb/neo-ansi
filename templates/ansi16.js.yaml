@@ -1,0 +1,9 @@
+- name: JS import
+  scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
+  settings:
+    foreground: $cyan
+- name: Decorators
+  scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
+  settings:
+    fontStyle: italic
+    foreground: $cyan

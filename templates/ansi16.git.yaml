@@ -1,0 +1,32 @@
+- name: Inserted
+  scope: markup.inserted
+  settings:
+    foreground: $green
+- name: Deleted
+  scope: markup.deleted
+  settings:
+    foreground: $red
+- name: Changed
+  scope: markup.changed
+  settings:
+    foreground: $yellow
+- name: GitGutter deleted
+  scope: markup.deleted.git_gutter
+  settings:
+    foreground: $red
+- name: GitGutter inserted
+  scope: markup.inserted.git_gutter
+  settings:
+    foreground: $green
+- name: GitGutter changed
+  scope: markup.changed.git_gutter
+  settings:
+    foreground: $yellow
+- name: GitGutter untracked
+  scope: markup.untracked.git_gutter
+  settings:
+    foreground: $brightRed
+- name: GitGutter ignored
+  scope: markup.ignored.git_gutter
+  settings:
+    foreground: $brightBlack

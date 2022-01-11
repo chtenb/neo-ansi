@@ -1,0 +1,19 @@
+name: $name
+uuid: $uuid
+author: $author
+colorSpaceName: $colorSpaceName
+semanticClass: $semanticClass
+comment: 'Generated from the ansi16 template at https://github.com/chtenb/ansi16'
+settings:
+- name: Invalid
+  scope: invalid, invalid.illegal
+  settings:
+    foreground: $brightRed
+- name: Invalid deprecated
+  scope: invalid.deprecated
+  settings:
+    foreground: $brightBlack
+- name: URL
+  scope: '*url*, *link*, *uri*'
+  settings:
+    fontStyle: underline

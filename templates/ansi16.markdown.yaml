@@ -1,0 +1,84 @@
+- name: Markdown - Plain
+  scope: text.html.markdown, punctuation.definition.list_item.markdown
+  settings:
+    foreground: '#A6ACCD'
+- name: Markdown - Markup Raw Inline
+  scope: text.html.markdown markup.inline.raw.markdown
+  settings:
+    foreground: '#C792EA'
+- name: Markdown - Markup Raw Inline Punctuation
+  scope: text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown
+  settings:
+    foreground: '#4E5579'
+- name: Markdown - Heading
+  scope: markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown
+    punctuation.definition.heading.markdown
+  settings:
+    foreground: '#C3E88D'
+- name: Markup - Italic
+  scope: markup.italic
+  settings:
+    fontStyle: italic
+    foreground: '#f07178'
+- name: Markup - Bold
+  scope: markup.bold, markup.bold string
+  settings:
+    fontStyle: bold
+    foreground: '#f07178'
+- name: Markup - Bold-Italic
+  scope: markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold,
+    markup.bold markup.italic string, markup.italic markup.bold string, markup.quote
+    markup.bold string
+  settings:
+    fontStyle: bold
+    foreground: '#f07178'
+- name: Markup - Underline
+  scope: markup.underline
+  settings:
+    fontStyle: underline
+    foreground: '#F78C6C'
+- name: Markup - Strike
+  scope: markup.strike
+  settings:
+    fontStyle: strike
+- name: Markdown - Blockquote
+  scope: markup.quote punctuation.definition.blockquote.markdown
+  settings:
+    foreground: '#4E5579'
+- name: Markup - Quote
+  scope: markup.quote
+  settings:
+    fontStyle: italic
+- name: Markdown - Link
+  scope: string.other.link.title.markdown
+  settings:
+    foreground: '#82AAFF'
+- name: Markdown - Link Description
+  scope: string.other.link.description.title.markdown
+  settings:
+    foreground: '#C792EA'
+- name: Markdown - Link Anchor
+  scope: constant.other.reference.link.markdown
+  settings:
+    foreground: '#FFCB6B'
+- name: Markup - Raw Block
+  scope: markup.raw.block
+  settings:
+    foreground: '#C792EA'
+- name: Markdown - Fenced Bode Block Variable
+  scope: markup.fenced_code.block.markdown, markup.inline.raw.string.markdown
+  settings:
+    foreground: '#A6ACCD90'
+- name: Markdown - Fenced Language
+  scope: variable.language.fenced.markdown
+  settings:
+    foreground: '#4E5579'
+- name: Markdown - Separator
+  scope: meta.separator
+  settings:
+    fontStyle: bold
+    foreground: '#4E5579'
+- name: Markup - Table
+  scope: markup.table
+  settings:
+    foreground: '#A6ACCD'
