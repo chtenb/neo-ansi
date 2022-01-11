@@ -1,0 +1,21 @@
+name: ANSI 16 Terminal
+uuid: uuid
+author: Chiel ten Brinke
+semanticClass: theme.ansi16
+colorSpaceName: sRGB
+black: '#00000000'
+red: '#01000000'
+green: '#02000000'
+yellow: '#03000000'
+blue: '#04000000'
+magenta: '#05000000'
+cyan: '#06000000'
+white: '#07000000'
+brightBlack: '#08000000'
+brightRed: '#09000000'
+brightGreen: '#0a000000'
+brightYellow: '#0b000000'
+brightBlue: '#0c000000'
+brightMagenta: '#0d000000'
+brightCyan: '#0e000000'
+brightWhite: '#0f000000'

@@ -8,47 +8,43 @@ settings:
 - name: Invalid
   scope: invalid, invalid.illegal
   settings:
-    foreground: '#FF5370'
+    foreground: $brightRed
 - name: Invalid deprecated
   scope: invalid.deprecated
   settings:
-    foreground: '#C792EA'
-- name: CSS ID
-  scope: source.sass
-  settings:
-    foreground: '#82AAFF'
+    foreground: $brightBlack
 - name: Inserted
   scope: markup.inserted
   settings:
-    foreground: '#C3E88D'
+    foreground: $green
 - name: Deleted
   scope: markup.deleted
   settings:
-    foreground: '#FF5370'
+    foreground: $red
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '#C792EA'
+    foreground: $yellow
 - name: GitGutter deleted
   scope: markup.deleted.git_gutter
   settings:
-    foreground: '#fe4450'
+    foreground: $red
 - name: GitGutter inserted
   scope: markup.inserted.git_gutter
   settings:
-    foreground: '#72f1b8cc'
+    foreground: $green
 - name: GitGutter changed
   scope: markup.changed.git_gutter
   settings:
-    foreground: '#b893ceee'
+    foreground: $yellow
 - name: GitGutter untracked
   scope: markup.untracked.git_gutter
   settings:
-    foreground: '#72f1b8'
+    foreground: $brightRed
 - name: GitGutter ignored
   scope: markup.ignored.git_gutter
   settings:
-    foreground: '#ffffff59'
+    foreground: $brightBlack
 - name: Text
   scope: source, text
   settings:
@@ -57,11 +53,11 @@ settings:
   scope: comment, punctuation.definition.comment, string.quoted.docstring
   settings:
     fontStyle: italic
-    foreground: $blackBright
+    foreground: $brightBlack
 - name: Variables
   scope: variable, entity.name.variable, constant.other.placeholder
   settings:
-    foreground: $whiteBright
+    foreground: $brightWhite
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
@@ -87,7 +83,7 @@ settings:
   scope: constant.numeric, constant.language, support.constant, constant.character,
     constant.escape, keyword.other.unit
   settings:
-    foreground: $redBright
+    foreground: $brightRed
 - name: String, Symbols, Inherited Class, Markup Heading
   scope: string, constant.other.symbol, constant.other.key, markup.heading, markup.inserted.git_gutter,
     meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
@@ -98,7 +94,7 @@ settings:
   scope: entity.name, entity.other.inherited-class, support.type, support.class, markup.changed.git_gutter,
     support.type.sys-types
   settings:
-    foreground: $yellowBright
+    foreground: $brightYellow
 - name: Support
   scope: support, support.function, keyword.other.special-method, keyword.operator,
     variable.language, string.regexp, constant.character.escape
@@ -109,7 +105,7 @@ settings:
     punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded,
     keyword.other.template, keyword.other.substitution
   settings:
-    foreground: $cyanBright
+    foreground: $brightCyan
 - name: CSS Class and Support
   scope: source.css support.type.property-name, source.sass support.type.property-name,
     source.scss support.type.property-name, source.less support.type.property-name,
@@ -127,7 +123,7 @@ settings:
 - name: CSS Classes
   scope: entity.other.attribute-name.class
   settings:
-    foreground: $yellowBright
+    foreground: $brightYellow
 - name: URL
   scope: '*url*, *link*, *uri*'
   settings:
@@ -151,7 +147,7 @@ settings:
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     support.type.property-name.json
   settings:
-    foreground: $yellowBright
+    foreground: $brightYellow
 - name: JSON Key - Level 3
   scope: source.json meta.structure.dictionary.json meta.structure.dictionary.value.json
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
@@ -199,7 +195,7 @@ settings:
     meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json
     support.type.property-name.json
   settings:
-    foreground: $whiteBright
+    foreground: $brightWhite
 - name: Markdown - Plain
   scope: text.html.markdown, punctuation.definition.list_item.markdown
   settings:
