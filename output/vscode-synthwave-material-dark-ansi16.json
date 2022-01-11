@@ -147,5 +147,5 @@
     "terminal.ansiBrightCyan": "#91f5f8",
     "terminal.ansiBrightWhite": "#ddccdd"
   },
-  "tokenColors": "./ansi16.tmTheme"
+  "tokenColors": "./material-dark-ansi16.tmTheme"
 }
