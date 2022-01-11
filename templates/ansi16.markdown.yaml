@@ -1,42 +1,42 @@
 - name: Markdown - Plain
   scope: text.html.markdown, punctuation.definition.list_item.markdown
   settings:
-    foreground: '#A6ACCD'
+    foreground: $white
 - name: Markdown - Markup Raw Inline
   scope: text.html.markdown markup.inline.raw.markdown
   settings:
-    foreground: '#C792EA'
+    foreground: $magenta
 - name: Markdown - Markup Raw Inline Punctuation
   scope: text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown
   settings:
-    foreground: '#4E5579'
+    foreground: $brightCyan
 - name: Markdown - Heading
-  scope: markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown
-    punctuation.definition.heading.markdown
+  scope: markdown.heading, markup.heading, markup.heading entity.name, markup.heading.markdown
+    punctuation.definition.heading.markdown, markup.heading.setext
   settings:
-    foreground: '#C3E88D'
+    foreground: $green
 - name: Markup - Italic
   scope: markup.italic
   settings:
     fontStyle: italic
-    foreground: '#f07178'
+    foreground: $red
 - name: Markup - Bold
   scope: markup.bold, markup.bold string
   settings:
     fontStyle: bold
-    foreground: '#f07178'
+    foreground: $brightRed
 - name: Markup - Bold-Italic
   scope: markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold,
     markup.bold markup.italic string, markup.italic markup.bold string, markup.quote
     markup.bold string
   settings:
     fontStyle: bold
-    foreground: '#f07178'
+    foreground: $brightRed
 - name: Markup - Underline
   scope: markup.underline
   settings:
     fontStyle: underline
-    foreground: '#F78C6C'
+    foreground: $yellow
 - name: Markup - Strike
   scope: markup.strike
   settings:
@@ -44,7 +44,7 @@
 - name: Markdown - Blockquote
   scope: markup.quote punctuation.definition.blockquote.markdown
   settings:
-    foreground: '#4E5579'
+    foreground: $brightBlack
 - name: Markup - Quote
   scope: markup.quote
   settings:
@@ -52,33 +52,33 @@
 - name: Markdown - Link
   scope: string.other.link.title.markdown
   settings:
-    foreground: '#82AAFF'
+    foreground: $blue
 - name: Markdown - Link Description
   scope: string.other.link.description.title.markdown
   settings:
-    foreground: '#C792EA'
+    foreground: $blue
 - name: Markdown - Link Anchor
   scope: constant.other.reference.link.markdown
   settings:
-    foreground: '#FFCB6B'
+    foreground: $brightYellow
 - name: Markup - Raw Block
   scope: markup.raw.block
   settings:
-    foreground: '#C792EA'
-- name: Markdown - Fenced Bode Block Variable
+    foreground: $white
+- name: Markdown - Fenced Language
   scope: markup.fenced_code.block.markdown, markup.inline.raw.string.markdown
   settings:
-    foreground: '#A6ACCD90'
-- name: Markdown - Fenced Language
+    foreground: $magenta
+- name: Markdown - Fenced Bode Block Variable
   scope: variable.language.fenced.markdown
   settings:
-    foreground: '#4E5579'
+    foreground: $cyan
 - name: Markdown - Separator
   scope: meta.separator
   settings:
     fontStyle: bold
-    foreground: '#4E5579'
+    foreground: $cyan
 - name: Markup - Table
   scope: markup.table
   settings:
-    foreground: '#A6ACCD'
+    foreground: $cyan
