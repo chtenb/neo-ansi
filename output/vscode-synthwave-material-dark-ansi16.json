@@ -129,7 +129,7 @@
     "terminalCursor.foreground": "#03edf9",
     "terminal.selectionBackground": "#ffffff20",
     "terminal.background": "#262335",
-    "terminal.foreground": "#ffffffee",
+    "terminal.foreground": "#ddccdd",
     "terminal.ansiBlack": "#676e95",
     "terminal.ansiRed": "#f07178",
     "terminal.ansiGreen": "#c3e88d",
@@ -145,7 +145,7 @@
     "terminal.ansiBrightBlue": "#82aaff",
     "terminal.ansiBrightMagenta": "#c792ea",
     "terminal.ansiBrightCyan": "#91f5f8",
-    "terminal.ansiBrightWhite": "#ffffff"
+    "terminal.ansiBrightWhite": "#ddccdd"
   },
   "tokenColors": "./ansi16.tmTheme"
 }
