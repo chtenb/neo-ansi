@@ -61,4 +61,5 @@
 - name: Keyword, Storage
   scope: keyword, storage
   settings:
+    fontStyle: bold
     foreground: $magenta

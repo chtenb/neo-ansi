@@ -1,0 +1,21 @@
+name: Material Light ANSI 16
+uuid: uuid
+author: Chiel ten Brinke
+semanticClass: theme.light.material-ansi16
+colorSpaceName: sRGB
+black: '#8ca6a6'
+red: '#b3694d'
+green: '#00b368'
+yellow: '#a88c00'
+blue: '#0094f0'
+magenta: '#ff5792'
+cyan: '#00bdd6'
+white: '#005661'
+brightBlack: '#8ca6a6'
+brightRed: '#e64100'
+brightGreen: '#00b368'
+brightYellow: '#fa8900'
+brightBlue: '#004d57'
+brightMagenta: '#7c4dff'
+brightCyan: '#0095a8'
+brightWhite: '#005661'

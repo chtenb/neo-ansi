@@ -1,5 +1,5 @@
 {
-  "name": "Lux-Material",
+  "name": "Lux",
   "type": "light",
   "semanticHighlighting": true,
   "colors": {
@@ -280,5 +280,5 @@
     "terminal.ansiBrightCyan": "$brightCyan",
     "terminal.ansiBrightWhite": "$brightWhite"
   },
-  "tokenColors": "./material-light-ansi16.tmTheme"
+  "tokenColors": "./lux-light-ansi16.tmTheme"
 }
