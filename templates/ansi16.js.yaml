@@ -1,3 +1,12 @@
+- name: Storage
+  scope: storage.*.js
+  settings:
+    foreground: $yellow
+- name: String, Symbols
+  scope: constant.other.key meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
+  settings:
+    fontStyle: ''
+    foreground: $green
 - name: JS import
   scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
   settings:

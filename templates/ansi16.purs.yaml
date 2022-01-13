@@ -1,0 +1,8 @@
+- name: Types
+  scope: entity.name.type
+  settings:
+    foreground: $yellow
+- name: Classes
+  scope: entity.name.class
+  settings:
+    foreground: $brightYellow

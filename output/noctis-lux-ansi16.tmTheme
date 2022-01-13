@@ -66,18 +66,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#fa8900</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Text</string>
-			<key>scope</key>
-			<string>source, text</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#005661</string>
+				<string>#a88c00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -95,13 +84,24 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variables</string>
+			<string>Tag</string>
 			<key>scope</key>
-			<string>variable, entity.name.variable, constant.other.placeholder</string>
+			<string>keyword.type, entity.name.tag, meta.tag.sgml</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#005661</string>
+				<string>#e64100</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Other Variable, String Link</string>
+			<key>scope</key>
+			<string>source.cpp meta.block variable.other, support.other.variable, string.other.link</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e64100</string>
 			</dict>
 		</dict>
 		<dict>
@@ -114,36 +114,25 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#ff5792</string>
+				<string>#00b368</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Tag</string>
+			<string>Types</string>
 			<key>scope</key>
-			<string>keyword.type, entity.name.tag, meta.tag.sgml</string>
+			<string>entity.name</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b3694d</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Other Variable, String Link</string>
-			<key>scope</key>
-			<string>source.cpp meta.block variable.other, support.other.variable, string.other.link</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#b3694d</string>
+				<string>#fa8900</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Function, Special Method</string>
 			<key>scope</key>
-			<string>entity.name.function, variable.function</string>
+			<string>entity.name.function, variable.function, meta.function-call</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -152,48 +141,15 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Alt keyword</string>
+			<string>Keyword, Storage</string>
 			<key>scope</key>
-			<string>keyword.other.arrow</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#a88c00</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Number, Constant</string>
-			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, constant.escape, keyword.other.unit</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#e64100</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>String, Symbols, Inherited Class</string>
-			<key>scope</key>
-			<string>string, constant.other.symbol, constant.other.key meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<string>keyword, storage</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>bold</string>
 				<key>foreground</key>
-				<string>#00b368</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Class, Support</string>
-			<key>scope</key>
-			<string>entity.name, entity.other.inherited-class, support.type, support.class, support.type.sys-types</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#fa8900</string>
+				<string>#ff5792</string>
 			</dict>
 		</dict>
 		<dict>
@@ -209,6 +165,61 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Text</string>
+			<key>scope</key>
+			<string>source, text</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#005661</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Number, Constant</string>
+			<key>scope</key>
+			<string>constant.numeric, constant.language, support.constant, constant.character, constant.escape, keyword.other.unit</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e64100</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String, Symbols</string>
+			<key>scope</key>
+			<string>string, constant.other.symbol</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00b368</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Alt types, Support types</string>
+			<key>scope</key>
+			<string>entity.other.inherited-class, support.type, support.class, support.type.sys-types</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a88c00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Alt keyword</string>
+			<key>scope</key>
+			<string>keyword.other.arrow</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#7c4dff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Punctuation</string>
 			<key>scope</key>
 			<string>punctuation.definition.tag, punctuation, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution</string>
@@ -220,15 +231,13 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Keyword, Storage</string>
+			<string>Variables</string>
 			<key>scope</key>
-			<string>keyword, storage</string>
+			<string>variable, entity.name.variable, constant.other.placeholder</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
 				<key>foreground</key>
-				<string>#ff5792</string>
+				<string>#005661</string>
 			</dict>
 		</dict>
 		<dict>
@@ -250,7 +259,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b3694d</string>
+				<string>#e64100</string>
 			</dict>
 		</dict>
 		<dict>
@@ -261,7 +270,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#a88c00</string>
+				<string>#fa8900</string>
 			</dict>
 		</dict>
 		<dict>
@@ -272,7 +281,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b3694d</string>
+				<string>#e64100</string>
 			</dict>
 		</dict>
 		<dict>
@@ -294,7 +303,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#a88c00</string>
+				<string>#fa8900</string>
 			</dict>
 		</dict>
 		<dict>
@@ -317,6 +326,30 @@
 			<dict>
 				<key>foreground</key>
 				<string>#8ca6a6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Storage</string>
+			<key>scope</key>
+			<string>storage.*.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#fa8900</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String, Symbols</string>
+			<key>scope</key>
+			<string>constant.other.key meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#00b368</string>
 			</dict>
 		</dict>
 		<dict>
@@ -351,7 +384,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b3694d</string>
+				<string>#e64100</string>
 			</dict>
 		</dict>
 		<dict>
@@ -362,7 +395,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#a88c00</string>
+				<string>#fa8900</string>
 			</dict>
 		</dict>
 		<dict>
@@ -373,7 +406,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#fa8900</string>
+				<string>#a88c00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -496,7 +529,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#b3694d</string>
+				<string>#e64100</string>
 			</dict>
 		</dict>
 		<dict>
@@ -535,7 +568,7 @@
 				<key>fontStyle</key>
 				<string>underline</string>
 				<key>foreground</key>
-				<string>#a88c00</string>
+				<string>#fa8900</string>
 			</dict>
 		</dict>
 		<dict>
@@ -573,13 +606,13 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markdown - Link</string>
+			<string>Markdown - Link title</string>
 			<key>scope</key>
 			<string>string.other.link.title.markdown</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#0094f0</string>
+				<string>#a88c00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -601,7 +634,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#fa8900</string>
+				<string>#a88c00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -659,6 +692,28 @@
 			<dict>
 				<key>foreground</key>
 				<string>#00bdd6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Types</string>
+			<key>scope</key>
+			<string>entity.name.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#fa8900</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Classes</string>
+			<key>scope</key>
+			<string>entity.name.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a88c00</string>
 			</dict>
 		</dict>
 	</array>

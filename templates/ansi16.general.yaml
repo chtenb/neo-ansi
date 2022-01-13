@@ -1,21 +1,8 @@
-- name: Text
-  scope: source, text
-  settings:
-    foreground: $white
 - name: Comment
   scope: comment, punctuation.definition.comment, string.quoted.docstring
   settings:
     fontStyle: italic
-    foreground: $brightBlack
-- name: Variables
-  scope: variable, entity.name.variable, constant.other.placeholder
-  settings:
-    foreground: $brightWhite
-- name: Attributes
-  scope: entity.other.attribute-name
-  settings:
-    fontStyle: italic
-    foreground: $magenta
+    foreground: $black
 - name: Tag
   scope: keyword.type, entity.name.tag, meta.tag.sgml
   settings:
@@ -24,42 +11,58 @@
   scope: source.cpp meta.block variable.other, support.other.variable, string.other.link
   settings:
     foreground: $red
-- name: Function, Special Method
-  scope: entity.name.function, variable.function
+- name: Attributes
+  scope: entity.other.attribute-name
   settings:
-    foreground: $blue
-- name: Alt keyword
-  scope: keyword.other.arrow
+    fontStyle: italic
+    foreground: $green
+- name: Types
+  scope: entity.name
   settings:
     foreground: $yellow
-- name: Number, Constant
-  scope: constant.numeric, constant.language, support.constant, constant.character,
-    constant.escape, keyword.other.unit
+- name: Function, Special Method
+  scope: entity.name.function, variable.function, meta.function-call
   settings:
-    foreground: $brightRed
-- name: String, Symbols, Inherited Class
-  scope: string, constant.other.symbol, constant.other.key
-    meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
+    foreground: $blue
+- name: Keyword, Storage
+  scope: keyword, storage
   settings:
-    fontStyle: ''
-    foreground: $green
-- name: Class, Support
-  scope: entity.name, entity.other.inherited-class, support.type, support.class, support.type.sys-types
-  settings:
-    foreground: $brightYellow
+    fontStyle: bold
+    foreground: $magenta
 - name: Support
   scope: support, support.function, keyword.other.special-method, keyword.operator,
     variable.language, string.regexp, constant.character.escape
   settings:
     foreground: $cyan
+- name: Text
+  scope: source, text
+  settings:
+    foreground: $white
+
+- name: Number, Constant
+  scope: constant.numeric, constant.language, support.constant, constant.character,
+    constant.escape, keyword.other.unit
+  settings:
+    foreground: $brightRed
+- name: String, Symbols
+  scope: string, constant.other.symbol
+  settings:
+    foreground: $green
+- name: Alt types, Support types
+  scope: entity.other.inherited-class, support.type, support.class, support.type.sys-types
+  settings:
+    foreground: $brightYellow
+- name: Alt keyword
+  scope: keyword.other.arrow
+  settings:
+    foreground: $brightMagenta
 - name: Punctuation
   scope: punctuation.definition.tag, punctuation, punctuation.definition.tag.html,
     punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded,
     keyword.other.template, keyword.other.substitution
   settings:
     foreground: $brightCyan
-- name: Keyword, Storage
-  scope: keyword, storage
+- name: Variables
+  scope: variable, entity.name.variable, constant.other.placeholder
   settings:
-    fontStyle: bold
-    foreground: $magenta
+    foreground: $brightWhite

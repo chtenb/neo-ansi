@@ -49,10 +49,10 @@
   scope: markup.quote
   settings:
     fontStyle: italic
-- name: Markdown - Link
+- name: Markdown - Link title
   scope: string.other.link.title.markdown
   settings:
-    foreground: $blue
+    foreground: $brightYellow
 - name: Markdown - Link Description
   scope: string.other.link.description.title.markdown
   settings:
