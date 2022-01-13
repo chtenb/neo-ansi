@@ -9,7 +9,7 @@
 	<key>comment</key>
 	<string>Generated from the ansi16 template at https://github.com/chtenb/ansi16</string>
 	<key>name</key>
-	<string>ANSI 16 Terminal</string>
+	<string>Ansi 16 Terminal</string>
 	<key>semanticClass</key>
 	<string>theme.ansi16</string>
 	<key>settings</key>

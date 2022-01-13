@@ -9,7 +9,7 @@
 	<key>comment</key>
 	<string>Generated from the ansi16 template at https://github.com/chtenb/ansi16</string>
 	<key>name</key>
-	<string>Material Dark ANSI 16</string>
+	<string>Material Dark Ansi 16</string>
 	<key>semanticClass</key>
 	<string>theme.dark.material-ansi16</string>
 	<key>settings</key>
