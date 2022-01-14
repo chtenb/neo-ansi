@@ -1,0 +1,21 @@
+name: Material Dark Ansi 16
+uuid: uuid
+author: Chiel ten Brinke
+semanticClass: theme.dark.material-ansi16
+colorSpaceName: sRGB
+black: '#676e95'
+red: '#f07178'
+green: '#c3e88d'
+yellow: '#ffcb6b'
+blue: '#82aaff'
+magenta: '#c792ea'
+cyan: '#89DDFF'
+white: '#EEFFFF'
+brightBlack: '#676e95'
+brightRed: '#ff5370'
+brightGreen: '#87de97'
+brightYellow: '#f78c6c'
+brightBlue: '#b9dedf'
+brightMagenta: '#c792ea'
+brightCyan: '#b9dedf'
+brightWhite: '#EEFFFF'
