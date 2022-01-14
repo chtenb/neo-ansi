@@ -1,3 +1,7 @@
+function identity<Type>(arg: Type): Type {
+    return arg;
+}
+
 interface ID3Selectors {
     select: (selector: string) => ID3Selection;
     selectAll: (selector: string) => ID3Selection;

@@ -17,7 +17,7 @@ namespace Rubjerg.Graphviz
     /// Wraps a cgraph root graph.
     /// NB: If there is no .net wrapper left that points to any part of a root graph, the root graph is destroyed.
     /// </summary>
-    public class RootGraph : Graph
+    public class RootGraph<T> : Graph where T:struct
     {
         private long added_pressure = 0;
         private RootGraph(IntPtr ptr) : base(ptr, null) { }

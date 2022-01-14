@@ -16,6 +16,10 @@
   settings:
     fontStyle: italic
     foreground: $green
+- name: String, Symbols
+  scope: string, constant.other.symbol
+  settings:
+    foreground: $green
 - name: Types
   scope: entity.name
   settings:
@@ -44,12 +48,8 @@
     constant.escape, keyword.other.unit
   settings:
     foreground: $brightRed
-- name: String, Symbols
-  scope: string, constant.other.symbol
-  settings:
-    foreground: $green
 - name: Alt types, Support types
-  scope: entity.other.inherited-class, support.type, support.class, support.type.sys-types
+  scope: support.type, support.class, support.type.sys-types, entity.name.type.parameter, entity.name.type.type-parameter
   settings:
     foreground: $brightYellow
 - name: Alt keyword
