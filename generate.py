@@ -1,4 +1,5 @@
-import sys
+#!/usr/bin/env python
+
 import os
 import glob
 import subprocess
