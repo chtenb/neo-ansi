@@ -100,10 +100,10 @@ But all this is subject to the discretion of the color theme designer.
 ## Implementation for TextMate scopes
 
 To aid in realizing principles **C.2** and **C.3** we implement a simple TextMate theme generator based on a palette of colors using a fixed language construct assignment strategy.
-Language constructs are called "scopes" in TextMate terminology.
-The scope assignment template collection can be found in [templates/](https://github.com/chtenb/ansi16/tree/main/templates).
-We generate an example set of themes from the palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
-The resulting themes are in [output/](https://github.com/chtenb/ansi16/tree/main/output).
+Language constructs are called [scopes](https://macromates.com/manual/en/language_grammars) in TextMate terminology, and they are matched using [scope selector](https://macromates.com/manual/en/scope_selectors).
+The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/ansi16/tree/main/templates).
+We generate an example set of TextMate themes from the palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
+The resulting `.tmTheme` files are placed in the root of this repository.
 
 ### Usage in VSCode
 
