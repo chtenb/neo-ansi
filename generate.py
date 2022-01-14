@@ -1,18 +1,32 @@
 #!/usr/bin/env python
 
+import shutil
+import sys
 import os
 import glob
 import subprocess
 
-def run(command):
-    subprocess.run(command, input=None, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, shell=True)
+def run(*command):
+    print(*command)
+    subprocess.run(command, input=None, stdout=sys.stdout, stderr=sys.stderr, universal_newlines=True, shell=False)
 
-run('rm *.tmTheme')
+def cmd_exists(cmd):
+    return shutil.which(cmd) is not None
+
+python = 'python'
+if cmd_exists('python3'):
+    python = 'python3'
+
+existing = glob.glob('*.tmTheme')
+if existing:
+    print(f'Removing existing {existing}')
+    run('rm', *existing)
 
 for palette in glob.glob('palettes/*.yaml'):
     print('Generating tmTheme for ' + palette)
-    palette_name = os.path.splitext(os.path.basename(palette))[0]
+    palette_file = os.path.basename(palette)
+    palette_name = os.path.splitext(palette_file)[0]
     result_name = palette_name + '-ansi16.tmTheme'
     if palette_name == 'terminal':
         result_name = 'ansi16.tmTheme'
-    run(f'python yamltotm/yamltotm.py -d {palette} ansi16.header.yaml templates/ansi16*.yaml {result_name}')
+    run(python, './yamltotm/yamltotm.py', '-d', f'palettes/{palette_file}', 'ansi16.header.yaml', *glob.glob('templates/ansi16*.yaml'), result_name)
