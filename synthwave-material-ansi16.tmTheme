@@ -330,7 +330,7 @@
 			<key>name</key>
 			<string>Storage</string>
 			<key>scope</key>
-			<string>source.js storage</string>
+			<string>source.js storage, source.js keyword.declaration</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

@@ -1,5 +1,5 @@
 - name: Storage
-  scope: source.js storage
+  scope: source.js storage, source.js keyword.declaration
   settings:
     foreground: $yellow
 - name: String, Symbols
