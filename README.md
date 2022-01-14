@@ -47,21 +47,21 @@ This way color theme designers can make sure that the first 8 colors form a nice
 | Color Number | Name | Description |
 | ------------ | ---- | ----------- |
 | 0 | black | low emphasis, comments
-| 1 | red | value types, tags
+| 1 | red | value types, tags, builtin types
 | 2 | green | strings
 | 3 | yellow | types, attributes
 | 4 | blue | operators, functions
 | 5 | magenta | keywords
-| 6 | cyan | medium emphasis, support
-| 7 | white | regular text
+| 6 | cyan | medium emphasis, miscellaneous
+| 7 | white | regular text, variables
 | 8 | bright black | alternative low emphasis
-| 9 | bright red | high emphasis, constants
+| 9 | bright red | high emphasis, constants, numbers
 | a | bright green | high emphasis
 | b | bright yellow | alternative types
-| c | bright blue | alternative operators, functions
+| c | bright blue | alternative operators, functions, variables
 | d | bright magenta | alternative keywords
 | e | bright cyan | punctuation
-| f | bright white | variables
+| f | bright white | alternative variables
 
 For non-typed languages the `Type` category can be interpreted more broadly as types of language constructions.
 

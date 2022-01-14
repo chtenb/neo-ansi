@@ -1,68 +1,66 @@
-- name: Comment
+- name: COMMENT
   scope: comment, punctuation.definition.comment, string.quoted.docstring
   settings:
     fontStyle: italic
     foreground: $black
-- name: Tag
-  scope: keyword.type, entity.name.tag, meta.tag.sgml
+- name: VALUE TYPE, BUILTIN TYPE, TAG
+  scope: keyword.type, entity.name.tag, meta.tag.sgml, entity.name.type.struct, support.type, support.class, support.type.sys-types, support.type.built-in
   settings:
     foreground: $red
-- name: Other Variable, String Link
-  scope: source.cpp meta.block variable.other, support.other.variable, string.other.link
-  settings:
-    foreground: $red
-- name: Attributes
-  scope: entity.other.attribute-name
-  settings:
-    fontStyle: italic
-    foreground: $green
-- name: String, Symbols
+- name: STRING, SYMBOL
   scope: string, constant.other.symbol
   settings:
     foreground: $green
-- name: Types
-  scope: entity.name
+- name: TYPE, ATTRIBUTE
+  scope: entity.name, entity.other.attribute-name
   settings:
     foreground: $yellow
-- name: Function, Special Method
+- name: FUNCTION, METHOD, OPERATOR
   scope: entity.name.function, variable.function, meta.function-call
   settings:
     foreground: $blue
-- name: Keyword, Storage
+- name: KEYWORD, STORAGE
   scope: keyword, storage
   settings:
     fontStyle: bold
     foreground: $magenta
-- name: Support
-  scope: support, support.function, keyword.other.special-method, keyword.operator,
-    variable.language, string.regexp, constant.character.escape
+- name: SUPPORT, SPECIAL, BUILTIN OTHER
+  scope: support, keyword.other.special-method,
+    variable.language, string.regexp, constant.character.escape, support.other.variable
   settings:
     foreground: $cyan
-- name: Text
-  scope: source, text
+- name: TEXT
+  scope: source, text, variable, entity.name.variable, constant.other.placeholder
   settings:
     foreground: $white
 
-- name: Number, Constant
-  scope: constant.numeric, constant.language, support.constant, constant.character,
-    constant.escape, keyword.other.unit
+- name: CONSTANT
+  scope: constant.numeric, constant.language, support.constant, constant.character, constant.escape, keyword.other.unit
   settings:
     foreground: $brightRed
-- name: Alt types, Support types
-  scope: support.type, support.class, support.type.sys-types, entity.name.type.parameter, entity.name.type.type-parameter
+- name: STRING LINK
+  scope: string.other.link
+  settings:
+    foreground: $brightGreen
+- name: ALT TYPE
+  scope: entity.name.type.parameter, entity.name.type.type-parameter, variable.other.generic-type
   settings:
     foreground: $brightYellow
-- name: Alt keyword
-  scope: keyword.other.arrow
+- name: ALT FUNCTION
+  scope: keyword.operator, support.function
+  settings:
+    foreground: $brightBlue
+- name: ALT KEYWORD
+  scope: keyword.other
   settings:
     foreground: $brightMagenta
-- name: Punctuation
+- name: PUNCTUATION
   scope: punctuation.definition.tag, punctuation, punctuation.definition.tag.html,
     punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded,
     keyword.other.template, keyword.other.substitution
   settings:
     foreground: $brightCyan
-- name: Variables
-  scope: variable, entity.name.variable, constant.other.placeholder
+- name: ALT VARIABLE
+  scope: entity.name.variable.field, entity.name.variable.property, variable.other.property, variable.other.field
   settings:
     foreground: $brightWhite

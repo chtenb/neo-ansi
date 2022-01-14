@@ -20,6 +20,8 @@ namespace Rubjerg.Graphviz
     public class RootGraph<T> : Graph where T:struct
     {
         private long added_pressure = 0;
+        public long _added_pressure = 0;
+        public long Added_pressure => 0;
         private RootGraph(IntPtr ptr) : base(ptr, null) { }
         ~RootGraph()
         {

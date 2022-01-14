@@ -18,6 +18,8 @@ args = parser.parse_args()
 class TestClass(int):
     pass
 
+foo = TestClass()
+
 def rotate_glyph(glyph):
     coords = [d for d in glyph.coordinates._a]
     xcoords = coords[0:len(coords):2]
