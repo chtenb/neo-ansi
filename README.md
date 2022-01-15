@@ -46,47 +46,45 @@ This way color theme designers can make sure that the first 8 colors form a nice
 
 | Color Number | Name | Description |
 | ------------ | ---- | ----------- |
-| 0 | black | low emphasis, comments
-| 1 | red | value types, tags, builtin types
-| 2 | green | strings
-| 3 | yellow | types, attributes
-| 4 | blue | operators, functions
-| 5 | magenta | keywords
+| 0 | black | low emphasis, comment
+| 1 | red | value type, tag, builtin type
+| 2 | green | string
+| 3 | yellow | type, attribute
+| 4 | blue | operator, function
+| 5 | magenta | keyword
 | 6 | cyan | medium emphasis, miscellaneous
-| 7 | white | regular text, variables
+| 7 | white | regular text, variable
 | 8 | bright black | alternative low emphasis
-| 9 | bright red | high emphasis, constants, numbers
+| 9 | bright red | high emphasis, constant, number
 | a | bright green | high emphasis
-| b | bright yellow | alternative types
-| c | bright blue | alternative operators, functions, variables
-| d | bright magenta | alternative keywords
+| b | bright yellow | alternative type
+| c | bright blue | alternative operator, function, variable
+| d | bright magenta | alternative keyword
 | e | bright cyan | punctuation
-| f | bright white | alternative variables
+| f | bright white | alternative variable
 
-For non-typed languages the `Type` category can be interpreted more broadly as types of language constructions.
+For non-typed languages the `type` category can be interpreted more broadly as types of language constructions.
 
 ### For markup languages
 
-*To be done.*
-
-<!-- | Color Number | Name | Description |
-| ------------ | ---- | ----------- |
-| 0 | black | low emphasis
-| 1 | red | emphasis, bold, tags
-| 2 | green | headers, strings
-| 3 | yellow | headers
-| 4 | blue | miscellaneous
-| 5 | magenta | inline code
-| 6 | cyan | quotes
+| Color Number | Name | Description |
+|--------------|------|-------------|
+| 0 | black | low emphasis, comment
+| 1 | red | emphasis, tag, bold, header
+| 2 | green | emphasis, underline, string, link
+| 3 | yellow | link title, attribute
+| 4 | blue | inline code
+| 5 | magenta | italic, description
+| 6 | cyan | block quote, table
 | 7 | white | regular text
-| 8 | bright black | low emphasis, comments
-| 9 | bright red | numbers, data
-| a | bright green | links
-| b | bright yellow | headers with emphasis, attributes
+| 8 | bright black | alternative low emphasis, strike
+| 9 | bright red | high emphasis, bold italic, number, data
+| a | bright green | miscellaneous
+| b | bright yellow | miscellaneous
 | c | bright blue | miscellaneous
 | d | bright magenta | miscellaneous
 | e | bright cyan | punctuation
-| f | bright white | emphasis, italic -->
+| f | bright white | miscellaneous
 
 A bright variant generally has more accent than its regular counterpart, but this is not required.
 Moreover, in a light color theme the color with more accent would often actually be darker.

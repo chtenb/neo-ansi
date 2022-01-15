@@ -12,7 +12,7 @@ settings:
 - name: Invalid deprecated
   scope: invalid.deprecated
   settings:
-    foreground: $brightBlack
+    foreground: $brightYellow
 - name: URL
   scope: '*url*, *link*, *uri*'
   settings:

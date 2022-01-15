@@ -57,7 +57,7 @@
 - name: PUNCTUATION
   scope: punctuation.definition.tag, punctuation, punctuation.definition.tag.html,
     punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded,
-    keyword.other.template, keyword.other.substitution
+    keyword.other.template, keyword.other.substitution, meta.separator
   settings:
     foreground: $brightCyan
 - name: ALT VARIABLE

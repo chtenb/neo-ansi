@@ -5,6 +5,14 @@
   settings:
     foreground: $cyan
 - name: CSS Classes
-  scope: entity.other.attribute-name.class
+  scope: entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element
   settings:
     foreground: $brightYellow
+- name: CSS Variables
+  scope: source.css variable
+  settings:
+    foreground: $brightWhite
+- name: CSS Properties
+  scope: source.css support.type.property-name
+  settings:
+    foreground: $white
