@@ -3,6 +3,7 @@ uuid: uuid
 author: Chiel ten Brinke
 semanticClass: theme.dark.material-ansi16
 colorSpaceName: sRGB
+comment: ''
 black: '#676e95'
 red: '#f07178'
 green: '#c3e88d'

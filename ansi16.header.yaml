@@ -3,7 +3,7 @@ uuid: $uuid
 author: $author
 colorSpaceName: $colorSpaceName
 semanticClass: $semanticClass
-comment: 'Generated from the ansi16 template at https://github.com/chtenb/ansi16'
+comment: 'Generated from the ansi16 template at https://github.com/chtenb/ansi16. $comment'
 settings:
 - name: Invalid
   scope: invalid, invalid.illegal

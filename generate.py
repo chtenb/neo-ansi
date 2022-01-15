@@ -27,6 +27,4 @@ for palette in glob.glob('palettes/*.yaml'):
     palette_file = os.path.basename(palette)
     palette_name = os.path.splitext(palette_file)[0]
     result_name = palette_name + '-ansi16.tmTheme'
-    if palette_name == 'bat':
-        result_name = 'bat-ansi16.tmTheme'
     run(python, './yamltotm/yamltotm.py', '-d', f'palettes/{palette_file}', 'ansi16.header.yaml', *glob.glob('templates/ansi16*.yaml'), result_name)

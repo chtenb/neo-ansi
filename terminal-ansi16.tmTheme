@@ -7,7 +7,7 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>comment</key>
-	<string>Generated from the ansi16 template at https://github.com/chtenb/ansi16</string>
+	<string>Generated from the ansi16 template at https://github.com/chtenb/ansi16. The colors in this theme are encoded as RRGGBBAA where RR is an ANSI palette number from 00 to 0f (the 8 colors and their bright versions), and AA is the special value 00 to indicate this encoding is being used.</string>
 	<key>name</key>
 	<string>Ansi 16 Terminal Theme for Bat</string>
 	<key>semanticClass</key>
