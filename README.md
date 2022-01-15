@@ -6,10 +6,10 @@ This standard came into being because I was dissatisfied with the current state 
 
 - The syntax highlighting quality and logic varies too much between themes.
 - VSCode themes often look good on one language, but not on another.
-- My git diffs in the terminal don't have the same syntax highlighting logic and colors as my editor.
+- My git diffs in the terminal don't automatically have the same syntax highlighting logic and colors as my editor.
 
 In my opinion this state could be improved greatly by formulating a standard, akin to [base16](http://www.chriskempson.com/projects/base16/) but with a different set of use cases and trade offs in mind.
-We will just concern ourselves with foreground colors in the context of syntax highlighting.
+Unlike base16 we will just concern ourselves with foreground colors in the context of syntax highlighting and we will encourage that the bright ANSI foreground colors remain more or less compatible with their non-bright versions.
 
 ## Design principles for a syntax highlighting scheme standard
 
@@ -19,10 +19,13 @@ We will just concern ourselves with foreground colors in the context of syntax h
 
 ### B). It needs to help making the code more readable.
 
-1. The coloring needs to be consistent across languages that are similar. C# and Java code should be colored mostly the same.
-2. The coloring needs to be consistent across color themes. Language constructs that are colored equally in one color theme should be colored equally in another.
+1. The coloring needs to be consistent across languages that are similar. 
+   E.g. C# and Java code should ideally be colored mostly the same.
+2. The coloring needs to be consistent across color themes.
+   Language constructs that are colored equally in one color theme should ideally be colored equally in another.
 3. The coloring needs to be consistent across tooling.
-4. The colors and accents need to make sort of sense semantically.
+4. The colors and accents of a color theme need to make sort of sense semantically.
+   Or at least not be completely counter intuitive.
 
 ### C). It needs to convenient to use across tooling, programming languages and color themes.
 
@@ -36,11 +39,8 @@ Since generally only the 8 ANSI colors and their bright alternatives are themabl
 Thus, color themes that implement this highlighting scheme are assignments of colors to ANSI color numbers.
 
 To comply with principle **B.1** and **B.2** we need to formulate a loose guideline for what kind of language constructs should be assigned to which color numbers.
-This is a global loose guideline, but language specific support can overrule this if it makes the highlighting scheme comply better with the design principles from **A** and **B**.
-The guideline is based on common patterns seen in popular syntax highlighting color themes and aims to make it easy for color theme designers to comply with the design principles.
-
-To make principle **A.1** feasible for color theme designers, the language construction assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
-This way color theme designers can make sure that the first 8 colors form a nicely balanced palette and be assured that the resulting color theme will balanced consistently across languages.
+Language specific support can overrule this guideline if it makes the highlighting scheme comply better with the design principles from **A** and **B**.
+The guideline is very loosely based on common patterns seen in popular syntax highlighting color themes and simultaneously aims to make it easy for color theme designers to comply with the design principles.
 
 ### For programming languages
 
@@ -86,10 +86,15 @@ For non-typed languages the `type` category can be interpreted more broadly as t
 | e | bright cyan | punctuation
 | f | bright white | miscellaneous
 
+
+An Ansi 16 color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
+To make principle **A.1** feasible for color theme designers, the language construction assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
+This way color theme designers can make sure that the first 8 colors form a nicely balanced palette and be assured that the resulting color theme will balanced consistently across languages.
+
 A bright variant generally has more accent than its regular counterpart, but this is not required.
 Moreover, in a light color theme the color with more accent would often actually be darker.
 
-A color theme can in principle assign arbitrary colors to each ANSI color number.
+An Ansi 16 color palette can in principle assign arbitrary colors to each ANSI color number.
 E.g. ANSI color number 6 does not necessarily have to be (close to) cyan.
 However, not all assignments will result in syntax highlighting schemes that promote readibility and consistency as stated in the design principles.
 Moreover, if the assignment is more or less compatible with the ANSI colors, it means that the the resulting syntax highlighting scheme will be more compatible with other schemes and is more suitable as a drop-in replacement for a terminal color theme.
@@ -97,28 +102,39 @@ But all this is subject to the discretion of the color theme designer.
 
 ## Implementation for TextMate scopes
 
-Language constructs are called [scopes](https://macromates.com/manual/en/language_grammars) in TextMate terminology, and they are matched using [scope selector](https://macromates.com/manual/en/scope_selectors).
-To aid in realizing principles **C.2** and **C.3** we implement a simple TextMate theme generator based on a variable palette of colors and a fixed scope assignment strategy.
+Many tools support the TextMate format for syntax highlighting, including VSCode and bat.
+Therefore we provide a simple implementation for  from a given Ansi 16 color palette.
+Language constructs are called [scopes](https://macromates.com/manual/en/language_grammars) in TextMate terminology, and they are matched using [scope selectors](https://macromates.com/manual/en/scope_selectors).
+To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Ansi 16 color palette a fixed scope assignment strategy.
 The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/ansi16/tree/main/templates).
-We generate an example set of TextMate themes from the palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
+We generate an example set of TextMate themes from the Ansi 16 color palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
 The resulting `.tmTheme` files are placed in the root of this repository.
-
-### Running the generator
-
-Make sure you have Python 3.4+ installed. Add desired palettes to the `palettes/` folder.
-Run `./generate.py` in the root of the repository.
 
 ### Usage in VSCode
 
 We've provided a collection of VSCode themes that implement the Ansi 16 syntax highlighting scheme, which are available at [VSCode Ansi 16](https://github.com/chtenb/vscode-ansi16).
 
-### Usage in Terminal tools
+### Usage in bat and delta
 
-The file [ansi16.thTheme](https://github.com/chtenb/ansi16/blob/main/output/ansi16.tmTheme) contains a definition of the ansi16 highlighting logic in terms of the 16 ANSI terminal colors.
-Any terminal application that can read tmThemes can be instructued to make use of this, like [bat](https://github.com/sharkdp/bat) and by extension [delta](https://github.com/dandavison/delta).
+The file [bat-ansi16.thTheme](https://github.com/chtenb/ansi16/blob/main/output/ansi16.tmTheme) contains a definition of the ansi16 highlighting logic in terms of the 16 ANSI terminal colors in a format that can be understood by bat.
+Any terminal applications that use `bat` for syntax highlighting (like [delta](https://github.com/dandavison/delta)) will be able to make use of this.
 If the 16 base colors of your terminal are then setup to match the 16 colors of the Ansi 16 color theme in your editor, the syntax highlighting in your terminal git diffs will look the same as in your text editor.
 Note that the themes provided in the [VSCode Ansi 16](https://github.com/chtenb/vscode-ansi16) will automatically set the terminal color palette for you in the integrated terminal emulator.
 
 ### Potential shortcomings
 
 Since we only concern ourselves with assigning colors to scopes, the grammar used to define the scopes for a language may still differ between different tools and therefore give slightly different results.
+
+## Contributing
+
+### Improving the scope assignment logic
+
+- Pull requests for improvements on the scope assignment logic are welcome, either by improving upon the existing [templates/](https://github.com/chtenb/ansi16/tree/main/templates) or by adding new language support.
+- Pull requests to improve the generation tooling are welcome.
+- Pull requests for new themes are also welcome as long as these themes have some reusability value. For other themes you can create your own Ansi 16 theme collection repository. By adding this repository as a submodule you can tap into the existing TextMate theme generation logic.
+
+### Running the tmTheme generator
+
+- Make sure you have Python 3.4+ installed. 
+- Run `./generate.py` in the root of the repository.
+
