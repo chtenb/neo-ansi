@@ -29,9 +29,9 @@ function createCancellationToken(args) {
     }
     if (!cancellationPipeName) {
         return {
-            isCancellationRequested: function () { return false; },
+            resetRequest: function (_requestId) { return void 0; },
             setRequest: function (_requestId) { return void 0; },
-            resetRequest: function (_requestId) { return void 0; }
+            isCancellationRequested: function () { return false; }
         };
     }
     if (cancellationPipeName.charAt(cancellationPipeName.length - 1) === "*") {
@@ -39,8 +39,8 @@ function createCancellationToken(args) {
         if (namePrefix_1.length === 0 || namePrefix_1.indexOf("*") >= 0) {
             throw new Error("Invalid name for template cancellation pipe: it should have length greater than 2 characters and contain only one '*'.");
         }
-        var perRequestPipeName_1;
         var currentRequestId_1;
+        var perRequestPipeName_1;
         return {
             isCancellationRequested: function () { return perRequestPipeName_1 !== undefined && pipeExists(perRequestPipeName_1); },
             setRequest: function (requestId) {
