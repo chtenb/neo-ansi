@@ -14,5 +14,5 @@
 - name: Decorators
   scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
   settings:
-    fontStyle: italic
+    fontStyle: $italic
     foreground: $cyan

@@ -4,6 +4,10 @@ author: Chiel ten Brinke
 semanticClass: theme.ansi16
 colorSpaceName: sRGB
 comment: The colors in this theme are encoded as RRGGBBAA where RR is an ANSI palette number from 00 to 0f (the 8 colors and their bright versions), and AA is the special value 00 to indicate this encoding is being used.
+bold: '' # In many terminals bold implies bright colors.
+italic: 'italic'
+strike: 'strike'
+underline: 'underline'
 black: '#00000000'
 red: '#01000000'
 green: '#02000000'

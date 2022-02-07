@@ -4,6 +4,10 @@ author: Chiel ten Brinke
 semanticClass: theme.dark.material-ansi16
 colorSpaceName: sRGB
 comment: ''
+bold: 'bold'
+italic: 'italic'
+strike: 'strike'
+underline: 'underline'
 black: '#676e95'
 red: '#f07178'
 green: '#c3e88d'

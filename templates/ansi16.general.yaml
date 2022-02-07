@@ -1,7 +1,7 @@
 - name: COMMENT
   scope: comment, punctuation.definition.comment, string.quoted.docstring
   settings:
-    fontStyle: italic
+    fontStyle: $italic
     foreground: $black
 - name: VALUE TYPE, BUILTIN TYPE, TAG
   scope: keyword.type, entity.name.tag, meta.tag.sgml, entity.name.type.struct, support.type, support.class, support.type.sys-types, support.type.built-in
@@ -22,7 +22,7 @@
 - name: KEYWORD, STORAGE
   scope: keyword, storage
   settings:
-    fontStyle: bold
+    fontStyle: $bold
     foreground: $magenta
 - name: SUPPORT, SPECIAL, BUILTIN OTHER
   scope: support, keyword.other.special-method,
