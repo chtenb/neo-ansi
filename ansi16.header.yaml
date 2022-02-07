@@ -5,6 +5,11 @@ colorSpaceName: $colorSpaceName
 semanticClass: $semanticClass
 comment: 'Generated from the ansi16 template at https://github.com/chtenb/ansi16. $comment'
 settings:
+- settings:
+    background: $background
+    foreground: $foreground
+    gutter: $gutter
+    gutterForeground: $gutterForeground
 - name: Invalid
   scope: invalid, invalid.illegal
   settings:

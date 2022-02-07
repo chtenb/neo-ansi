@@ -15,6 +15,19 @@
 	<key>settings</key>
 	<array>
 		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#00000001</string>
+				<key>foreground</key>
+				<string>#00000001</string>
+				<key>gutter</key>
+				<string>#00000001</string>
+				<key>gutterForeground</key>
+				<string>#00000001</string>
+			</dict>
+		</dict>
+		<dict>
 			<key>name</key>
 			<string>Invalid</string>
 			<key>scope</key>

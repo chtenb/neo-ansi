@@ -15,6 +15,19 @@
 	<key>settings</key>
 	<array>
 		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#263238</string>
+				<key>foreground</key>
+				<string>#ddeeee</string>
+				<key>gutter</key>
+				<string>#263238</string>
+				<key>gutterForeground</key>
+				<string>#ddeeee</string>
+			</dict>
+		</dict>
+		<dict>
 			<key>name</key>
 			<string>Invalid</string>
 			<key>scope</key>
@@ -55,7 +68,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#89DDFF</string>
+				<string>#89ddff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -169,7 +182,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#89DDFF</string>
+				<string>#89ddff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -380,7 +393,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#89DDFF</string>
+				<string>#89ddff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -393,7 +406,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#89DDFF</string>
+				<string>#89ddff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -459,7 +472,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#89DDFF</string>
+				<string>#89ddff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -588,7 +601,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#89DDFF</string>
+				<string>#89ddff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -601,7 +614,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#89DDFF</string>
+				<string>#89ddff</string>
 			</dict>
 		</dict>
 		<dict>

@@ -4,6 +4,10 @@ author: Chiel ten Brinke
 semanticClass: theme.ansi16
 colorSpaceName: sRGB
 comment: The colors in this theme are encoded as RRGGBBAA where RR is an ANSI palette number from 00 to 0f (the 8 colors and their bright versions), and AA is the special value 00 to indicate this encoding is being used.
+background: '#00000001'
+foreground: '#00000001'
+gutter: '#00000001' #  Explicitly set the gutter color since bat falls back to a hardcoded DEFAULT_GUTTER_COLOR otherwise.
+gutterForeground: '#00000001'
 bold: '' # In many terminals bold implies bright colors.
 italic: 'italic'
 strike: 'strike'

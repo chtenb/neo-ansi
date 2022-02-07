@@ -22,6 +22,9 @@
 > Test
 
 *test*
+_test_
+__test__
+**test**
 
     asdfjlkasdjflkasdjf
 
