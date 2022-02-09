@@ -18,11 +18,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#f6edda</string>
+				<string>#fef8ec</string>
 				<key>foreground</key>
 				<string>#005661</string>
 				<key>gutter</key>
-				<string>#f6edda</string>
+				<string>#fef8ec</string>
 				<key>gutterForeground</key>
 				<string>#005661</string>
 			</dict>

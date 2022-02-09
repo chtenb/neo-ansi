@@ -4,9 +4,9 @@ author: Chiel ten Brinke
 semanticClass: theme.light.material-ansi16
 colorSpaceName: sRGB
 comment: ''
-background: '#f6edda'
+background: '#fef8ec'
 foreground: '#005661'
-gutter: '#f6edda'
+gutter: '#fef8ec'
 gutterForeground: '#005661'
 bold: 'bold'
 italic: 'italic'
