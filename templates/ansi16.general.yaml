@@ -55,7 +55,7 @@
   settings:
     foreground: $brightMagenta
 - name: PUNCTUATION
-  scope: punctuation.definition.tag, punctuation, punctuation.definition.tag.html,
+  scope: punctuation.definition.tag, punctuation.definition, punctuation, punctuation.definition.tag.html,
     punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded,
     keyword.other.template, keyword.other.substitution, meta.separator
   settings:

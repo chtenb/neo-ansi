@@ -1,0 +1,10 @@
+- name: Values
+  scope: constant.other.haskell
+  settings:
+    foreground: $red
+
+- name: Types
+  scope: storage.type.haskell
+  settings:
+    foreground: $yellow
+    fontStyle: ''

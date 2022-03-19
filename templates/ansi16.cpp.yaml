@@ -1,0 +1,10 @@
+- name: Storage operators
+  scope: storage.modifier.pointer, storage.modifier.reference
+  settings:
+    foreground: $brightBlue
+
+- name: Pointer access
+  scope: punctuation.separator.pointer-access
+  settings:
+    foreground: $brightBlue
+

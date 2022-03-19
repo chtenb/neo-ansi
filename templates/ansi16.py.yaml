@@ -1,0 +1,4 @@
+- name: String types
+  scope: storage.type.string.python
+  settings:
+    foreground: $brightCyan

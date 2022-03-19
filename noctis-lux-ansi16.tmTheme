@@ -35,7 +35,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f00055</string>
+				<string>#ef004b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -58,6 +58,28 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Storage operators</string>
+			<key>scope</key>
+			<string>storage.modifier.pointer, storage.modifier.reference</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0094f0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Pointer access</string>
+			<key>scope</key>
+			<string>punctuation.separator.pointer-access</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0094f0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -204,7 +226,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f00055</string>
+				<string>#ef004b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -255,7 +277,7 @@
 			<key>name</key>
 			<string>PUNCTUATION</string>
 			<key>scope</key>
-			<string>punctuation.definition.tag, punctuation, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution, meta.separator</string>
+			<string>punctuation.definition.tag, punctuation.definition, punctuation, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution, meta.separator</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -347,7 +369,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f00055</string>
+				<string>#ef004b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -359,6 +381,30 @@
 			<dict>
 				<key>foreground</key>
 				<string>#8ca6a6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Values</string>
+			<key>scope</key>
+			<string>constant.other.haskell</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e64100</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Types</string>
+			<key>scope</key>
+			<string>storage.type.haskell</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#fa8900</string>
 			</dict>
 		</dict>
 		<dict>
@@ -651,7 +697,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#f00055</string>
+				<string>#ef004b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -681,6 +727,28 @@
 			<string>Classes</string>
 			<key>scope</key>
 			<string>source.purescript entity.name.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b3694d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String types</string>
+			<key>scope</key>
+			<string>storage.type.string.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0095a8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Lifetime types</string>
+			<key>scope</key>
+			<string>source.rust entity.name.type.lifetime, source.rust punctuation.definition.lifetime</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

@@ -1,0 +1,4 @@
+- name: Lifetime types
+  scope: source.rust entity.name.type.lifetime, source.rust punctuation.definition.lifetime
+  settings:
+    foreground: $brightYellow
