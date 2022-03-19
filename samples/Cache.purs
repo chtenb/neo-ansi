@@ -17,6 +17,9 @@ import Utils (foreachM)
 -- However, we do want some form of central bookkeeping, because we want:
 --   - A way to fetch everything (such that peeks will always return something e.g. in the rendering)
 
+test :: CacheValue Boolean
+test = Cached false
+
 data CacheValue a = Cached a | NoValue
 type CacheEntry s a =
   { value :: CacheValue a
