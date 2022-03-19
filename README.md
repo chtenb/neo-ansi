@@ -9,7 +9,9 @@ This standard came into being because I was dissatisfied with the current state 
 - My git diffs in the terminal don't automatically have the same syntax highlighting logic and colors as my editor.
 
 In my opinion this state could be improved greatly by formulating a standard, akin to [base16](http://www.chriskempson.com/projects/base16/) but with a different set of use cases and trade offs in mind.
-Unlike base16 we will just concern ourselves with foreground colors in the context of syntax highlighting and we will encourage that the bright ANSI foreground colors remain more or less compatible with their non-bright versions.
+Unlike base16 we will just concern ourselves with foreground colors in the context of syntax highlighting and we will encourage that our color palette can be used as a color palette for an ANSI terminal without breaking compatibility with the ANSI colors.
+In other words, we don't want to encourage remapping the ANSI red color to something that is not close to red, because this will make the terminal colors confusing when using terminal applications that rely on these colors and assign meaning to them.
+For instance, a `git diff` command should be able to use the ANSI red color to highlight deleted lines.
 
 ## Design principles for a syntax highlighting scheme standard
 
@@ -27,9 +29,9 @@ Unlike base16 we will just concern ourselves with foreground colors in the conte
 4. The colors and accents of a color theme need to make sort of sense semantically.
    Or at least not be completely counter intuitive.
 
-### C). It needs to convenient to use across tooling, programming languages and color themes.
+### C). It needs to be convenient to use across tooling, programming languages and color themes.
 
-1. It should be easy to use the highlighting scheme in a terminal. 
+1. It should be easy to use the highlighting scheme in a terminal without breaking colors for other terminal applications. 
 2. It needs to be easy to remap the colors but keep the same (high quality) highlighting logic. 
 3. It needs to be easy to synchronize the syntax highlighting scheme between an editor and a terminal emulator.
 
@@ -86,13 +88,11 @@ For non-typed languages the `type` category can be interpreted more broadly as t
 | e | bright cyan | punctuation
 | f | bright white | miscellaneous
 
+### Designing colors palettes
 
 An Ansi 16 color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
-To make principle **A.1** feasible for color theme designers, the language construction assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
+To make principle **A.1** feasible for color theme designers, the language construction to color assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
 This way color theme designers can make sure that the first 8 colors form a nicely balanced palette and be assured that the resulting color theme will balanced consistently across languages.
-
-A bright variant generally has more accent than its regular counterpart, but this is not required.
-Moreover, in a light color theme the color with more accent would often actually be darker.
 
 An Ansi 16 color palette can in principle assign arbitrary colors to each ANSI color number.
 E.g. ANSI color number 6 does not necessarily have to be (close to) cyan.
@@ -100,12 +100,24 @@ However, not all assignments will result in syntax highlighting schemes that pro
 Moreover, if the assignment is more or less compatible with the ANSI colors, it means that the the resulting syntax highlighting scheme will be more compatible with other schemes and is more suitable as a drop-in replacement for a terminal color theme.
 But all this is subject to the discretion of the color theme designer.
 
+#### Light color palettes
+
+In the proposed guidelines above, the color white is used to color regular text while black is used for low emphasis text.
+This makes sense in a dark theme, but in a light theme where the background will be a light color it makes more sense the other way around.
+Therefore it is recommended that color palettes that are intended for use in a light theme have their white and black colors swapped.
+I.e. they would assign dark colors to `7` and `f` and assign light colors to `0` and `8`.
+Strictly speaking this breaks our ANSI color compatibility, but in practice this will not hurt the ANSI compatibility much because the black and white colors are not used a lot by terminal applications and also usually do not have strong meaning.
+If anything this swap will probably improve color behavior of other terminal applications, because many terminal applications assume a dark theme by default.
+
+A bright color generally is expected to have more accent than its regular counterpart, but this is not required.
+In a light color theme the color with more accent would often actually be darker instead of brighter.
+
 ## Implementation for TextMate scopes
 
 Many tools support the TextMate format for syntax highlighting, including VSCode and bat.
 Therefore we provide a simple implementation for  from a given Ansi 16 color palette.
 Language constructs are called [scopes](https://macromates.com/manual/en/language_grammars) in TextMate terminology, and they are matched using [scope selectors](https://macromates.com/manual/en/scope_selectors).
-To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Ansi 16 color palette a fixed scope assignment strategy.
+To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Ansi 16 color palette and a fixed scope assignment strategy.
 The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/ansi16/tree/main/templates).
 We generate an example set of TextMate themes from the Ansi 16 color palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
 The resulting `.tmTheme` files are placed in the root of this repository.
