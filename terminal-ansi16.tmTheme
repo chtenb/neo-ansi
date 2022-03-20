@@ -176,7 +176,7 @@
 			<key>name</key>
 			<string>FUNCTION, METHOD, OPERATOR</string>
 			<key>scope</key>
-			<string>entity.name.function, variable.function, meta.function-call</string>
+			<string>entity.name.function, variable.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

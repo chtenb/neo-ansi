@@ -16,7 +16,7 @@
   settings:
     foreground: $yellow
 - name: FUNCTION, METHOD, OPERATOR
-  scope: entity.name.function, variable.function, meta.function-call
+  scope: entity.name.function, variable.function
   settings:
     foreground: $blue
 - name: KEYWORD, STORAGE
