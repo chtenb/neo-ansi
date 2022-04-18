@@ -30,7 +30,7 @@
   settings:
     foreground: $cyan
 - name: TEXT
-  scope: source, text, variable, entity.name.variable, constant.other.placeholder
+  scope: source, text, variable, entity.name.variable, entity.name.namespace, constant.other.placeholder
   settings:
     foreground: $white
 

@@ -1,4 +1,4 @@
-# Ansi 16 Syntax Highlighting Standard
+# Ansi16 Syntax Highlighting Standard
 
 *Disclaimer: the guidelines are still in development and are subject to change.*
 
@@ -90,11 +90,11 @@ For non-typed languages the `type` category can be interpreted more broadly as t
 
 ### Designing colors palettes
 
-An Ansi 16 color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
+An Ansi16 color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
 To make principle **A.1** feasible for color theme designers, the language construction to color assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
 This way color theme designers can make sure that the first 8 colors form a nicely balanced palette and be assured that the resulting color theme will balanced consistently across languages.
 
-An Ansi 16 color palette can in principle assign arbitrary colors to each ANSI color number.
+An Ansi16 color palette can in principle assign arbitrary colors to each ANSI color number.
 E.g. ANSI color number 6 does not necessarily have to be (close to) cyan.
 However, not all assignments will result in syntax highlighting schemes that promote readibility and consistency as stated in the design principles.
 Moreover, if the assignment is more or less compatible with the ANSI colors, it means that the the resulting syntax highlighting scheme will be more compatible with other schemes and is more suitable as a drop-in replacement for a terminal color theme.
@@ -115,16 +115,16 @@ In a light color theme the color with more accent would often actually be darker
 ## Implementation for TextMate scopes
 
 Many tools support the TextMate format for syntax highlighting, including VSCode and bat.
-Therefore we provide a simple implementation for  from a given Ansi 16 color palette.
+Therefore we provide a simple implementation for  from a given Ansi16 color palette.
 Language constructs are called [scopes](https://macromates.com/manual/en/language_grammars) in TextMate terminology, and they are matched using [scope selectors](https://macromates.com/manual/en/scope_selectors).
-To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Ansi 16 color palette and a fixed scope assignment strategy.
+To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Ansi16 color palette and a fixed scope assignment strategy.
 The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/ansi16/tree/main/templates).
-We generate an example set of TextMate themes from the Ansi 16 color palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
+We generate an example set of TextMate themes from the Ansi16 color palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
 The resulting `.tmTheme` files are placed in the root of this repository.
 
 ### Usage in VSCode
 
-We've provided a collection of VSCode themes that implement the Ansi 16 syntax highlighting scheme, which are available at [VSCode Ansi 16](https://github.com/chtenb/vscode-ansi16).
+We've provided a collection of VSCode themes that implement the Ansi16 syntax highlighting scheme, which are available at [VSCode Ansi 16](https://github.com/chtenb/vscode-ansi16).
 
 ### Usage in bat and delta
 
@@ -134,7 +134,7 @@ Any terminal applications that use `bat` for syntax highlighting (like [delta](h
 You can install it by copying it manually to the bat themes folder, or by cloning this repository and running `install4bat.py`.
 Then you can optionally configure `terminal-ansi16` as the default theme by putting `--theme="terminal-ansi16"` in the bat config file.
 
-If the 16 base colors of your terminal are then setup to match the 16 colors of the Ansi 16 color theme in your editor, the syntax highlighting in your terminal git diffs will look the same as in your text editor.
+If the 16 base colors of your terminal are then setup to match the 16 colors of the Ansi16 color theme in your editor, the syntax highlighting in your terminal git diffs will look the same as in your text editor.
 Note that the themes provided in the [VSCode Ansi 16](https://github.com/chtenb/vscode-ansi16) will automatically set the terminal color palette for you in the integrated terminal emulator.
 
 ### Potential shortcomings
@@ -147,7 +147,7 @@ Since we only concern ourselves with assigning colors to scopes, the grammar use
 
 - Pull requests for improvements on the scope assignment logic are welcome, either by improving upon the existing [templates/](https://github.com/chtenb/ansi16/tree/main/templates) or by adding new language support.
 - Pull requests to improve the generation tooling are welcome.
-- Pull requests for new themes are also welcome as long as these themes have some reusability value. For other themes you can create your own Ansi 16 theme collection repository. By adding this repository as a submodule you can tap into the existing TextMate theme generation logic.
+- Pull requests for new themes are also welcome as long as these themes have some reusability value. For other themes you can create your own Ansi16 theme collection repository. By adding this repository as a submodule you can tap into the existing TextMate theme generation logic.
 
 ### Running the tmTheme generator
 

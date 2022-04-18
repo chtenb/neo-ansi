@@ -20,7 +20,8 @@ if cmd_exists('python3'):
 existing = glob.glob('*.tmTheme')
 if existing:
     print(f'Removing existing {existing}')
-    run('rm', *existing)
+    for file in existing:
+        os.remove(file)
 
 for palette in glob.glob('palettes/*.yaml'):
     print('Generating tmTheme for ' + palette)

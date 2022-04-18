@@ -9,7 +9,7 @@
 	<key>comment</key>
 	<string>Generated from the ansi16 template at https://github.com/chtenb/ansi16. </string>
 	<key>name</key>
-	<string>Material Light Ansi 16</string>
+	<string>Material Light Ansi16</string>
 	<key>semanticClass</key>
 	<string>theme.light.material-ansi16</string>
 	<key>settings</key>
@@ -211,7 +211,7 @@
 			<key>name</key>
 			<string>TEXT</string>
 			<key>scope</key>
-			<string>source, text, variable, entity.name.variable, constant.other.placeholder</string>
+			<string>source, text, variable, entity.name.variable, entity.name.namespace, constant.other.placeholder</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

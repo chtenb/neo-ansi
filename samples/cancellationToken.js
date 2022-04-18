@@ -19,6 +19,7 @@ var fs = require("fs");
 function pipeExists(name) {
     return fs.existsSync(name);
 }
+
 // Create a cancellation token with a pipe name
 function createCancellationToken(args) {
     var cancellationPipeName;
