@@ -3,17 +3,35 @@
   settings:
     fontStyle: $bold
     foreground: $red
+- name: Markup - Italic
+  scope: markup.italic
+  settings:
+    fontStyle: $italic
+    foreground: $magenta
+- name: Markup - Underline and Link
+  scope: markup.underline
+  settings:
+    fontStyle: $underline
+    foreground: $green
+- name: Markup - Strike
+  scope: markup.strike
+  settings:
+    fontStyle: $strike
+    foreground: $brightBlack
+- name: Markup - Bold-Italic
+  scope: markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold,
+    markup.bold markup.italic string, markup.italic markup.bold string, markup.quote
+    markup.bold string
+  settings:
+    fontStyle: $bold
+    foreground: $brightRed
+
 - name: Markdown - Heading
   scope: markdown.heading, markup.heading, markup.heading entity.name, markup.heading.markdown
     punctuation.definition.heading.markdown, markup.heading.setext
   settings:
     fontStyle: $bold
     foreground: $red
-- name: Markup - Underline and Link
-  scope: markup.underline
-  settings:
-    fontStyle: $underline
-    foreground: $green
 - name: Markdown - Link Anchor and Title
   scope: constant.other.reference.link.markdown, string.other.link.title.markdown
   settings:
@@ -25,11 +43,6 @@
 - name: Markdown - Link Description
   scope: string.other.link.description.title.markdown
   settings:
-    foreground: $magenta
-- name: Markup - Italic
-  scope: markup.italic
-  settings:
-    fontStyle: $italic
     foreground: $magenta
 - name: Markup - Table
   scope: markup.table
@@ -44,19 +57,6 @@
   scope: text.html.markdown, punctuation.definition.list_item.markdown
   settings:
     foreground: $white
-
-- name: Markup - Strike
-  scope: markup.strike
-  settings:
-    fontStyle: $strike
-    foreground: $brightBlack
-- name: Markup - Bold-Italic
-  scope: markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold,
-    markup.bold markup.italic string, markup.italic markup.bold string, markup.quote
-    markup.bold string
-  settings:
-    fontStyle: $bold
-    foreground: $brightRed
 - name: Markdown - Fenced Bode Block Variable
   scope: variable.language.fenced.markdown
   settings:

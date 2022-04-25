@@ -63,7 +63,7 @@ The guideline is very loosely based on common patterns seen in popular syntax hi
 | c | bright blue | alternative operator, function, variable
 | d | bright magenta | alternative keyword
 | e | bright cyan | punctuation
-| f | bright white | alternative variable
+| f | bright white | alternative variable, mutable variable
 
 For non-typed languages the `type` category can be interpreted more broadly as types of language constructions.
 

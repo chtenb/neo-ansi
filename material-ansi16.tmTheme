@@ -558,13 +558,65 @@
 			<key>name</key>
 			<string>Markup - Bold</string>
 			<key>scope</key>
-			<string>markup.bold, markup.bold string</string>
+			<string>markup.bold - source, markup.bold string - source</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#f07178</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup - Italic</string>
+			<key>scope</key>
+			<string>markup.italic - source</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#c792ea</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup - Underline and Link</string>
+			<key>scope</key>
+			<string>markup.underline - source</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>underline</string>
+				<key>foreground</key>
+				<string>#c3e88d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup - Strike</string>
+			<key>scope</key>
+			<string>markup.strike - source</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>strike</string>
+				<key>foreground</key>
+				<string>#676e95</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup - Bold-Italic</string>
+			<key>scope</key>
+			<string>markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold, markup.bold markup.italic string, markup.italic markup.bold string, markup.quote markup.bold string</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ff5370</string>
 			</dict>
 		</dict>
 		<dict>
@@ -578,19 +630,6 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#f07178</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markup - Underline and Link</string>
-			<key>scope</key>
-			<string>markup.underline</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
-				<key>foreground</key>
-				<string>#c3e88d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -628,19 +667,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markup - Italic</string>
-			<key>scope</key>
-			<string>markup.italic</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#c792ea</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Markup - Table</string>
 			<key>scope</key>
 			<string>markup.table</string>
@@ -654,7 +680,7 @@
 			<key>name</key>
 			<string>Markup - Quote</string>
 			<key>scope</key>
-			<string>markup.quote</string>
+			<string>markup.quote - source</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -672,32 +698,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#dceaea</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markup - Strike</string>
-			<key>scope</key>
-			<string>markup.strike</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>strike</string>
-				<key>foreground</key>
-				<string>#676e95</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markup - Bold-Italic</string>
-			<key>scope</key>
-			<string>markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold, markup.bold markup.italic string, markup.italic markup.bold string, markup.quote markup.bold string</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
-				<key>foreground</key>
-				<string>#ff5370</string>
 			</dict>
 		</dict>
 		<dict>
