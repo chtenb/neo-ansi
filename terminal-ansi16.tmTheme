@@ -558,7 +558,7 @@
 			<key>name</key>
 			<string>Markup - Bold</string>
 			<key>scope</key>
-			<string>markup.bold - source, markup.bold string - source</string>
+			<string>markup.bold, markup.bold string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -571,7 +571,7 @@
 			<key>name</key>
 			<string>Markup - Italic</string>
 			<key>scope</key>
-			<string>markup.italic - source</string>
+			<string>markup.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -584,7 +584,7 @@
 			<key>name</key>
 			<string>Markup - Underline and Link</string>
 			<key>scope</key>
-			<string>markup.underline - source</string>
+			<string>markup.underline</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -597,7 +597,7 @@
 			<key>name</key>
 			<string>Markup - Strike</string>
 			<key>scope</key>
-			<string>markup.strike - source</string>
+			<string>markup.strike</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -680,7 +680,7 @@
 			<key>name</key>
 			<string>Markup - Quote</string>
 			<key>scope</key>
-			<string>markup.quote - source</string>
+			<string>markup.quote</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
