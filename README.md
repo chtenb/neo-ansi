@@ -58,5 +58,6 @@ Since we only concern ourselves with assigning colors to scopes, the grammar use
 ### Running the tmTheme generator
 
 - Make sure you have Python 3.4+ installed. 
+- Make sure you have pyyaml installed.
 - Run `./generate.py` in the root of the repository.
 
