@@ -34,8 +34,8 @@ We've provided a collection of VSCode themes that implement the Ansi16 syntax hi
 
 ### Usage in bat and delta
 
-The file [terminal-ansi16.thTheme](https://github.com/chtenb/ansi16/blob/main/terminal-ansi16.tmTheme) contains a definition of the ansi16 highlighting logic in terms of the 16 ANSI terminal colors in a format that can be understood by bat.
-Any terminal applications that use `bat` for syntax highlighting (like [delta](https://github.com/dandavison/delta)) will be able to make use of this.
+The file [terminal-ansi16.thTheme](https://github.com/chtenb/ansi16/blob/main/terminal-ansi16.tmTheme) contains a definition of the ansi16 highlighting logic in terms of the 16 ANSI terminal colors in a format that can be understood by [bat](https://github.com/sharkdp/bat).
+Any terminal applications that use bat for syntax highlighting (like [delta](https://github.com/dandavison/delta)) will be able to make use of this.
 
 You can install it by copying it manually to the bat themes folder, or by cloning this repository and running `install4bat.py`.
 Then you can optionally configure `terminal-ansi16` as the default theme by putting `--theme="terminal-ansi16"` in the bat config file.
