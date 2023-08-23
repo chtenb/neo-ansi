@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import shutil
 import sys
 import os
 import glob
@@ -8,12 +7,14 @@ import subprocess
 
 def run(*command):
     print(*command)
-    subprocess.run(command, input=None, stdout=sys.stdout, stderr=sys.stderr, universal_newlines=True, shell=False)
+    return subprocess.run(command, input=None, stdout=sys.stdout, stderr=sys.stderr, universal_newlines=True, shell=False).returncode
 
-def cmd_exists(cmd):
-    return shutil.which(cmd) is not None
+def run_silent(*command):
+    return subprocess.run(command, input=None, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, shell=False).returncode
 
 python = 'python'
+if run_silent('python3', '-V') == 0:
+    python = 'python3'
 
 existing = glob.glob('*.tmTheme')
 if existing:
