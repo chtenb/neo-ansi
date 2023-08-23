@@ -14,8 +14,6 @@ def cmd_exists(cmd):
     return shutil.which(cmd) is not None
 
 python = 'python'
-if cmd_exists('python3'):
-    python = 'python3'
 
 existing = glob.glob('*.tmTheme')
 if existing:
