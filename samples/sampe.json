@@ -1,0 +1,51 @@
+{
+  "glossary": {
+    "title": "example glossary",
+    "GlossDiv": {
+      "title": "S",
+      "GlossList": {
+        "GlossEntry": {
+          "ID": "SGML",
+          "SortAs": "SGML",
+          "GlossTerm": "Standard Generalized Markup Language",
+          "Acronym": "SGML",
+          "Abbrev": "ISO 8879:1986",
+          "GlossDef": {
+            "para": "A meta-markup language, used to create markup languages such as DocBook.",
+            "GlossSeeAlso": [
+              "GML",
+              "XML"
+            ]
+          },
+          "GlossSee": "markup"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "MainId": 1111,
+      "firstName": "Sherlock",
+      "lastName": "Homes",
+      "categories": [
+        {
+          "CategoryID": 1,
+          "CategoryName": "Example"
+        }
+      ]
+    },
+    {
+      "MainId": 122,
+      "firstName": "James",
+      "lastName": "Watson",
+      "categories": [
+        {
+          "CategoryID": 2,
+          "CategoryName": "Example2"
+        }
+      ]
+    }
+  ],
+  "messages": [], 
+  "success": true 
+}
