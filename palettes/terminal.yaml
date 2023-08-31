@@ -1,7 +1,7 @@
-name: Ansi16 Terminal Theme for Bat
+name: Neo-ansi Terminal Theme for Bat
 uuid: uuid
 author: Chiel ten Brinke
-semanticClass: theme.ansi16
+semanticClass: theme.neo-ansi
 colorSpaceName: sRGB
 comment: The colors in this theme are encoded as RRGGBBAA where RR is an ANSI palette number from 00 to 0f (the 8 colors and their bright versions), and AA is the special value 00 to indicate this encoding is being used.
 background: '#00000001'

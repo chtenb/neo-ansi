@@ -1,4 +1,4 @@
-# Ansi16 Syntax Highlighting Standard
+# Neo-ansi Syntax Highlighting Standard
 
 *Disclaimer: the guidelines are still in development and are subject to change.*
 
@@ -13,11 +13,11 @@ Unlike base16 we will just concern ourselves with foreground colors in the conte
 In other words, we don't want to encourage remapping the ANSI red color to something that is not close to red, because this will make the terminal colors confusing when using terminal applications that rely on these colors and assign meaning to them.
 For instance, a `git diff` command should be able to use the ANSI red color to highlight deleted lines.
 
-The design principles are layed out in [DESIGN.md](https://github.com/chtenb/ansi16/blob/main/DESIGN.md)
+The design principles are layed out in [DESIGN.md](https://github.com/chtenb/neo-ansi/blob/main/DESIGN.md)
 
 ## Supported languages
 
-The Ansi16 standard and our implementation attempts to be language agnostic, and should mostly work okay for everything.
+The Neo-ansi standard and our implementation attempts to be language agnostic, and should mostly work okay for everything.
 However, we've put some additional effort in syntax highlighting support for a few languages and their most commonly used TexMate grammars.
 They include
 
@@ -25,23 +25,23 @@ C, C++, HTML, CSS, Haskell, PureScript, Javascript, JSON, Python, Rust, Several 
 
 ## Usage
 
-We provide a few `.tmTheme` files that implement the Ansi16 standard as layed out in the DESIGN.md.
+We provide a few `.tmTheme` files that implement the Neo-ansi standard as layed out in the DESIGN.md.
 Many tools understand this format, but see below for specific details per tool.
 
 ### Usage in VSCode
 
-We've provided a collection of VSCode themes that implement the Ansi16 syntax highlighting scheme, which are available at [VSCode Ansi 16](https://github.com/chtenb/vscode-ansi16).
+We've provided a collection of VSCode themes that implement the Neo-ansi syntax highlighting scheme, which are available at [VSCode Neo-ansi](https://github.com/chtenb/vscode-neo-ansi).
 
 ### Usage in bat and delta
 
-The file [terminal-ansi16.thTheme](https://github.com/chtenb/ansi16/blob/main/terminal-ansi16.tmTheme) contains a definition of the ansi16 highlighting logic in terms of the 16 ANSI terminal colors in a format that can be understood by [bat](https://github.com/sharkdp/bat).
+The file [terminal-neo-ansi.thTheme](https://github.com/chtenb/neo-ansi/blob/main/terminal-neo-ansi.tmTheme) contains a definition of the neo-ansi highlighting logic in terms of the 16 ANSI terminal colors in a format that can be understood by [bat](https://github.com/sharkdp/bat).
 Any terminal applications that use bat for syntax highlighting (like [delta](https://github.com/dandavison/delta)) will be able to make use of this.
 
 You can install it by copying it manually to the bat themes folder, or by cloning this repository and running `install4bat.py`.
-Then you can optionally configure `terminal-ansi16` as the default theme by putting `--theme="terminal-ansi16"` in the bat config file.
+Then you can optionally configure `terminal-neo-ansi` as the default theme by putting `--theme="terminal-neo-ansi"` in the bat config file.
 
-If the 16 base colors of your terminal are then setup to match the 16 colors of the Ansi16 color theme in your editor, the syntax highlighting in your terminal git diffs will look the same as in your text editor.
-Note that the themes provided in the [VSCode Ansi 16](https://github.com/chtenb/vscode-ansi16) will automatically set the terminal color palette for you in the integrated terminal emulator.
+If the 16 base colors of your terminal are then setup to match the 16 colors of the Neo-ansi color theme in your editor, the syntax highlighting in your terminal git diffs will look the same as in your text editor.
+Note that the themes provided in the [VSCode Neo-ansi](https://github.com/chtenb/vscode-neo-ansi) will automatically set the terminal color palette for you in the integrated terminal emulator.
 
 ### Potential shortcomings
 
@@ -51,9 +51,9 @@ Since we only concern ourselves with assigning colors to scopes, the grammar use
 
 ### Improving the scope assignment logic
 
-- Pull requests for improvements on the scope assignment logic are welcome, either by improving upon the existing [templates/](https://github.com/chtenb/ansi16/tree/main/templates) or by adding new language support.
+- Pull requests for improvements on the scope assignment logic are welcome, either by improving upon the existing [templates/](https://github.com/chtenb/neo-ansi/tree/main/templates) or by adding new language support.
 - Pull requests to improve the generation tooling are welcome.
-- Pull requests for new themes are also welcome as long as these themes have some reusability value. For other themes you can create your own Ansi16 theme collection repository. By adding this repository as a submodule you can tap into the existing TextMate theme generation logic.
+- Pull requests for new themes are also welcome as long as these themes have some reusability value. For other themes you can create your own Neo-ansi theme collection repository. By adding this repository as a submodule you can tap into the existing TextMate theme generation logic.
 
 ### Running the tmTheme generator
 

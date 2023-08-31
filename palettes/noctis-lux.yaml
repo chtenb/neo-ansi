@@ -1,7 +1,7 @@
-name: Material Light Ansi16
+name: Material Light Neo-ansi
 uuid: uuid
 author: Chiel ten Brinke
-semanticClass: theme.light.material-ansi16
+semanticClass: theme.light.material-neo-ansi
 colorSpaceName: sRGB
 comment: ''
 background: '#fef8ec'

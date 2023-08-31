@@ -16,7 +16,7 @@ def out(*command):
 current_dir = Path(os.path.dirname(os.path.abspath(__file__)))
 config_dir = Path(get('bat', '--config-dir').strip())
 themes_dir = config_dir / 'themes'
-file_path = current_dir / 'terminal-ansi16.tmTheme'
+file_path = current_dir / 'terminal-neo-ansi.tmTheme'
 print(f'Copying {file_path} to {themes_dir}')
 shutil.copy(file_path, themes_dir)
 

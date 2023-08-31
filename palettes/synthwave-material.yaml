@@ -1,7 +1,7 @@
-name: Synthwave Material Ansi16
+name: Synthwave Material Neo-ansi
 uuid: uuid
 author: Chiel ten Brinke
-semanticClass: theme.dark.material-ansi16
+semanticClass: theme.dark.material-neo-ansi
 colorSpaceName: sRGB
 comment: ''
 background: '#262335'

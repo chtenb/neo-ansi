@@ -1,4 +1,4 @@
-# Ansi 16 Syntax Highlighting Standard
+# Neo-ansi Syntax Highlighting Standard
 
 *Disclaimer: the guidelines are still in development and are subject to change.*
 
@@ -120,11 +120,11 @@ Here are some suggestions how they could be used.
 
 ### Designing color palettes
 
-An Ansi16 color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
+An Neo-ansi color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
 To make principle **A.1** feasible for color theme designers, the language construction to color assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
 This way color theme designers can make sure that the first 8 colors form a nicely balanced palette and be assured that the resulting color theme will balanced consistently across languages.
 
-An Ansi16 color palette can in principle assign arbitrary colors to each ANSI color number.
+An Neo-ansi color palette can in principle assign arbitrary colors to each ANSI color number.
 E.g. ANSI color number 6 does not necessarily have to be (close to) cyan.
 However, not all assignments will result in syntax highlighting schemes that promote readibility and consistency as stated in the design principles.
 Moreover, if the assignment is more or less compatible with the ANSI colors, it means that the the resulting syntax highlighting scheme will be more compatible with other schemes and is more suitable as a drop-in replacement for a terminal color theme.
@@ -145,11 +145,11 @@ In a light color theme the color with more accent would often actually be darker
 ## Implementation for TextMate scopes
 
 Many tools support the TextMate format for syntax highlighting, including VSCode and bat.
-Therefore we provide a simple implementation for  from a given Ansi16 color palette.
+Therefore we provide a simple implementation for  from a given Neo-ansi color palette.
 Language constructs are called [scopes](https://macromates.com/manual/en/language_grammars) in TextMate terminology, and they are matched using [scope selectors](https://macromates.com/manual/en/scope_selectors).
-To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Ansi16 color palette and a fixed scope assignment strategy.
-The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/ansi16/tree/main/templates).
-We generate an example set of TextMate themes from the Ansi16 color palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
+To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Neo-ansi color palette and a fixed scope assignment strategy.
+The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/neo-ansi/tree/main/templates).
+We generate an example set of TextMate themes from the Neo-ansi color palettes defined in [palettes/](https://github.com/chtenb/neo-ansi/tree/main/palettes).
 The resulting `.tmTheme` files are placed in the root of this repository.
 
 
