@@ -48,15 +48,16 @@ The guideline is very loosely based on common patterns seen in popular syntax hi
 
 | Color Number | Name | Description |
 | ------------ | ---- | ----------- |
-| 0 | black | low emphasis, comment
+|-1 | default | regular text, variable
+| 0 | black | unused
 | 1 | red | value type, tag, builtin type
 | 2 | green | string
 | 3 | yellow | type, attribute
 | 4 | blue | operator, function
 | 5 | magenta | keyword
 | 6 | cyan | medium emphasis, miscellaneous
-| 7 | white | regular text, variable
-| 8 | bright black | alternative low emphasis
+| 7 | white | alternative low emphasis
+| 8 | bright black | low emphasis, comment, whitespace indicators
 | 9 | bright red | high emphasis, constant, number
 | a | bright green | high emphasis
 | b | bright yellow | alternative type
@@ -67,19 +68,35 @@ The guideline is very loosely based on common patterns seen in popular syntax hi
 
 For non-typed languages the `type` category can be interpreted more broadly as types of language constructions.
 
+Optionally, a theme can also use graphics modes to change the appearance of text, if the terminal emulator supports them.
+Here are some suggestions how they could be used.
+
+| Modifier | Name | Description |
+|----------|------|-------------|
+|0| Reset | default
+|1| Bold | keywords, high emphasis
+|2| Dim | comments, low emphasis, whitespace indicators
+|3| Underline | links
+|4| Italic | comments
+|5| Blink |
+|7| Inverse |
+|8| Hidden |
+|9| Strikethrough | Strikethrough markup
+
 ### For markup languages
 
 | Color Number | Name | Description |
 |--------------|------|-------------|
-| 0 | black | low emphasis, comment
+|-1 | default | regular text
+| 0 | black | unused
 | 1 | red | emphasis, tag, bold, header
 | 2 | green | emphasis, underline, string, link
 | 3 | yellow | link title, attribute
 | 4 | blue | inline code
 | 5 | magenta | italic, description
 | 6 | cyan | block quote, table
-| 7 | white | regular text
-| 8 | bright black | alternative low emphasis, strike
+| 7 | white | alternative low emphasis
+| 8 | bright black | low emphasis, comment, whitespace indicators, strikethrough
 | 9 | bright red | high emphasis, bold italic, number, data
 | a | bright green | miscellaneous
 | b | bright yellow | miscellaneous
@@ -88,7 +105,20 @@ For non-typed languages the `type` category can be interpreted more broadly as t
 | e | bright cyan | punctuation
 | f | bright white | miscellaneous
 
-### Designing colors palettes
+
+| Modifier | Name | Description |
+|----------|------|-------------|
+|0| Reset | default
+|1| Bold | high emphasis, tag, bold, header
+|2| Dim | comments, low emphasis
+|3| Underline | links
+|4| Italic | medium emphasis
+|5| Blink |
+|7| Inverse |
+|8| Hidden |
+|9| Strikethrough | Strikethrough markup
+
+### Designing color palettes
 
 An Ansi16 color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
 To make principle **A.1** feasible for color theme designers, the language construction to color assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
@@ -121,3 +151,25 @@ To aid in realizing principles **C.2** and **C.3** we implement a simple tool fo
 The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/ansi16/tree/main/templates).
 We generate an example set of TextMate themes from the Ansi16 color palettes defined in [palettes/](https://github.com/chtenb/ansi16/tree/main/palettes).
 The resulting `.tmTheme` files are placed in the root of this repository.
+
+
+# Background colors
+
+All 16 base colors are used for foreground colors.
+We can use some of the 8-bit colors for background, assuming they are customizable by the terminal emulator.
+
+|Hex|Dec|Description|
+|---|---|-----------|
+|e8-f3|232-243|Various background color highlighting purposes, in increasing intensity|
+|f4-ff|244-255|Miscellaneous foreground color purposes for UI elements, in increasing intensity|
+|34|52|git diff minus|
+|58|88|git diff minus emph|
+|16|22|git diff plus|
+|1c|28|git diff plus emph|
+|35|53|git diff purple|
+|11|17|git diff blue|
+|17|23|git diff cyan|
+|3a|58|git diff yellow|
+
+Even though colors e8-ff are gray scale, we do not require them to be as such.
+It is recommended that these colors follow a natural scale fitting to the color palette.
