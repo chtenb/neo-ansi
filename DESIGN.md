@@ -2,16 +2,20 @@
 
 *Disclaimer: the guidelines are still in development and are subject to change.*
 
-This standard came into being because I was dissatisfied with the current state of syntax highlighting in my VSCode environment.
-
 - The syntax highlighting quality and logic varies too much between themes.
-- VSCode themes often look good on one language, but not on another.
+- Syntax highlighting themes often look good on one language, but not on another.
 - My git diffs in the terminal don't automatically have the same syntax highlighting logic and colors as my editor.
+- When creating a new theme, I don't want to have to deal with all the subtilities of theme configurations of all the terminal apps I'm using. I simply want to specify a set of colors and styles to use.
 
-In my opinion this state could be improved greatly by formulating a standard, akin to [base16](http://www.chriskempson.com/projects/base16/) but with a different set of use cases and trade offs in mind.
-Unlike base16 we will just concern ourselves with foreground colors in the context of syntax highlighting and we will encourage that our color palette can be used as a color palette for an ANSI terminal without breaking compatibility with the ANSI colors.
-In other words, we don't want to encourage remapping the ANSI red color to something that is not close to red, because this will make the terminal colors confusing when using terminal applications that rely on these colors and assign meaning to them.
-For instance, a `git diff` command should be able to use the ANSI red color to highlight deleted lines.
+Fortunately, modern terminal emulators allow you to configure what each of the 256 ANSI colors looks like, and even what font to use for any modifier codes.
+This means we can treat the 256 colors and modifier escape codes as variables that we can refer to in theme configurations for terminal apps.
+Then we can set these variables once in our terminal configuration, and all terminal apps would synchronously use the same theme.
+
+There is a small thing to keep in mind: we'd like to make sure that terminal apps using standard ANSI colors and modifiers will produce logical and readable output, even without a custom configuration.
+For instance, a `git diff` command should be able to use the ANSI red color to highlight deleted lines, and this should make sense.
+If we don't adhere to this, we would have to reconfigure literally all terminal apps we are using, even things like npm, to make sure the output styling makes sense and is readable.
+This is not feasible, because it is to tedious, and not all apps allow you to configure the colors they use.
+Moreover, we'd like the first 16 base ANSI colors to be readable as a foreground color against the default terminal background.
 
 ## Design principles for a syntax highlighting scheme standard
 
@@ -120,7 +124,7 @@ Here are some suggestions how they could be used.
 
 ### Designing color palettes
 
-An Neo-ansi color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
+A Neo-ansi color palette is simply a set of 16 colors that attempts to follow the guidelines described above.
 To make principle **A.1** feasible for color theme designers, the language construction to color assignment should make sure that the first 8 colors are assigned fairly balanced among each other and assigned more frequently on average than the last 8 colors.
 This way color theme designers can make sure that the first 8 colors form a nicely balanced palette and be assured that the resulting color theme will balanced consistently across languages.
 
@@ -153,7 +157,7 @@ We generate an example set of TextMate themes from the Neo-ansi color palettes d
 The resulting `.tmTheme` files are placed in the root of this repository.
 
 
-# Background colors
+# Miscellaneous UI colors
 
 All 16 base colors are used for foreground colors.
 We can use some of the 8-bit colors for background, assuming they are customizable by the terminal emulator.
