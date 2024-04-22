@@ -1,0 +1,92 @@
+# Author: chtenb <ctenbrinke@gmail.com>
+inherits = "neo-ansi-syntax"
+
+"ui.background" = { } # 
+"ui.background.separator" = { fg = "244" } # Picker separator below input line
+"ui.cursor" = { fg = "default", bg = "default", modifiers = ["reversed"] } # 
+#"ui.cursor.normal" = { } # 
+#"ui.cursor.insert" = { } # 
+#"ui.cursor.select" = { } # 
+"ui.cursor.match" = { bg = "black" } # Matching bracket etc.
+"ui.cursor.primary" = { fg = "white", bg = "default", modifiers = ["reversed"] } # Cursor with primary selection
+#"ui.cursor.primary.normal" = { } # 
+#"ui.cursor.primary.insert" = { } # 
+#"ui.cursor.primary.select" = { } # 
+"ui.debug.breakpoint" = { fg = "red" } # Breakpoint indicator, found in the gutter
+"ui.debug.active" = { fg = "red", bg = "yellow" } # Indicator for the line at which debugging execution is paused at, found in the gutter
+#"ui.gutter" = { } # Gutter
+#"ui.gutter.selected" = { } # Gutter for the line the cursor is on
+"ui.highlight.frameline" = { bg = "239" } # Line at which debugging execution is paused at
+"ui.linenr" = { fg = "gray" } # Line numbers
+"ui.linenr.selected" = { fg = "white" } # Line number for the line the cursor is on
+"ui.statusline" = { bg = "250", fg = "245", modifiers = [] } # Statusline and buffer line
+"ui.statusline.inactive" = { bg = "250", fg = "244", modifiers = [] } # Statusline (unfocused document) and buffer line (inactive buffers)
+"ui.statusline.normal" = { modifiers = ["reversed"] } # Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { bg = "light-magenta" } # Statusline mode during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { bg = "light-blue" } # Statusline mode during select mode (only if editor.color-modes is enabled)
+# "ui.statusline.separator" = { fg = "red" } # Separator character in statusline
+"ui.bufferline" = { bg = "250", fg = "244", modifiers = ["italic"] }
+"ui.bufferline.active" = { bg = "250", fg = "245", modifiers = [] }
+"ui.bufferline.background" = { bg = "250", fg = "244", modifiers = [] }
+"ui.popup" = { fg = "default", bg = "234" } # Documentation popups (e.g. Space + k)
+"ui.popup.info" = { fg = "default", bg = "default" } # Prompt for multiple key options
+"ui.window" = { fg = "253" } # Borderlines separating splits
+"ui.help" = { fg = "default", bg = "default" } # Description box for commands. chtenb: border of minor mode popups
+"ui.text" = { } # Command prompts, popup text, etc.
+"ui.text.focus" = { fg = "default", bg = "243" } # chtenb: Selected line in command picker?
+"ui.text.inactive" = { fg = "gray" } # Same as ui.text but when the text is inactive (e.g. suggestions)
+"ui.text.info" = { fg = "default", bg = "default" } # The key: command text in ui.popup.info boxes. chtenb: text inside minor mode popups
+"ui.virtual.ruler" = { bg = "232" } # Ruler columns (see the editor.rulers config)
+"ui.virtual.whitespace" = { fg = "black", modifiers = [] } # Visible whitespace characters
+"ui.virtual.indent-guide" = { fg = "gray" } # Vertical indent width guides
+"ui.virtual.inlay-hint" = { bg = "22" } # Default style for inlay hints of all kinds
+"ui.virtual.inlay-hint.parameter" = { bg = "52" } # Style for inlay hints of kind parameter (LSPs are not required to set a kind)
+"ui.virtual.inlay-hint.type" = { bg = "58" } # Style for inlay hints of kind type (LSPs are not required to set a kind)
+"ui.virtual.wrap" = { fg = "gray" } # Soft-wrap indicator (see the editor.soft-wrap config)
+"ui.virtual.jump-label" = { fg = "red", modifiers = ["bold"] }
+"ui.menu" = { bg = "234" } # Code and command completion menus
+"ui.menu.selected" = { bg = "243" } # Selected autocomplete item
+"ui.menu.scroll" = { fg = "245", bg = "232" } # fg sets thumb color, bg sets track color of scrollbar
+"ui.selection" = { bg = "241", modifiers = [] } # For selections in the editing area
+"ui.selection.primary" = { bg = "243", modifiers = [] } # 
+"ui.highlight" = { bg = "240" } # Highlighted lines in the picker preview
+"ui.cursorline.primary" = { bg = "240" } # The line of the primary cursor (if cursorline is enabled)
+"ui.cursorline.secondary" = { bg = "240" } # The lines of any other cursors (if cursorline is enabled)
+"ui.cursorcolumn.primary" = { bg = "240" } # The column of the primary cursor (if cursorcolumn is enabled)
+"ui.cursorcolumn.secondary" = { bg = "240" } # The columns of any other cursors (if cursorcolumn is enabled)
+"warning" = { fg = "226" } # Diagnostics warning (gutter)
+"error" = { fg = "red" } # Diagnostics error (gutter)
+"info" = { fg = "blue" } # Diagnostics info (gutter)
+"hint" = { fg = "green" } # Diagnostics hint (gutter)
+"diagnostic" = { } # Diagnostics fallback style (editing area)
+"diagnostic.hint" = { underline = { color = "light-green", style = "curl" } } # Diagnostics hint (editing area)
+"diagnostic.info" = { underline = { color = "light-blue", style = "curl" } } # Diagnostics info (editing area)
+"diagnostic.warning" = { underline = { color = "light-yellow", style = "curl" } } # Diagnostics warning (editing area)
+"diagnostic.error" = { underline = { color = "light-red", style = "curl" } } # Diagnostics error (editing area)
+
+
+# Gutter line
+#"diff" = "white"
+"diff.plus" = "green" # line added
+"diff.minus" = "red" # removed lines
+"diff.delta" = "226" # line modified
+"diff.delta.moved" = "magenta" # line moved
+
+"markup.normal.completion" = { } # for completion doc popup UI
+"markup.normal.hover" = { } # for hover popup UI
+"heading.completion" = { modifiers = ["bold"] } # for completion doc popup UI
+"heading.hover" = { modifiers = ["bold"] } # for hover popup UI
+"raw.inline.completion" = { } # for completion doc popup UI
+"raw.inline.hover" = { } # for hover popup UI
+
+
+"markup.heading" = "light-blue"
+"markup.list" = "light-red"
+"markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "light-magenta", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "yellow", underline.style="line" }
+"markup.link.text" = "light-red"
+"markup.quote" = "light-cyan"
+"markup.raw" = "light-green"
+

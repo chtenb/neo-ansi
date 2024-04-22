@@ -1,0 +1,18 @@
+[delta]
+    syntax-theme = terminal-neo-ansi
+    features = zebra-neo-ansi
+
+[delta "zebra-neo-ansi"]
+    minus-style = syntax 52
+    minus-emph-style = syntax 88
+    plus-style = syntax 22
+    plus-emph-style = syntax 28
+
+    map-styles = \
+       bold purple => syntax 53, \
+       bold blue => syntax 17, \
+       bold cyan => syntax 23, \
+       bold yellow => syntax 58
+
+    zero-style = syntax
+    whitespace-error-style = "#aaaaaa"
