@@ -34,3 +34,21 @@ for palette in glob.glob('palettes/*.yaml'):
     result_name = syntax_subfolder + palette_name + '-neo-ansi.tmTheme'
     run(python, './yamltotm/yamltotm.py', '-d',
         f'palettes/{palette_file}', 'neo-ansi.header.yaml', *glob.glob('templates/neo-ansi*.yaml'), result_name)
+
+existing = glob.glob('terms/wezterm/*-neo-ansi.toml')
+if existing:
+    print(f'Removing existing {existing}')
+    for file in existing:
+        os.remove(file)
+
+for palette in glob.glob('palettes/*.yaml'):
+    if 'terminal.yaml' in palette:
+        continue
+    if 'lux.yaml' not in palette:
+        continue # FIXNOW
+    print('Generating wezterm theme for ' + palette)
+    palette_file = os.path.basename(palette)
+    palette_name = os.path.splitext(palette_file)[0]
+    result_name = 'terms/wezterm/' + palette_name + '-neo-ansi.toml'
+    run(python, './yamltotm/yamltotm.py', '-d',
+        f'palettes/{palette_file}', 'terms/wezterm/template.toml', '-r', result_name)

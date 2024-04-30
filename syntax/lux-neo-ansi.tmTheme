@@ -9,9 +9,9 @@
 	<key>comment</key>
 	<string>Generated from the neo-ansi template at https://github.com/chtenb/neo-ansi. </string>
 	<key>name</key>
-	<string>Material Light Neo-ansi</string>
+	<string>Lux</string>
 	<key>semanticClass</key>
-	<string>theme.light.material-neo-ansi</string>
+	<string>theme.light.neo-ansi</string>
 	<key>settings</key>
 	<array>
 		<dict>

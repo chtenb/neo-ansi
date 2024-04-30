@@ -1,0 +1,108 @@
+[metadata]
+aliases = []
+author = 'chtenb'
+name = 'Lux (neo-ansi)'
+
+[colors]
+foreground = "#005661"
+background = "#fef8ec"
+cursor_bg = "#005661"
+cursor_border = "#005661"
+cursor_fg = "#ffffff"
+selection_bg = "#cfe7f0"
+selection_fg = "#005661"
+
+ansi = [
+  "#8ca6a6", # black
+  "#e64100", # red
+  "#00b368", # green
+  "#fa8900", # yellow
+  "#0095a8", # blue
+  "#ff5792", # magenta
+  "#00bdd6", # cyan
+  "#005661"] # white
+brights =  [ 
+  "#8ca6a6", # bright black
+  "#e5164a", # bright red
+  "#00b368", # bright green
+  "#b3694d", # bright yellow
+  "#0094f0", # bright blue
+  "#ff5792", # bright magenta
+  "#00bdd6", # bright cyan
+  "#004d57"] # bright white
+
+[colors.indexed] 
+# background colors for git diffs
+52 = "#fbdada" # red
+88 = "#f6b6b6" # red emph
+22 = "#d6ffd6" # green
+28 = "#adffad" # green emph
+53 = "#feecf7" # purple
+17 = "#e5dff6" # blue
+23 = "#d8fdf6" # cyan
+58 = "#f4ffe0" # yellow
+
+# Colors 232-255 are UI colors
+
+# bg - all base colors must be readable against these
+232 = "#f8f1e0" # e8: background #1 inactive background
+233 = "#f1e7c9" # e9: background #2 inactive overlay background
+234 = "#efe9d5" # ea: background #3 overlay background
+235 = "#f1e7c9" # eb: background #4 inactive overlay title bar
+236 = "#e3ded3" # ec: alt background #1 overlay title bar
+237 = "#efebdf" # ed: alt background #2 inactive main title bar
+238 = "#efe9d5" # ee: alt background #3 main title bar
+239 = "#d8eef1" # ef: alt background #4 special highlight
+240 = "#daedeb" # f0: selection #1 inactive selection
+241 = "#d8eef1" # f1: selection #2 active selection
+242 = "#d6f3fa" # f2: selection #3 inactive primary selection
+243 = "#d6f3fa" # f3: selection #4 active primary selection
+# fg - the default foreground color must be readable against these in inverse mode
+244 = "#8ca6a6" # f4: Inactive inverse fg
+245 = "#efe9d5" # f5: Soft inverse fg
+246 = "#fefaf2" # f6: Regular inverse fg
+247 = "#ffffff" # f7: Highlighted inverse fg 
+248 = "#58868a" # f8:
+249 = "#4b7e83" # f9:
+250 = "#3e767c" # fa:
+251 = "#316e75" # fb:
+252 = "#24666e" # fc:
+253 = "#175e67" # fd:
+254 = "#0a5660" # fe:
+255 = "#004d57" # ff: active text
+
+# FIXNOW...
+
+# UI variants of base text colors (No readability requirement, optimize for looks)
+226 = "#fa8900" # Yellow; warning
+
+[colors.tab_bar]
+background = "#efe9d5"
+inactive_tab_edge = "#efe9d5"
+inactive_tab_edge_hover = "#efe9d5"
+
+[colors.tab_bar.active_tab]
+bg_color = "#fef8ec"
+fg_color = "#0a5660"
+# italic = false
+# strikethrough = false
+# underline = "None"
+# intensity = "Normal"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#efe9d5"
+fg_color = "#004d57"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#daedeb"
+fg_color = "#004d57"
+
+[colors.tab_bar.new_tab]
+bg_color = "#efe9d5"
+fg_color = "#004d57"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#efe9d5"
+fg_color = "#0095a8"
+intensity = "Bold"
+

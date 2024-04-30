@@ -1,0 +1,77 @@
+name: Lux
+uuid: uuid
+author: Chiel ten Brinke
+semanticClass: theme.light.neo-ansi
+colorSpaceName: sRGB
+comment: ''
+background: '#fef8ec'
+foreground: '#005661'
+gutter: '#fef8ec'
+gutterForeground: '#005661'
+bold: 'bold'
+italic: 'italic'
+strike: 'strike'
+underline: 'underline'
+black: '#8ca6a6'
+red: '#e64100'
+green: '#00b368'
+yellow: '#fa8900'
+blue: '#0095a8'
+magenta: '#ff5792'
+cyan: '#00bdd6'
+white: '#005661'
+brightBlack: '#8ca6a6'
+brightRed: '#e5164a'
+brightGreen: '#00b368'
+brightYellow: '#b3694d'
+brightBlue: '#0094f0'
+brightMagenta: '#ff5792'
+# brightCyan: '#7c4dff'
+brightCyan: '#00bdd6'
+brightWhite: '#004d57'
+
+
+cursor_bg: '#005661'
+cursor_border: '#005661'
+cursor_fg: '#ffffff'
+selection_bg: '#cfe7f0'
+selection_fg: '#005661'
+
+
+'gitBgRed': '#fbdada' # red
+'gitBgRedEmph': '#f6b6b6' # red emph
+'gitBgGreen': '#d6ffd6' # green
+'gitBgGreenEmph': '#adffad' # green emph
+'gitBgPurple': '#feecf7' # purple
+'gitBgBlue': '#e5dff6' # blue
+'gitBgCyan': '#d8fdf6' # cyan
+'gitBgYellow': '#f4ffe0' # yellow
+
+'bg01': '#f8f1e0' # e8 232: background #1 inactive background
+'bg02': '#f1e7c9' # e9 233: background #2 inactive overlay background
+'bg03': '#efe9d5' # ea 234: background #3 overlay background
+'bg04': '#f1e7c9' # eb 235: background #4 inactive overlay title bar
+'bg05': '#e3ded3' # ec 236: alt background #1 overlay title bar
+'bg06': '#efebdf' # ed 237: alt background #2 inactive main title bar
+'bg07': '#efe9d5' # ee 238: alt background #3 main title bar
+'bg08': '#d8eef1' # ef 239: alt background #4 special highlight
+'bg09': '#daedeb' # f0 240: selection #1 inactive selection
+'bg10': '#d8eef1' # f1 241: selection #2 active selection
+'bg11': '#d6f3fa' # f2 242: selection #3 inactive primary selection
+'bg12': '#d6f3fa' # f3 243: selection #4 active primary selection
+
+'fg12': '#8ca6a6' # f4 244: Inactive inverse fg
+'fg11': '#efe9d5' # f5 245: Soft inverse fg
+'fg10': '#fefaf2' # f6 246: Regular inverse fg
+'fg09': '#ffffff' # f7 247: Highlighted inverse fg 
+'fg08': '#58868a' # f8 248:
+'fg07': '#4b7e83' # f9 249:
+'fg06': '#3e767c' # fa 250:
+'fg05': '#316e75' # fb 251:
+'fg04': '#24666e' # fc 252:
+'fg03': '#175e67' # fd 253:
+'fg02': '#0a5660' # fe 254:
+'fg01': '#004d57' # ff 255: active text
+
+# UI variants of base text colors (No readability requirement, optimize for looks)
+'uiYellow': '#fa8900' # Yellow; warning
