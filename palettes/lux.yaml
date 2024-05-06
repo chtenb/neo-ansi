@@ -4,7 +4,7 @@ author: Chiel ten Brinke
 semanticClass: theme.light.neo-ansi
 colorSpaceName: sRGB
 comment: ''
-background: '#fef8ec'
+background: '#fefaf2'
 foreground: '#005661'
 gutter: '#fef8ec'
 gutterForeground: '#005661'

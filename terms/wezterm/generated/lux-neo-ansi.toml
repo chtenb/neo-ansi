@@ -5,7 +5,7 @@ name = 'Lux (neo-ansi)'
 
 [colors]
 foreground = "#005661"
-background = "#fef8ec"
+background = "#fefaf2"
 cursor_bg = "#005661"
 cursor_border = "#005661"
 cursor_fg = "#ffffff"
@@ -71,8 +71,6 @@ brights =  [
 254 = "#0a5660" # fe:
 255 = "#004d57" # ff: active text
 
-# FIXNOW...
-
 # UI variants of base text colors (No readability requirement, optimize for looks)
 226 = "#fa8900" # Yellow; warning
 
@@ -82,7 +80,7 @@ inactive_tab_edge = "#efe9d5"
 inactive_tab_edge_hover = "#efe9d5"
 
 [colors.tab_bar.active_tab]
-bg_color = "#fef8ec"
+bg_color = "#fefaf2"
 fg_color = "#0a5660"
 # italic = false
 # strikethrough = false

@@ -49,6 +49,6 @@ for palette in glob.glob('palettes/*.yaml'):
     print('Generating wezterm theme for ' + palette)
     palette_file = os.path.basename(palette)
     palette_name = os.path.splitext(palette_file)[0]
-    result_name = 'terms/wezterm/' + palette_name + '-neo-ansi.toml'
+    result_name = 'terms/wezterm/generated/' + palette_name + '-neo-ansi.toml'
     run(python, './yamltotm/yamltotm.py', '-d',
         f'palettes/{palette_file}', 'terms/wezterm/template.toml', '-r', result_name)
