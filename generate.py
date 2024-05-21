@@ -44,8 +44,6 @@ if existing:
 for palette in glob.glob('palettes/*.yaml'):
     if 'terminal.yaml' in palette:
         continue
-    if 'lux.yaml' not in palette:
-        continue # FIXNOW
     print('Generating wezterm theme for ' + palette)
     palette_file = os.path.basename(palette)
     palette_name = os.path.splitext(palette_file)[0]

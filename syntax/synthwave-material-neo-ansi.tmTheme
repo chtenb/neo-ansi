@@ -9,9 +9,9 @@
 	<key>comment</key>
 	<string>Generated from the neo-ansi template at https://github.com/chtenb/neo-ansi. </string>
 	<key>name</key>
-	<string>Synthwave Material Neo-ansi</string>
+	<string>Synthwave Material</string>
 	<key>semanticClass</key>
-	<string>theme.dark.material-neo-ansi</string>
+	<string>theme.dark.neo-ansi</string>
 	<key>settings</key>
 	<array>
 		<dict>

@@ -1,7 +1,7 @@
-name: Synthwave Material Neo-ansi
+name: Synthwave Material
 uuid: uuid
 author: Chiel ten Brinke
-semanticClass: theme.dark.material-neo-ansi
+semanticClass: theme.dark.neo-ansi
 colorSpaceName: sRGB
 comment: ''
 background: '#262335'
@@ -28,3 +28,51 @@ brightBlue: '#b9dedf'
 brightMagenta: '#c792ea'
 brightCyan: '#8ee2e5'
 brightWhite: '#dddddd'
+
+cursor_bg: '#ffffff'
+cursor_border: '#ffffff'
+cursor_fg: 'black'
+selection_fg: '#cccccc'
+selection_bg: '#333041'
+
+
+gitBgRed: '#330f0f' # minus
+gitBgRedEmph: '#4f1917' # minus emph
+gitBgGreen: '#0e2f19' # plus
+gitBgGreenEmph: '#174525' # plus emph
+gitBgPurple: '#330f29' # purple
+gitBgBlue: '#271344' # blue
+gitBgCyan: '#0d3531' # cyan
+gitBgYellow: '#222f14' # yellow
+
+
+# bg
+bg01: '#2F2E43' # inactive background
+bg02: '#393850' # inactive overlay background
+bg03: '#42435E' # overlay background
+bg04: '#4B4E6C' # inactive overlay title bar
+bg05: '#54597A' # overlay title bar
+bg06: '#5E6387' # inactive main title bar
+bg07: '#241b30' # main title bar
+bg08: '#b0b0b0' # special highlight
+bg09: '#303030' # inactive selection
+bg10: '#404040' # active selection
+bg11: '#303030' # inactive primary selection
+bg12: '#4a3a48' # active primary selection
+
+# fg
+fg12: '#444444' # Inactive inverse fg
+fg11: '#262335' # Soft inverse fg
+fg10: '#262335' # Regular inverse fg
+fg09: '#000000' # Highlighted inverse fg 
+fg08: '#909090' # 
+fg07: '#909090' # 
+fg06: '#7D83A4' # 
+fg05: '#9297B3' # 
+fg04: '#A8ACC2' # 
+fg03: '#BEC1D2' # 
+fg02: '#D4D6E1' # 
+fg01: '#E9EAF0' # 
+
+# UI variants of base colors
+uiYellow: '#ffcb6b' # Yellow; warning
