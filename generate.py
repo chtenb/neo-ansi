@@ -35,7 +35,7 @@ for palette in glob.glob('palettes/*.yaml'):
     run(python, './yamltotm/yamltotm.py', '-d',
         f'palettes/{palette_file}', 'neo-ansi.header.yaml', *glob.glob('templates/neo-ansi*.yaml'), result_name)
 
-existing = glob.glob('terms/wezterm/*-neo-ansi.toml')
+existing = glob.glob('terms/wezterm/generated/*')
 if existing:
     print(f'Removing existing {existing}')
     for file in existing:
@@ -47,6 +47,11 @@ for palette in glob.glob('palettes/*.yaml'):
     print('Generating wezterm theme for ' + palette)
     palette_file = os.path.basename(palette)
     palette_name = os.path.splitext(palette_file)[0]
+    # Generate toml theme
     result_name = 'terms/wezterm/generated/' + palette_name + '-neo-ansi.toml'
     run(python, './yamltotm/yamltotm.py', '-d',
         f'palettes/{palette_file}', 'terms/wezterm/template.toml', '-r', result_name)
+    # Generate lua theme
+    result_name = 'terms/wezterm/generated/' + palette_name + '-neo-ansi.lua'
+    run(python, './yamltotm/yamltotm.py', '-d',
+        f'palettes/{palette_file}', 'terms/wezterm/template.lua', '-r', result_name)
