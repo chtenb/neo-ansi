@@ -46,11 +46,11 @@ return {
 
     -- Colors 232-255 are UI colors
 
-    -- bg - all base colors must be readable against these
-    [232] = "#2F2E43", -- e8: background #1 inactive background
-    [233] = "#393850", -- e9: background #2 inactive overlay background
-    [234] = "#42435E", -- ea: background #3 overlay background
-    [235] = "#4B4E6C", -- eb: background #4 inactive overlay title bar
+    -- bg - all ansi base colors must be readable against these, including the default foreground color
+    [232] = "#2F2E43", -- e8: background #1 background
+    [233] = "#393850", -- e9: background #2 overlay background
+    [234] = "#42435E", -- ea: background #3 inactive background
+    [235] = "#4B4E6C", -- eb: background #4 inactive overlay background
     [236] = "#54597A", -- ec: alt background #1 overlay title bar
     [237] = "#5E6387", -- ed: alt background #2 inactive main title bar
     [238] = "#241b30", -- ee: alt background #3 main title bar
@@ -59,7 +59,7 @@ return {
     [241] = "#404040", -- f1: selection #2 active selection
     [242] = "#303030", -- f2: selection #3 inactive primary selection
     [243] = "#4a3a48", -- f3: selection #4 active primary selection
-    -- fg - the default foreground color must be readable against these in inverse mode
+    -- fg - the default background color must be readable against these in inverse mode
     [244] = "#444444", -- f4: Inactive inverse fg
     [245] = "#262335", -- f5: Soft inverse fg
     [246] = "#262335", -- f6: Regular inverse fg

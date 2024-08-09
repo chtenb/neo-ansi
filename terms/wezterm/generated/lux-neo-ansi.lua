@@ -46,11 +46,11 @@ return {
 
     -- Colors 232-255 are UI colors
 
-    -- bg - all base colors must be readable against these
-    [232] = "#f8f1e0", -- e8: background #1 inactive background
-    [233] = "#f1e7c9", -- e9: background #2 inactive overlay background
-    [234] = "#efe9d5", -- ea: background #3 overlay background
-    [235] = "#f1e7c9", -- eb: background #4 inactive overlay title bar
+    -- bg - all ansi base colors must be readable against these, including the default foreground color
+    [232] = "#fefaf2", -- e8: background #1 background
+    [233] = "#f1e7c9", -- e9: background #2 overlay background
+    [234] = "#f0e0c0", -- ea: background #3 inactive background
+    [235] = "#f0e0c0", -- eb: background #4 inactive overlay background
     [236] = "#e3ded3", -- ec: alt background #1 overlay title bar
     [237] = "#efebdf", -- ed: alt background #2 inactive main title bar
     [238] = "#efe9d5", -- ee: alt background #3 main title bar
@@ -59,7 +59,7 @@ return {
     [241] = "#d8eef1", -- f1: selection #2 active selection
     [242] = "#d6f3fa", -- f2: selection #3 inactive primary selection
     [243] = "#d6f3fa", -- f3: selection #4 active primary selection
-    -- fg - the default foreground color must be readable against these in inverse mode
+    -- fg - the default background color must be readable against these in inverse mode
     [244] = "#8ca6a6", -- f4: Inactive inverse fg
     [245] = "#efe9d5", -- f5: Soft inverse fg
     [246] = "#fefaf2", -- f6: Regular inverse fg
@@ -79,9 +79,9 @@ return {
   },
 
   tab_bar = {
-    background = "#efe9d5",
-    inactive_tab_edge = "#efe9d5",
-    inactive_tab_edge_hover = "#efe9d5",
+    background = "#f0e0c0",
+    inactive_tab_edge = "#f0e0c0",
+    inactive_tab_edge_hover = "#f0e0c0",
 
     active_tab = {
       bg_color = "#fefaf2",
@@ -93,7 +93,7 @@ return {
     },
 
     inactive_tab = {
-      bg_color = "#efe9d5",
+      bg_color = "#f0e0c0",
       fg_color = "#004d57",
     },
 
@@ -103,12 +103,12 @@ return {
     },
 
     new_tab = {
-      bg_color = "#efe9d5",
+      bg_color = "#f0e0c0",
       fg_color = "#004d57",
     },
 
     new_tab_hover = {
-      bg_color = "#efe9d5",
+      bg_color = "#f0e0c0",
       fg_color = "#0095a8",
       intensity = "Bold",
     },

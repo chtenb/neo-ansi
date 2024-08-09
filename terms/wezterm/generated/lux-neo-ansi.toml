@@ -45,10 +45,10 @@ brights =  [
 # Colors 232-255 are UI colors
 
 # bg - all base colors must be readable against these
-232 = "#f8f1e0" # e8: background #1 inactive background
+232 = "#fefaf2" # e8: background #1 inactive background
 233 = "#f1e7c9" # e9: background #2 inactive overlay background
-234 = "#efe9d5" # ea: background #3 overlay background
-235 = "#f1e7c9" # eb: background #4 inactive overlay title bar
+234 = "#f0e0c0" # ea: background #3 overlay background
+235 = "#f0e0c0" # eb: background #4 inactive overlay title bar
 236 = "#e3ded3" # ec: alt background #1 overlay title bar
 237 = "#efebdf" # ed: alt background #2 inactive main title bar
 238 = "#efe9d5" # ee: alt background #3 main title bar
@@ -75,9 +75,9 @@ brights =  [
 226 = "#fa8900" # Yellow; warning
 
 [colors.tab_bar]
-background = "#efe9d5"
-inactive_tab_edge = "#efe9d5"
-inactive_tab_edge_hover = "#efe9d5"
+background = "#f0e0c0"
+inactive_tab_edge = "#f0e0c0"
+inactive_tab_edge_hover = "#f0e0c0"
 
 [colors.tab_bar.active_tab]
 bg_color = "#fefaf2"
@@ -88,7 +88,7 @@ fg_color = "#0a5660"
 # intensity = "Normal"
 
 [colors.tab_bar.inactive_tab]
-bg_color = "#efe9d5"
+bg_color = "#f0e0c0"
 fg_color = "#004d57"
 
 [colors.tab_bar.inactive_tab_hover]
@@ -96,11 +96,11 @@ bg_color = "#daedeb"
 fg_color = "#004d57"
 
 [colors.tab_bar.new_tab]
-bg_color = "#efe9d5"
+bg_color = "#f0e0c0"
 fg_color = "#004d57"
 
 [colors.tab_bar.new_tab_hover]
-bg_color = "#efe9d5"
+bg_color = "#f0e0c0"
 fg_color = "#0095a8"
 intensity = "Bold"
 
