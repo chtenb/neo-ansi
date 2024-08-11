@@ -47,10 +47,10 @@ gitBgYellow: '#222f14' # yellow
 
 
 # bg
-bg01: '#2F2E43' # inactive background
-bg02: '#393850' # inactive overlay background
-bg03: '#42435E' # overlay background
-bg04: '#4B4E6C' # inactive overlay title bar
+bg01: '#2F2E43' # background
+bg02: '#393850' # overlay background
+bg03: '#42435E' # inactive background
+bg04: '#4B4E6C' # inactive overlay background
 bg05: '#54597A' # overlay title bar
 bg06: '#5E6387' # inactive main title bar
 bg07: '#241b30' # main title bar
@@ -61,18 +61,18 @@ bg11: '#303030' # inactive primary selection
 bg12: '#4a3a48' # active primary selection
 
 # fg
-fg12: '#444444' # Inactive inverse fg
-fg11: '#262335' # Soft inverse fg
-fg10: '#262335' # Regular inverse fg
-fg09: '#000000' # Highlighted inverse fg 
-fg08: '#909090' # 
-fg07: '#909090' # 
-fg06: '#7D83A4' # 
-fg05: '#9297B3' # 
-fg04: '#A8ACC2' # 
-fg03: '#BEC1D2' # 
-fg02: '#D4D6E1' # 
-fg01: '#E9EAF0' # 
+ac12: '#555555' # Inactive inverse fg
+ac11: '#262335' # Soft inverse fg
+ac10: '#262335' # Regular inverse fg
+ac09: '#000000' # Highlighted inverse fg 
+ac08: '#909090' # 
+ac07: '#909090' # 
+ac06: '#7D83A4' # 
+ac05: '#9297B3' # 
+ac04: '#A8ACC2' # 
+ac03: '#BEC1D2' # 
+ac02: '#D4D6E1' # 
+ac01: '#E9EAF0' # 
 
 # UI variants of base colors
 uiYellow: '#ffcb6b' # Yellow; warning

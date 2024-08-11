@@ -157,23 +157,62 @@ We generate an example set of TextMate themes from the Neo-ansi color palettes d
 The resulting `.tmTheme` files are placed in the root of this repository.
 
 
-# Miscellaneous UI colors
+# Neo-ansi standard for background and miscellaneous UI colors
 
-All 16 base colors are used for foreground colors.
-We can use some of the 8-bit colors for background, assuming they are customizable by the terminal emulator.
+All 16 4-bit ansi colors are used for foreground colors as specified earlier.
+We can use some of the remaining 8-bit colors for backgrounds and other UI components, assuming they are customizable by the terminal emulator.
 
-|Hex|Dec|Description|
-|---|---|-----------|
-|e8-f3|232-243|Various background color highlighting purposes, in increasing intensity|
-|f4-ff|244-255|Miscellaneous foreground color purposes for UI elements, in increasing intensity|
-|34|52|git diff minus|
-|58|88|git diff minus emph|
-|16|22|git diff plus|
-|1c|28|git diff plus emph|
-|35|53|git diff purple|
-|11|17|git diff blue|
-|17|23|git diff cyan|
-|3a|58|git diff yellow|
+## Diff background colors
+Readability requirement: all 4-bit colors must be readable as foreground color against these background colors.
 
-Even though colors e8-ff are gray scale, we do not require them to be as such.
+|Hex|Dec|Name|Usage suggestion|
+|---|---|----|-----------|
+|34 |052|gitBgRed|git diff minus|
+|58 |088|gitBgRedEmph|git diff minus emph|
+|16 |022|gitBgGreen|git diff plus|
+|1c |028|gitBgGreenEmph|git diff plus emph|
+|35 |053|gitBgPurple|git diff purple|
+|11 |017|gitBgBlue|git diff blue|
+|17 |023|gitBgCyan|git diff cyan|
+|3a |058|gitBgYellow|git diff yellow|
+
+## UI background colors
+Readability requirement: all 4-bit colors must yield readable text when combined with these background colors, in normal mode as well as reverse mode.
+Brightness suggestion: colors should be in order of increasing brightness
+
+|Hex|Dec|Name|Usage suggestion|
+|---|---|----|-----------|
+|e8 |232|bg01|default background|
+|e9 |233|bg02|inactive background|
+|ea |234|bg03|overlay background|
+|eb |235|bg04|inactive overlay background|
+|ec |236|bg05|alt/header background|
+|ed |237|bg06|alt/header inactive background|
+|ee |238|bg07|alt/header overlay background|
+|ef |239|bg08|alt/header inactive overlay background|
+|f0 |240|bg09|primary selection|
+|f1 |241|bg10|inactive primary selection|
+|f2 |242|bg11|secondary selections|
+|f3 |243|bg12|inactive secondary selections|
+
+## UI Accent colors
+Readability requirement: the default background color must yield readable text when combined with these accent colors, in normal mode as well as reverse mode.
+Brightness suggestion: colors should be in order of increasing brightness
+
+|Hex|Dec|Name|Usage suggestion|
+|---|---|----|-----------|
+|f4 |244|ac12| |
+|f5 |245|ac11| |
+|f6 |246|ac10| |
+|f7 |247|ac09| |
+|f8 |248|ac08| |
+|f9 |249|ac07| |
+|fa |250|ac06| |
+|fb |251|ac05| |
+|fc |252|ac04| |
+|fd |253|ac03| |
+|fe |254|ac02| |
+|ff |255|ac01| |
+
+Even though colors e8-ff are gray scale according to the ANSI spec, we do not require them to be as such.
 It is recommended that these colors follow a natural scale fitting to the color palette.

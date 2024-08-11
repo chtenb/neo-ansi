@@ -64,18 +64,18 @@ bg11: '#d6f3fa' # f2 242: selection #3 inactive primary selection
 bg12: '#d6f3fa' # f3 243: selection #4 active primary selection
 
 # fg - the default background color must be readable against these in inverse mode
-fg12: '#8ca6a6' # f4 244: Inactive inverse fg
-fg11: '#efe9d5' # f5 245: Soft inverse fg
-fg10: '#fefaf2' # f6 246: Regular inverse fg
-fg09: '#ffffff' # f7 247: Highlighted inverse fg 
-fg08: '#58868a' # f8 248:
-fg07: '#4b7e83' # f9 249:
-fg06: '#3e767c' # fa 250:
-fg05: '#316e75' # fb 251:
-fg04: '#24666e' # fc 252:
-fg03: '#175e67' # fd 253:
-fg02: '#0a5660' # fe 254:
-fg01: '#004d57' # ff 255: active text
+ac12: '#8ca6a6' # f4 244: Inactive inverse fg
+ac11: '#efe9d5' # f5 245: Soft inverse fg
+ac10: '#fefaf2' # f6 246: Regular inverse fg
+ac09: '#ffffff' # f7 247: Highlighted inverse fg 
+ac08: '#58868a' # f8 248:
+ac07: '#4b7e83' # f9 249:
+ac06: '#3e767c' # fa 250:
+ac05: '#316e75' # fb 251:
+ac04: '#24666e' # fc 252:
+ac03: '#175e67' # fd 253:
+ac02: '#0a5660' # fe 254:
+ac01: '#004d57' # ff 255: active text
 
 # UI variants of base text colors (No readability requirement, optimize for looks)
 uiYellow: '#fa8900' # Yellow; warning

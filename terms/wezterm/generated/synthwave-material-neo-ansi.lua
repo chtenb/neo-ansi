@@ -60,7 +60,7 @@ return {
     [242] = "#303030", -- f2: selection #3 inactive primary selection
     [243] = "#4a3a48", -- f3: selection #4 active primary selection
     -- fg - the default background color must be readable against these in inverse mode
-    [244] = "#444444", -- f4: Inactive inverse fg
+    [244] = "#eeeeee", -- f4: Inactive inverse fg
     [245] = "#262335", -- f5: Soft inverse fg
     [246] = "#262335", -- f6: Regular inverse fg
     [247] = "#000000", -- f7: Highlighted inverse fg
