@@ -5,11 +5,15 @@ semanticClass: theme.light.neo-ansi
 colorSpaceName: sRGB
 comment: ''
 
-# Base ansi colors
 background: '#fefaf2'
 foreground: '#005661'
-gutter: '#fef8ec'
-gutterForeground: '#005661'
+
+cursor_bg: '#005661'
+cursor_border: '#005661'
+cursor_fg: '#ffffff'
+selection_bg: '#cfe7f0'
+selection_fg: '#005661'
+
 bold: 'bold'
 italic: 'italic'
 strike: 'strike'
@@ -22,6 +26,7 @@ blue: '#0095a8'
 magenta: '#ff5792'
 cyan: '#00bdd6'
 white: '#005661'
+
 brightBlack: '#8ca6a6'
 brightRed: '#e5164a'
 brightGreen: '#00b368'
@@ -33,13 +38,6 @@ brightCyan: '#00bdd6'
 brightWhite: '#004d57'
 
 
-cursor_bg: '#005661'
-cursor_border: '#005661'
-cursor_fg: '#ffffff'
-selection_bg: '#cfe7f0'
-selection_fg: '#005661'
-
-# background colors for git diffs
 gitBgRed: '#fbdada' # red
 gitBgRedEmph: '#f6b6b6' # red emph
 gitBgGreen: '#d6ffd6' # green
@@ -49,33 +47,30 @@ gitBgBlue: '#e5dff6' # blue
 gitBgCyan: '#d8fdf6' # cyan
 gitBgYellow: '#f4ffe0' # yellow
 
-# bg - all ansi base colors must be readable against these, including the default foreground color
-bg01: '#fefaf2' # e8 232: background #1 background
-bg02: '#f1e7c9' # e9 233: background #2 overlay background
-bg03: '#f0e0c0' # ea 234: background #3 inactive background
-bg04: '#f0e0c0' # eb 235: background #4 inactive overlay background
-bg05: '#e3ded3' # ec 236: alt background #1 overlay title bar
-bg06: '#efebdf' # ed 237: alt background #2 inactive main title bar
-bg07: '#efe9d5' # ee 238: alt background #3 main title bar
-bg08: '#d8eef1' # ef 239: alt background #4 special highlight
-bg09: '#daedeb' # f0 240: selection #1 inactive selection
-bg10: '#d8eef1' # f1 241: selection #2 active selection
-bg11: '#d6f3fa' # f2 242: selection #3 inactive primary selection
-bg12: '#d6f3fa' # f3 243: selection #4 active primary selection
+bg01: '#fefaf2'
+bg02: '#f1e7c9'
+bg03: '#f0e0c0'
+bg04: '#f0e0c0'
+bg05: '#e3ded3'
+bg06: '#efebdf'
+bg07: '#efe9d5'
+bg08: '#d8eef1'
+bg09: '#daedeb'
+bg10: '#d8eef1'
+bg11: '#d6f3fa'
+bg12: '#d6f3fa'
 
-# fg - the default background color must be readable against these in inverse mode
-ac12: '#8ca6a6' # f4 244: Inactive inverse fg
-ac11: '#efe9d5' # f5 245: Soft inverse fg
-ac10: '#fefaf2' # f6 246: Regular inverse fg
-ac09: '#ffffff' # f7 247: Highlighted inverse fg 
-ac08: '#58868a' # f8 248:
-ac07: '#4b7e83' # f9 249:
-ac06: '#3e767c' # fa 250:
-ac05: '#316e75' # fb 251:
-ac04: '#24666e' # fc 252:
-ac03: '#175e67' # fd 253:
-ac02: '#0a5660' # fe 254:
-ac01: '#004d57' # ff 255: active text
+ac12: '#8ca6a6'
+ac11: '#efe9d5'
+ac10: '#fefaf2'
+ac09: '#ffffff'
+ac08: '#58868a'
+ac07: '#4b7e83'
+ac06: '#3e767c'
+ac05: '#316e75'
+ac04: '#24666e'
+ac03: '#175e67'
+ac02: '#0a5660'
+ac01: '#004d57'
 
-# UI variants of base text colors (No readability requirement, optimize for looks)
 uiYellow: '#fa8900' # Yellow; warning

@@ -8,8 +8,8 @@ settings:
 - settings:
     background: $background
     foreground: $foreground
-    gutter: $gutter
-    gutterForeground: $gutterForeground
+    gutter: $background #  Explicitly set the gutter color since bat falls back to a hardcoded DEFAULT_GUTTER_COLOR otherwise.
+    gutterForeground: $foreground
 - name: Invalid
   scope: invalid, invalid.illegal
   settings:

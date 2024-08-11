@@ -22,7 +22,7 @@
 				<key>foreground</key>
 				<string>#005661</string>
 				<key>gutter</key>
-				<string>#fef8ec</string>
+				<string>#fefaf2</string>
 				<key>gutterForeground</key>
 				<string>#005661</string>
 			</dict>

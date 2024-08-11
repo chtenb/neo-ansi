@@ -46,32 +46,31 @@ return {
 
     -- Colors 232-255 are UI colors
 
-    -- bg - all ansi base colors must be readable against these, including the default foreground color
-    [232] = "#fefaf2", -- e8: background #1 background
-    [233] = "#f1e7c9", -- e9: background #2 overlay background
-    [234] = "#f0e0c0", -- ea: background #3 inactive background
-    [235] = "#f0e0c0", -- eb: background #4 inactive overlay background
-    [236] = "#e3ded3", -- ec: alt background #1 overlay title bar
-    [237] = "#efebdf", -- ed: alt background #2 inactive main title bar
-    [238] = "#efe9d5", -- ee: alt background #3 main title bar
-    [239] = "#d8eef1", -- ef: alt background #4 special highlight
-    [240] = "#daedeb", -- f0: selection #1 inactive selection
-    [241] = "#d8eef1", -- f1: selection #2 active selection
-    [242] = "#d6f3fa", -- f2: selection #3 inactive primary selection
-    [243] = "#d6f3fa", -- f3: selection #4 active primary selection
-    -- fg - the default background color must be readable against these in inverse mode
-    [244] = "#8ca6a6", -- f4: Inactive inverse fg
-    [245] = "#efe9d5", -- f5: Soft inverse fg
-    [246] = "#fefaf2", -- f6: Regular inverse fg
-    [247] = "#ffffff", -- f7: Highlighted inverse fg
-    [248] = "#58868a", -- f8:
-    [249] = "#4b7e83", -- f9:
-    [250] = "#3e767c", -- fa:
-    [251] = "#316e75", -- fb:
-    [252] = "#24666e", -- fc:
-    [253] = "#175e67", -- fd:
-    [254] = "#0a5660", -- fe:
-    [255] = "#004d57", -- ff: active text
+    [232] = "#fefaf2", -- e8
+    [233] = "#f1e7c9", -- e9
+    [234] = "#f0e0c0", -- ea
+    [235] = "#f0e0c0", -- eb
+    [236] = "#e3ded3", -- ec
+    [237] = "#efebdf", -- ed
+    [238] = "#efe9d5", -- ee
+    [239] = "#d8eef1", -- ef
+    [240] = "#daedeb", -- f0
+    [241] = "#d8eef1", -- f1
+    [242] = "#d6f3fa", -- f2
+    [243] = "#d6f3fa", -- f3
+
+    [244] = "#8ca6a6", -- f4
+    [245] = "#efe9d5", -- f5
+    [246] = "#fefaf2", -- f6
+    [247] = "#ffffff", -- f7
+    [248] = "#58868a", -- f8
+    [249] = "#4b7e83", -- f9
+    [250] = "#3e767c", -- fa
+    [251] = "#316e75", -- fb
+    [252] = "#24666e", -- fc
+    [253] = "#175e67", -- fd
+    [254] = "#0a5660", -- fe
+    [255] = "#004d57", -- ff
 
     -- UI variants of base text colors (No readability requirement, optimize for looks)
     [226] = "#fa8900" -- Yellow; warning

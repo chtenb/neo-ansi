@@ -4,14 +4,21 @@ author: Chiel ten Brinke
 semanticClass: theme.dark.neo-ansi
 colorSpaceName: sRGB
 comment: ''
-background: '#262335'
-foreground: '#cccccc'
-gutter: '#262335'
-gutterForeground: '#cccccc'
+
 bold: 'bold'
 italic: 'italic'
 strike: 'strike'
 underline: 'underline'
+
+background: '#262335'
+foreground: '#cccccc'
+
+cursor_bg: '#ffffff'
+cursor_border: '#ffffff'
+cursor_fg: 'black'
+selection_fg: '#cccccc'
+selection_bg: '#333041'
+
 black: '#676e95'
 red: '#f07178'
 green: '#c3e88d'
@@ -29,12 +36,6 @@ brightMagenta: '#c792ea'
 brightCyan: '#8ee2e5'
 brightWhite: '#dddddd'
 
-cursor_bg: '#ffffff'
-cursor_border: '#ffffff'
-cursor_fg: 'black'
-selection_fg: '#cccccc'
-selection_bg: '#333041'
-
 
 gitBgRed: '#330f0f' # minus
 gitBgRedEmph: '#4f1917' # minus emph
@@ -45,34 +46,31 @@ gitBgBlue: '#271344' # blue
 gitBgCyan: '#0d3531' # cyan
 gitBgYellow: '#222f14' # yellow
 
+bg01: '#2F2E43'
+bg02: '#393850'
+bg03: '#42435E'
+bg04: '#4B4E6C'
+bg05: '#54597A'
+bg06: '#5E6387'
+bg07: '#241b30'
+bg08: '#b0b0b0'
+bg09: '#303030'
+bg10: '#404040'
+bg11: '#303030'
+bg12: '#4a3a48'
 
-# bg
-bg01: '#2F2E43' # background
-bg02: '#393850' # overlay background
-bg03: '#42435E' # inactive background
-bg04: '#4B4E6C' # inactive overlay background
-bg05: '#54597A' # overlay title bar
-bg06: '#5E6387' # inactive main title bar
-bg07: '#241b30' # main title bar
-bg08: '#b0b0b0' # special highlight
-bg09: '#303030' # inactive selection
-bg10: '#404040' # active selection
-bg11: '#303030' # inactive primary selection
-bg12: '#4a3a48' # active primary selection
-
-# fg
-ac12: '#555555' # Inactive inverse fg
-ac11: '#262335' # Soft inverse fg
-ac10: '#262335' # Regular inverse fg
-ac09: '#000000' # Highlighted inverse fg 
-ac08: '#909090' # 
-ac07: '#909090' # 
-ac06: '#7D83A4' # 
-ac05: '#9297B3' # 
-ac04: '#A8ACC2' # 
-ac03: '#BEC1D2' # 
-ac02: '#D4D6E1' # 
-ac01: '#E9EAF0' # 
+ac12: '#555555'
+ac11: '#262335'
+ac10: '#262335'
+ac09: '#000000'
+ac08: '#909090'
+ac07: '#909090'
+ac06: '#7D83A4'
+ac05: '#9297B3'
+ac04: '#A8ACC2'
+ac03: '#BEC1D2'
+ac02: '#D4D6E1'
+ac01: '#E9EAF0'
 
 # UI variants of base colors
 uiYellow: '#ffcb6b' # Yellow; warning
