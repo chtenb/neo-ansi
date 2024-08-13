@@ -19,24 +19,24 @@ inherits = "neo-ansi-syntax"
 "ui.highlight.frameline" = { bg = "239" } # Line at which debugging execution is paused at
 "ui.linenr" = { fg = "gray" } # Line numbers
 "ui.linenr.selected" = { fg = "white" } # Line number for the line the cursor is on
-"ui.statusline" = { bg = "250", fg = "245", modifiers = [] } # Statusline and buffer line
-"ui.statusline.inactive" = { bg = "250", fg = "244", modifiers = [] } # Statusline (unfocused document) and buffer line (inactive buffers)
-"ui.statusline.normal" = { modifiers = ["reversed"] } # Statusline mode during normal mode (only if editor.color-modes is enabled)
-"ui.statusline.insert" = { bg = "light-magenta" } # Statusline mode during insert mode (only if editor.color-modes is enabled)
-"ui.statusline.select" = { bg = "light-blue" } # Statusline mode during select mode (only if editor.color-modes is enabled)
+"ui.statusline" = { bg = "250", fg = "232", modifiers = [""] } # Statusline and buffer line
+"ui.statusline.inactive" = { bg = "249", fg = "232", modifiers = [] } # Statusline (unfocused document) and buffer line (inactive buffers)
+"ui.statusline.normal" = { bg = "232", fg = "250", modifiers = [] } # Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { bg = "light-magenta", modifiers = [] } # Statusline mode during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { bg = "light-blue", modifiers = [] } # Statusline mode during select mode (only if editor.color-modes is enabled)
 # "ui.statusline.separator" = { fg = "red" } # Separator character in statusline
-"ui.bufferline" = { bg = "250", fg = "244", modifiers = ["italic"] }
-"ui.bufferline.active" = { bg = "250", fg = "245", modifiers = [] }
-"ui.bufferline.background" = { bg = "250", fg = "244", modifiers = [] }
+"ui.bufferline" = { bg = "250", fg = "232", modifiers = ["italic"] }
+"ui.bufferline.active" = { bg = "232", fg = "250", modifiers = [] }
+"ui.bufferline.background" = { bg = "250", fg = "232", modifiers = [] }
 "ui.popup" = { fg = "default", bg = "234" } # Documentation popups (e.g. Space + k)
 "ui.popup.info" = { fg = "default", bg = "default" } # Prompt for multiple key options
 "ui.window" = { fg = "253" } # Borderlines separating splits
 "ui.help" = { fg = "default", bg = "default" } # Description box for commands. chtenb: border of minor mode popups
 "ui.text" = { } # Command prompts, popup text, etc.
-"ui.text.focus" = { fg = "default", bg = "243" } # chtenb: Selected line in command picker?
+"ui.text.focus" = { fg = "default", bg = "240" } # chtenb: Selected line in command picker?
 "ui.text.inactive" = { fg = "gray" } # Same as ui.text but when the text is inactive (e.g. suggestions)
 "ui.text.info" = { fg = "default", bg = "default" } # The key: command text in ui.popup.info boxes. chtenb: text inside minor mode popups
-"ui.virtual.ruler" = { bg = "232" } # Ruler columns (see the editor.rulers config)
+"ui.virtual.ruler" = { bg = "234" } # Ruler columns (see the editor.rulers config)
 "ui.virtual.whitespace" = { fg = "black", modifiers = [] } # Visible whitespace characters
 "ui.virtual.indent-guide" = { fg = "gray" } # Vertical indent width guides
 "ui.virtual.inlay-hint" = { bg = "22" } # Default style for inlay hints of all kinds
@@ -47,8 +47,8 @@ inherits = "neo-ansi-syntax"
 "ui.menu" = { bg = "234" } # Code and command completion menus
 "ui.menu.selected" = { bg = "243" } # Selected autocomplete item
 "ui.menu.scroll" = { fg = "245", bg = "232" } # fg sets thumb color, bg sets track color of scrollbar
-"ui.selection" = { bg = "241", modifiers = [] } # For selections in the editing area
-"ui.selection.primary" = { bg = "243", modifiers = [] } # 
+"ui.selection" = { bg = "242", modifiers = [] } # For selections in the editing area
+"ui.selection.primary" = { bg = "240", modifiers = [] } # 
 "ui.highlight" = { bg = "240" } # Highlighted lines in the picker preview
 "ui.cursorline.primary" = { bg = "240" } # The line of the primary cursor (if cursorline is enabled)
 "ui.cursorline.secondary" = { bg = "240" } # The lines of any other cursors (if cursorline is enabled)

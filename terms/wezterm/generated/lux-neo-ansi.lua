@@ -7,7 +7,7 @@ return {
   cursor_bg = "#005661",
   cursor_border = "#005661",
   cursor_fg = "#ffffff",
-  selection_bg = "#cfe7f0",
+  selection_bg = "#d6f3fa",
   selection_fg = "#005661",
 
   ansi = {
@@ -47,69 +47,33 @@ return {
     -- Colors 232-255 are UI colors
 
     [232] = "#fefaf2", -- e8
-    [233] = "#f1e7c9", -- e9
-    [234] = "#f0e0c0", -- ea
+    [233] = "#faf1e1", -- e9
+    [234] = "#f5e9d1", -- ea
     [235] = "#f0e0c0", -- eb
-    [236] = "#e3ded3", -- ec
-    [237] = "#efebdf", -- ed
-    [238] = "#efe9d5", -- ee
-    [239] = "#d8eef1", -- ef
-    [240] = "#daedeb", -- f0
-    [241] = "#d8eef1", -- f1
-    [242] = "#d6f3fa", -- f2
-    [243] = "#d6f3fa", -- f3
+    [236] = "#f4eee2", -- ec
+    [237] = "#eae3d7", -- ed
+    [238] = "#e0dacc", -- ee
+    [239] = "#d6cfc0", -- ef
+    [240] = "#d6f3fa", -- f0
+    [241] = "#d8f0f4", -- f1
+    [242] = "#dbedef", -- f2
+    [243] = "#ddeae9", -- f3
 
     [244] = "#8ca6a6", -- f4
-    [245] = "#efe9d5", -- f5
-    [246] = "#fefaf2", -- f6
-    [247] = "#ffffff", -- f7
-    [248] = "#58868a", -- f8
-    [249] = "#4b7e83", -- f9
-    [250] = "#3e767c", -- fa
-    [251] = "#316e75", -- fb
-    [252] = "#24666e", -- fc
-    [253] = "#175e67", -- fd
-    [254] = "#0a5660", -- fe
+    [245] = "#819d9e", -- f5
+    [246] = "#769597", -- f6
+    [247] = "#6b8d90", -- f7
+    [248] = "#608488", -- f8
+    [249] = "#557c81", -- f9
+    [250] = "#4a747a", -- fa
+    [251] = "#3e6c73", -- fb
+    [252] = "#33646c", -- fc
+    [253] = "#265c65", -- fd
+    [254] = "#17545e", -- fe
     [255] = "#004d57", -- ff
 
     -- UI variants of base text colors (No readability requirement, optimize for looks)
     [226] = "#fa8900" -- Yellow; warning
 
-  },
-
-  tab_bar = {
-    background = "#f0e0c0",
-    inactive_tab_edge = "#f0e0c0",
-    inactive_tab_edge_hover = "#f0e0c0",
-
-    active_tab = {
-      bg_color = "#fefaf2",
-      fg_color = "#0a5660",
-      -- italic = false,
-      -- strikethrough = false,
-      -- underline = "None",
-      -- intensity = "Normal",
-    },
-
-    inactive_tab = {
-      bg_color = "#f0e0c0",
-      fg_color = "#004d57",
-    },
-
-    inactive_tab_hover = {
-      bg_color = "#daedeb",
-      fg_color = "#004d57",
-    },
-
-    new_tab = {
-      bg_color = "#f0e0c0",
-      fg_color = "#004d57",
-    },
-
-    new_tab_hover = {
-      bg_color = "#f0e0c0",
-      fg_color = "#0095a8",
-      intensity = "Bold",
-    },
   },
 }

@@ -76,40 +76,4 @@ return {
     [226] = "$uiYellow" -- Yellow; warning
 
   },
-
-  tab_bar = {
-    background = "$bg03",
-    inactive_tab_edge = "$bg03",
-    inactive_tab_edge_hover = "$bg03",
-
-    active_tab = {
-      bg_color = "$background",
-      fg_color = "$ac02",
-      -- italic = false,
-      -- strikethrough = false,
-      -- underline = "None",
-      -- intensity = "Normal",
-    },
-
-    inactive_tab = {
-      bg_color = "$bg03",
-      fg_color = "$ac01",
-    },
-
-    inactive_tab_hover = {
-      bg_color = "$bg09",
-      fg_color = "$ac01",
-    },
-
-    new_tab = {
-      bg_color = "$bg03",
-      fg_color = "$ac01",
-    },
-
-    new_tab_hover = {
-      bg_color = "$bg03",
-      fg_color = "$blue",
-      intensity = "Bold",
-    },
-  },
 }

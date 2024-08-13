@@ -9,11 +9,11 @@ background = "#262335"
 cursor_bg = "#ffffff"
 cursor_border = "#ffffff"
 cursor_fg = "black"
-selection_bg = "#333041"
+selection_bg = "#713c5b"
 selection_fg = "#cccccc"
 
 ansi = [
-  "#676e95", # black
+  "#858aaa", # black
   "#f07178", # red
   "#c3e88d", # green
   "#ffcb6b", # yellow
@@ -22,7 +22,7 @@ ansi = [
   "#b9dedf", # cyan
   "#b4b8d0"] # white
 brights =  [ 
-  "#676e95", # bright black
+  "#a3a7bf", # bright black
   "#ff5370", # bright red
   "#87de97", # bright green
   "#f78c6c", # bright yellow
@@ -44,62 +44,62 @@ brights =  [
 
 # Colors 232-255 are UI colors
 
-232 = "#2F2E43" # e8
-233 = "#393850" # e9
-234 = "#42435E" # ea
-235 = "#4B4E6C" # eb
-236 = "#54597A" # ec
-237 = "#5E6387" # ed
-238 = "#241b30" # ee
-239 = "#b0b0b0" # ef
-240 = "#303030" # f0
-241 = "#404040" # f1
-242 = "#303030" # f2
-243 = "#4a3a48" # f3
+232 = "#262335" # e8
+233 = "#2c2a3e" # e9
+234 = "#333248" # ea
+235 = "#393951" # eb
+236 = "#40415b" # ec
+237 = "#464965" # ed
+238 = "#4d5170" # ee
+239 = "#54597a" # ef
+240 = "#713c5b" # f0
+241 = "#513745" # f1
+242 = "#51444b" # f2
+243 = "#505050" # f3
 
 244 = "#555555" # f4
-245 = "#262335" # f5
-246 = "#262335" # f6
-247 = "#000000" # f7
-248 = "#909090" # f8
-249 = "#909090" # f9
-250 = "#7D83A4" # fa
-251 = "#9297B3" # fb
-252 = "#A8ACC2" # fc
-253 = "#BEC1D2" # fd
-254 = "#D4D6E1" # fe
-255 = "#E9EAF0" # ff
+245 = "#616162" # f5
+246 = "#6e6e6f" # f6
+247 = "#7b7b7c" # f7
+248 = "#88888a" # f8
+249 = "#959598" # f9
+250 = "#a2a3a6" # fa
+251 = "#b0b1b4" # fb
+252 = "#bebfc3" # fc
+253 = "#cccdd2" # fd
+254 = "#dbdbe1" # fe
+255 = "#e9eaf0" # ff
 
 # UI variants of base text colors (No readability requirement, optimize for looks)
 226 = "#ffcb6b" # Yellow; warning
 
 [colors.tab_bar]
-background = "#42435E"
-inactive_tab_edge = "#42435E"
-inactive_tab_edge_hover = "#42435E"
+background = "#333248"
+inactive_tab_edge = "#333248"
+inactive_tab_edge_hover = "#333248"
 
 [colors.tab_bar.active_tab]
 bg_color = "#262335"
-fg_color = "#D4D6E1"
+fg_color = "#dbdbe1"
 # italic = false
 # strikethrough = false
 # underline = "None"
 # intensity = "Normal"
 
 [colors.tab_bar.inactive_tab]
-bg_color = "#42435E"
-fg_color = "#E9EAF0"
+bg_color = "#333248"
+fg_color = "#e9eaf0"
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = "#303030"
-fg_color = "#E9EAF0"
+bg_color = "#713c5b"
+fg_color = "#e9eaf0"
 
 [colors.tab_bar.new_tab]
-bg_color = "#42435E"
-fg_color = "#E9EAF0"
+bg_color = "#333248"
+fg_color = "#e9eaf0"
 
 [colors.tab_bar.new_tab_hover]
-bg_color = "#42435E"
+bg_color = "#333248"
 fg_color = "#94afeb"
 intensity = "Bold"
 

@@ -76,40 +76,4 @@ return {
     [226] = "#c7c400" -- Yellow; warning
 
   },
-
-  tab_bar = {
-    background = "#141414",
-    inactive_tab_edge = "#141414",
-    inactive_tab_edge_hover = "#141414",
-
-    active_tab = {
-      bg_color = "#000000",
-      fg_color = "#f2f2f2",
-      -- italic = false,
-      -- strikethrough = false,
-      -- underline = "None",
-      -- intensity = "Normal",
-    },
-
-    inactive_tab = {
-      bg_color = "#141414",
-      fg_color = "#ffffff",
-    },
-
-    inactive_tab_hover = {
-      bg_color = "#3c3c3c",
-      fg_color = "#ffffff",
-    },
-
-    new_tab = {
-      bg_color = "#141414",
-      fg_color = "#ffffff",
-    },
-
-    new_tab_hover = {
-      bg_color = "#141414",
-      fg_color = "#0071ff",
-      intensity = "Bold",
-    },
-  },
 }

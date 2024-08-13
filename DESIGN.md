@@ -166,7 +166,7 @@ We can use some of the remaining 8-bit colors for backgrounds and other UI compo
 Readability requirement: all 4-bit colors must be readable as foreground color against these background colors.
 
 |Hex|Dec|Name|Usage suggestion|
-|---|---|----|-----------|
+|---|---|----|----------------|
 |34 |052|gitBgRed|git diff minus|
 |58 |088|gitBgRedEmph|git diff minus emph|
 |16 |022|gitBgGreen|git diff plus|
@@ -176,13 +176,13 @@ Readability requirement: all 4-bit colors must be readable as foreground color a
 |17 |023|gitBgCyan|git diff cyan|
 |3a |058|gitBgYellow|git diff yellow|
 
-## UI background colors
+## UI Background Colors
 Readability requirement: all 4-bit colors must yield readable text when combined with these background colors, in normal mode as well as reverse mode.
 Brightness suggestion: colors should be in order of increasing brightness
 
 |Hex|Dec|Name|Usage suggestion|
-|---|---|----|-----------|
-|e8 |232|bg01|default background|
+|---|---|----|----------------|
+|e8 |232|bg01|should be the same as the default background|
 |e9 |233|bg02|inactive background|
 |ea |234|bg03|overlay background|
 |eb |235|bg04|inactive overlay background|
@@ -195,19 +195,19 @@ Brightness suggestion: colors should be in order of increasing brightness
 |f2 |242|bg11|secondary selections|
 |f3 |243|bg12|inactive secondary selections|
 
-## UI Accent colors
+## UI Accent Colors
 Readability requirement: the default background color must yield readable text when combined with these accent colors, in normal mode as well as reverse mode.
 Brightness suggestion: colors should be in order of increasing brightness
 
 |Hex|Dec|Name|Usage suggestion|
-|---|---|----|-----------|
+|---|---|----|----------------|
 |f4 |244|ac12| |
 |f5 |245|ac11| |
 |f6 |246|ac10| |
 |f7 |247|ac09| |
 |f8 |248|ac08| |
 |f9 |249|ac07| |
-|fa |250|ac06| |
+|fa |250|ac06|should be the same as the default foreground|
 |fb |251|ac05| |
 |fc |252|ac04| |
 |fd |253|ac03| |
@@ -216,3 +216,10 @@ Brightness suggestion: colors should be in order of increasing brightness
 
 Even though colors e8-ff are gray scale according to the ANSI spec, we do not require them to be as such.
 It is recommended that these colors follow a natural scale fitting to the color palette.
+
+## UI Non-text Colors
+Colors for usage on elements that are not text, like gutters.
+Hence, these do not have to adhere to the readability constraints as other colors.
+
+|Hex|Dec|Name|Usage suggestion|
+|---|---|----|----------------|
