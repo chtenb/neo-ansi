@@ -7,7 +7,7 @@ inherits = "neo-ansi-syntax"
 #"ui.cursor.normal" = { } # 
 #"ui.cursor.insert" = { } # 
 #"ui.cursor.select" = { } # 
-"ui.cursor.match" = { bg = "black" } # Matching bracket etc.
+"ui.cursor.match" = { underline = { color = "light-cyan", style = "line" }, modifiers = [] } # Matching bracket etc.
 "ui.cursor.primary" = { fg = "white", bg = "default", modifiers = ["reversed"] } # Cursor with primary selection
 #"ui.cursor.primary.normal" = { } # 
 #"ui.cursor.primary.insert" = { } # 
@@ -19,19 +19,19 @@ inherits = "neo-ansi-syntax"
 "ui.highlight.frameline" = { bg = "239" } # Line at which debugging execution is paused at
 "ui.linenr" = { fg = "gray" } # Line numbers
 "ui.linenr.selected" = { fg = "white" } # Line number for the line the cursor is on
-"ui.statusline" = { bg = "250", fg = "232", modifiers = [""] } # Statusline and buffer line
-"ui.statusline.inactive" = { bg = "249", fg = "232", modifiers = [] } # Statusline (unfocused document) and buffer line (inactive buffers)
-"ui.statusline.normal" = { bg = "232", fg = "250", modifiers = [] } # Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline" = { bg = "250", fg = "236", modifiers = ["bold"] } # Statusline and buffer line
+"ui.statusline.inactive" = { bg = "249", fg = "236", modifiers = [] } # Statusline (unfocused document) and buffer line (inactive buffers)
+"ui.statusline.normal" = { bg = "236", fg = "250", modifiers = [] } # Statusline mode during normal mode (only if editor.color-modes is enabled)
 "ui.statusline.insert" = { bg = "light-magenta", modifiers = [] } # Statusline mode during insert mode (only if editor.color-modes is enabled)
 "ui.statusline.select" = { bg = "light-blue", modifiers = [] } # Statusline mode during select mode (only if editor.color-modes is enabled)
 # "ui.statusline.separator" = { fg = "red" } # Separator character in statusline
 "ui.bufferline" = { bg = "250", fg = "232", modifiers = ["italic"] }
-"ui.bufferline.active" = { bg = "232", fg = "250", modifiers = [] }
+"ui.bufferline.active" = { bg = "232", fg = "250", modifiers = ["bold"] }
 "ui.bufferline.background" = { bg = "250", fg = "232", modifiers = [] }
 "ui.popup" = { fg = "default", bg = "234" } # Documentation popups (e.g. Space + k)
 "ui.popup.info" = { fg = "default", bg = "default" } # Prompt for multiple key options
 "ui.window" = { fg = "253" } # Borderlines separating splits
-"ui.help" = { fg = "default", bg = "default" } # Description box for commands. chtenb: border of minor mode popups
+"ui.help" = { fg = "default", bg = "default" } # Description box for commands. chtenb: command prompt completion help
 "ui.text" = { } # Command prompts, popup text, etc.
 "ui.text.focus" = { fg = "default", bg = "240" } # chtenb: Selected line in command picker?
 "ui.text.inactive" = { fg = "gray" } # Same as ui.text but when the text is inactive (e.g. suggestions)

@@ -1,0 +1,91 @@
+name: Tropical
+uuid: uuid
+author: Chiel ten Brinke
+semanticClass: theme.light.neo-ansi
+colorSpaceName: sRGB
+comment: ''
+
+# [colors]
+# foreground = "#e7ebed"
+# background = "#1d262a"
+# cursor_bg = "#eaeaea"
+# cursor_border = "#eaeaea"
+# cursor_fg = "#000000"
+# selection_bg = "#4e6a78"
+# selection_fg = "#e7ebed"
+
+# ansi = ["#435b67","#fc3841","#5cf19e","#fed032","#37b6ff","#fc226e","#59ffd1","#ffffff"]
+# brights = ["#a1b0b8","#fc746d","#adf7be","#fee16c","#70cfff","#fc669b","#9affe6","#ffffff"]
+
+background: '#fefaf2'
+foreground: '#005661'
+
+cursor_bg: '#005661'
+cursor_border: '#005661'
+cursor_fg: '#ffffff'
+selection_bg: '#d6f3fa'
+selection_fg: '#005661'
+
+bold: 'bold'
+italic: 'italic'
+strike: 'strike'
+underline: 'underline'
+
+black: '#9fb4bf'
+red: '#fc3841'
+green: '#12d66b'
+yellow: '#fed221'
+blue: '#37b6ff'
+magenta: '#fc226e'
+cyan: '#00d99b'
+white: '#535353'
+
+brightBlack: '#a1b0b8'
+brightRed: '#fc453b'
+brightGreen: '#10af35'
+brightYellow: '#ca9b01'
+brightBlue: '#70cfff'
+brightMagenta: '#fc347a'
+brightCyan: '#009f77'
+brightWhite: '#444444'
+
+
+gitBgRed: '#fbdada' # red
+gitBgRedEmph: '#f6b6b6' # red emph
+gitBgGreen: '#d6ffd6' # green
+gitBgGreenEmph: '#adffad' # green emph
+gitBgPurple: '#feecf7' # purple
+gitBgBlue: '#e5dff6' # blue
+gitBgCyan: '#d8fdf6' # cyan
+gitBgYellow: '#f4ffe0' # yellow
+
+# pastel gradient -n 4 fefaf2 f0e0c0
+bg01: '#fefaf2'
+bg02: '#faf1e1'
+bg03: '#f5e9d1'
+bg04: '#f0e0c0'
+# pastel gradient -n 4 fefaf2 f0e0c0 | pastel darken 0.05 | pastel desaturate 0.4 | pastel format hex
+bg05: '#f4eee2'
+bg06: '#eae3d7'
+bg07: '#e0dacc'
+bg08: '#d6cfc0'
+bg09: '#d6f3fa'
+bg10: '#d8f0f4'
+bg11: '#dbedef'
+bg12: '#ddeae9'
+
+# pastel gradient -n 12 8ca6a6 004d57 | pastel format hex
+ac12: '#8ca6a6'
+ac11: '#819d9e'
+ac10: '#769597'
+ac09: '#6b8d90'
+ac08: '#608488'
+ac07: '#557c81'
+ac06: '#4a747a'
+ac05: '#3e6c73'
+ac04: '#33646c'
+ac03: '#265c65'
+ac02: '#17545e'
+ac01: '#004d57'
+
+uiYellow: '#fa8900' # Yellow; warning
