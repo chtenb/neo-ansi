@@ -162,6 +162,9 @@ The resulting `.tmTheme` files are placed in the root of this repository.
 All 16 4-bit ansi colors are used for foreground colors as specified earlier.
 We can use some of the remaining 8-bit colors for backgrounds and other UI components, assuming they are customizable by the terminal emulator.
 
+Even though colors e8-ff are gray scale according to the ANSI spec, we do not require them to be as such.
+It is recommended that these colors follow a natural scale fitting to the color palette, and we will assign semantics to these in the next sections.
+
 ## Diff background colors
 Readability requirement: all 4-bit colors must be readable as foreground color against these background colors.
 
@@ -213,9 +216,6 @@ Brightness suggestion: colors should be in order of increasing brightness
 |fd |253|ac03| |
 |fe |254|ac02| |
 |ff |255|ac01| |
-
-Even though colors e8-ff are gray scale according to the ANSI spec, we do not require them to be as such.
-It is recommended that these colors follow a natural scale fitting to the color palette.
 
 ## UI Non-text Colors
 Colors for usage on elements that are not text, like gutters.

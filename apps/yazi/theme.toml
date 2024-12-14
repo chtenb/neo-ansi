@@ -50,23 +50,16 @@ syntect_theme = ""
 
 [mode]
 
-# normal_main = { fg = "black", bg = "blue", bold = true }
-# normal_alt  = { fg = "blue", bg = "black" }
+normal_main = { fg = "250", bg = "236", bold = true }
+normal_alt  = { fg = "236", bg = "250" }
 
 # Select mode
-# select_main = { bg = "red", bold = true }
-# select_alt  = { fg = "red", bg = "gray" }
+select_main = { fg = "236", bg = "red", bold = true }
+select_alt  = { fg = "236", bg = "250" }
 
 # Unset mode
-# unset_main = { bg = "red", bold = true }
-# unset_alt  = { fg = "red", bg = "gray" }
-
-normal_main = { fg = "reset", bg = "reset", reversed = true, bold = true }
-normal_alt  = { fg = "reset", bg = "reset", reversed = true }
-select_main = { fg = "red", bg = "reset", reversed = true, bold = true }
-select_alt  = { fg = "red", bg = "reset", reversed = true }
-unset_main = { fg = "red", bg = "reset", reversed = true, bold = true }
-unset_alt  = { fg = "red", bg = "reset", reversed = true }
+unset_main = { fg = "236", bg = "red", bold = true }
+unset_alt  = { fg = "236", bg = "250" }
 
 # : }}}
 
@@ -74,15 +67,13 @@ unset_alt  = { fg = "red", bg = "reset", reversed = true }
 # : Status bar {{{
 
 [status]
-# separator_open  = ""
-# separator_close = ""
-separator_open  = " "
-separator_close = " "
+separator_open  = ""
+separator_close = ""
 
 # Progress
 progress_label  = { bold = true }
-progress_normal = { fg = "blue", bg = "black" }
-progress_error  = { fg = "red", bg = "black" }
+progress_normal = { fg = "blue", bg = "234" }
+progress_error  = { fg = "red", bg = "234" }
 
 # Permissions
 perm_sep   = { fg = "darkgray" }
@@ -153,7 +144,7 @@ hovered = { fg = "magenta", underline = true }
 
 [which]
 cols            = 3
-mask            = { bg = "black" }
+mask            = { bg = "234" }
 cand            = { fg = "lightcyan" }
 rest            = { fg = "darkgray" }
 desc            = { fg = "lightmagenta" }
@@ -170,7 +161,7 @@ on      = { fg = "cyan" }
 run     = { fg = "magenta" }
 desc    = {}
 hovered = { reversed = true, bold = true }
-footer  = { fg = "black", bg = "white" }
+footer  = { fg = "234", bg = "250" }
 
 # : }}}
 
@@ -207,12 +198,12 @@ rules = [
 	# { mime = "inode/empty", fg = "red" },
 
 	# Special files
-	{ name = "*", is = "orphan", bg = "red" },
+	{ name = "*", is = "orphan", fg = "red", reversed = true },
 	{ name = "*", is = "exec"  , fg = "green" },
 
 	# Dummy files
-	{ name = "*", is = "dummy", bg = "red" },
-	{ name = "*/", is = "dummy", bg = "red" },
+	{ name = "*", is = "dummy", fg = "red", reversed = true },
+	{ name = "*/", is = "dummy", fg = "red", reversed = true },
 
 	# Fallback
 	# { name = "*", fg = "white" },
