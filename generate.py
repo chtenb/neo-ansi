@@ -33,7 +33,7 @@ for palette in glob.glob('palettes/*.yaml'):
     palette_name = os.path.splitext(palette_file)[0]
     result_name = syntax_subfolder + palette_name + '-neo-ansi.tmTheme'
     run(python, './yamltotm/yamltotm.py', '-d',
-        f'palettes/{palette_file}', 'neo-ansi.header.yaml', *glob.glob('templates/neo-ansi*.yaml'), result_name)
+        f'palettes/{palette_file}', 'syntax/neo-ansi.header.yaml', *glob.glob('syntax/templates/neo-ansi*.yaml'), result_name)
 
 existing = glob.glob('terms/wezterm/generated/*')
 if existing:

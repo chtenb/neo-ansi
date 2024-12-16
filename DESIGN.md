@@ -67,8 +67,8 @@ Many tools support the TextMate format for syntax highlighting, including VSCode
 Therefore we provide a simple implementation for  from a given Neo-ansi color palette.
 Language constructs are called [scopes](https://macromates.com/manual/en/language_grammars) in TextMate terminology, and they are matched using [scope selectors](https://macromates.com/manual/en/scope_selectors).
 To aid in realizing principles **C.2** and **C.3** we implement a simple tool for generating TextMate themes (.tmTheme files) based on a variable Neo-ansi color palette and a fixed scope assignment strategy.
-The scope assignment logic is defined as a collection of templates which can be found in [templates/](https://github.com/chtenb/neo-ansi/tree/main/templates).
+The scope assignment logic is defined as a collection of templates which can be found in [syntax/templates/](https://github.com/chtenb/neo-ansi/tree/main/templates).
 We generate an example set of TextMate themes from the Neo-ansi color palettes defined in [palettes/](https://github.com/chtenb/neo-ansi/tree/main/palettes).
-The resulting `.tmTheme` files are placed in the root of this repository.
+The resulting `.tmTheme` files are placed in the `syntax/` directory.
 
 
