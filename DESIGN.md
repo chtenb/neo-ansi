@@ -1,10 +1,10 @@
-# Neo-ansi Syntax Highlighting Standard
+# Neo-ansi Design Principles
 
-*Disclaimer: the guidelines are still in development and are subject to change.*
-
+Problems:
 - The syntax highlighting quality and logic varies too much between themes.
-- Syntax highlighting themes often look good on one language, but not on another.
+- Text editor themes often look good on one language, but not on another.
 - My git diffs in the terminal don't automatically have the same syntax highlighting logic and colors as my editor.
+- Every new tool requires tweaking of color schemes to have their UI match somewhat with the other tools.
 - When creating a new theme, I don't want to have to deal with all the subtilities of theme configurations of all the terminal apps I'm using. I simply want to specify a set of colors and styles to use.
 
 Fortunately, modern terminal emulators allow you to configure what each of the 256 ANSI colors looks like, and even what font to use for any modifier codes.
@@ -48,79 +48,6 @@ To comply with principle **B.1** and **B.2** we need to formulate a loose guidel
 Language specific support can overrule this guideline if it makes the highlighting scheme comply better with the design principles from **A** and **B**.
 The guideline is very loosely based on common patterns seen in popular syntax highlighting color themes and simultaneously aims to make it easy for color theme designers to comply with the design principles.
 
-### For programming languages
-
-| Color Number | Name | Description |
-| ------------ | ---- | ----------- |
-|-1 | default | regular text, variable
-| 0 | black | unused
-| 1 | red | value type, tag, builtin type
-| 2 | green | string
-| 3 | yellow | type, attribute
-| 4 | blue | operator, function
-| 5 | magenta | keyword
-| 6 | cyan | medium emphasis, miscellaneous
-| 7 | white | alternative low emphasis
-| 8 | bright black | low emphasis, comment, whitespace indicators
-| 9 | bright red | high emphasis, constant, number
-| a | bright green | high emphasis
-| b | bright yellow | alternative type
-| c | bright blue | alternative operator, function, variable
-| d | bright magenta | alternative keyword
-| e | bright cyan | punctuation
-| f | bright white | alternative variable, mutable variable
-
-For non-typed languages the `type` category can be interpreted more broadly as types of language constructions.
-
-Optionally, a theme can also use graphics modes to change the appearance of text, if the terminal emulator supports them.
-Here are some suggestions how they could be used.
-
-| Modifier | Name | Description |
-|----------|------|-------------|
-|0| Reset | default
-|1| Bold | keywords, high emphasis
-|2| Dim | comments, low emphasis, whitespace indicators
-|3| Underline | links
-|4| Italic | comments
-|5| Blink |
-|7| Inverse |
-|8| Hidden |
-|9| Strikethrough | Strikethrough markup
-
-### For markup languages
-
-| Color Number | Name | Description |
-|--------------|------|-------------|
-|-1 | default | regular text
-| 0 | black | unused
-| 1 | red | emphasis, tag, bold, header
-| 2 | green | emphasis, underline, string, link
-| 3 | yellow | link title, attribute
-| 4 | blue | inline code
-| 5 | magenta | italic, description
-| 6 | cyan | block quote, table
-| 7 | white | alternative low emphasis
-| 8 | bright black | low emphasis, comment, whitespace indicators, strikethrough
-| 9 | bright red | high emphasis, bold italic, number, data
-| a | bright green | miscellaneous
-| b | bright yellow | miscellaneous
-| c | bright blue | miscellaneous
-| d | bright magenta | miscellaneous
-| e | bright cyan | punctuation
-| f | bright white | miscellaneous
-
-
-| Modifier | Name | Description |
-|----------|------|-------------|
-|0| Reset | default
-|1| Bold | high emphasis, tag, bold, header
-|2| Dim | comments, low emphasis
-|3| Underline | links
-|4| Italic | medium emphasis
-|5| Blink |
-|7| Inverse |
-|8| Hidden |
-|9| Strikethrough | Strikethrough markup
 
 ### Designing color palettes
 
@@ -134,18 +61,6 @@ However, not all assignments will result in syntax highlighting schemes that pro
 Moreover, if the assignment is more or less compatible with the ANSI colors, it means that the the resulting syntax highlighting scheme will be more compatible with other schemes and is more suitable as a drop-in replacement for a terminal color theme.
 But all this is subject to the discretion of the color theme designer.
 
-#### Light color palettes
-
-In the proposed guidelines above, the color white is used to color regular text while black is used for low emphasis text.
-This makes sense in a dark theme, but in a light theme where the background will be a light color it makes more sense the other way around.
-Therefore it is recommended that color palettes that are intended for use in a light theme have their white and black colors swapped.
-I.e. they would assign dark colors to `7` and `f` and assign light colors to `0` and `8`.
-Strictly speaking this breaks our ANSI color compatibility, but in practice this will not hurt the ANSI compatibility much because the black and white colors are not used a lot by terminal applications and also usually do not have strong meaning.
-If anything this swap will probably improve color behavior of other terminal applications, because many terminal applications assume a dark theme by default.
-
-A bright color generally is expected to have more accent than its regular counterpart, but this is not required.
-In a light color theme the color with more accent would often actually be darker instead of brighter.
-
 ## Implementation for TextMate scopes
 
 Many tools support the TextMate format for syntax highlighting, including VSCode and bat.
@@ -157,69 +72,3 @@ We generate an example set of TextMate themes from the Neo-ansi color palettes d
 The resulting `.tmTheme` files are placed in the root of this repository.
 
 
-# Neo-ansi standard for background and miscellaneous UI colors
-
-All 16 4-bit ansi colors are used for foreground colors as specified earlier.
-We can use some of the remaining 8-bit colors for backgrounds and other UI components, assuming they are customizable by the terminal emulator.
-
-Even though colors e8-ff are gray scale according to the ANSI spec, we do not require them to be as such.
-It is recommended that these colors follow a natural scale fitting to the color palette, and we will assign semantics to these in the next sections.
-
-## Diff background colors
-Readability requirement: all 4-bit colors must be readable as foreground color against these background colors.
-
-|Hex|Dec|Name|Usage suggestion|
-|---|---|----|----------------|
-|34 |052|gitBgRed|git diff minus|
-|58 |088|gitBgRedEmph|git diff minus emph|
-|16 |022|gitBgGreen|git diff plus|
-|1c |028|gitBgGreenEmph|git diff plus emph|
-|35 |053|gitBgPurple|git diff purple|
-|11 |017|gitBgBlue|git diff blue|
-|17 |023|gitBgCyan|git diff cyan|
-|3a |058|gitBgYellow|git diff yellow|
-
-## UI Background Colors
-Readability requirement: all 4-bit colors must yield readable text when combined with these background colors, in normal mode as well as reverse mode.
-Brightness suggestion: colors should be in order of increasing brightness
-
-|Hex|Dec|Name|Usage suggestion|
-|---|---|----|----------------|
-|e8 |232|bg01|should be the same as the default background|
-|e9 |233|bg02|inactive background|
-|ea |234|bg03|overlay background|
-|eb |235|bg04|inactive overlay background|
-|ec |236|bg05|alt/header background|
-|ed |237|bg06|alt/header inactive background|
-|ee |238|bg07|alt/header overlay background|
-|ef |239|bg08|alt/header inactive overlay background|
-|f0 |240|bg09|primary selection|
-|f1 |241|bg10|inactive primary selection|
-|f2 |242|bg11|secondary selections|
-|f3 |243|bg12|inactive secondary selections|
-
-## UI Accent Colors
-Readability requirement: the default background color must yield readable text when combined with these accent colors, in normal mode as well as reverse mode.
-Brightness suggestion: colors should be in order of increasing brightness
-
-|Hex|Dec|Name|Usage suggestion|
-|---|---|----|----------------|
-|f4 |244|ac12| |
-|f5 |245|ac11| |
-|f6 |246|ac10| |
-|f7 |247|ac09| |
-|f8 |248|ac08| |
-|f9 |249|ac07| |
-|fa |250|ac06|should be the same as the default foreground|
-|fb |251|ac05| |
-|fc |252|ac04| |
-|fd |253|ac03| |
-|fe |254|ac02| |
-|ff |255|ac01| |
-
-## UI Non-text Colors
-Colors for usage on elements that are not text, like gutters.
-Hence, these do not have to adhere to the readability constraints as other colors.
-
-|Hex|Dec|Name|Usage suggestion|
-|---|---|----|----------------|
