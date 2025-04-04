@@ -70,6 +70,8 @@ unset_alt  = { fg = "236", bg = "250" }
 separator_open  = ""
 separator_close = ""
 
+overall = { fg = "250", bg = "232" }
+
 # Progress
 progress_label  = { bold = true }
 progress_normal = { fg = "blue", bg = "234" }
