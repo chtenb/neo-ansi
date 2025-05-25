@@ -71,7 +71,7 @@
 # "markup.list.checked" = "white"
 # "markup.list.unchecked" = "white"
 "markup.bold" = { fg = "red", modifiers = ["bold"] }
-"markup.italic" = { fg = "green", modifiers = ["italic"] }
+"markup.italic" = { fg = "magenta", modifiers = ["italic"] }
 "markup.strikethrough" = { fg = "gray", modifiers = ["crossed_out"] }
 "markup.link" = "green"
 "markup.link.url" = { fg = "green", underline.style="line" }
