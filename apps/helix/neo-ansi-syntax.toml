@@ -65,16 +65,16 @@
 # "markup.heading.4" = "white"
 # "markup.heading.5" = "white"
 # "markup.heading.6" = "white"
-"markup.list" = "white"
+"markup.list" = "light-yellow"
 # "markup.list.unnumbered" = "white"
 # "markup.list.numbered" = "white"
 # "markup.list.checked" = "white"
 # "markup.list.unchecked" = "white"
-"markup.bold" = "red"
-"markup.italic" = "green"
-"markup.strikethrough" = "gray"
+"markup.bold" = { fg = "red", modifiers = ["bold"] }
+"markup.italic" = { fg = "green", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "gray", modifiers = ["crossed_out"] }
 "markup.link" = "green"
-# "markup.link.url" = "white"
+"markup.link.url" = { fg = "green", underline.style="line" }
 "markup.link.label" = "yellow"
 "markup.link.text" = "yellow"
 "markup.quote" = "cyan"
