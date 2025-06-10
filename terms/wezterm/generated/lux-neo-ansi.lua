@@ -11,7 +11,7 @@ return {
   selection_fg = "#005661",
 
   ansi = {
-    "#8ca6a6",   -- black
+    "#cbd7d7",   -- black
     "#e64100",     -- red
     "#00b368",   -- green
     "#fa8900",  -- yellow
