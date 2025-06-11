@@ -2,7 +2,7 @@
   scope: comment, punctuation.definition.comment, string.quoted.docstring
   settings:
     fontStyle: $italic
-    foreground: $black
+    foreground: $brightBlack
 - name: VALUE TYPE, BUILTIN TYPE, TAG
   scope: keyword.type, entity.name.tag, meta.tag.sgml, entity.name.type.struct, support.type, support.class, support.type.sys-types, support.type.built-in
   settings:
