@@ -26,7 +26,7 @@ The first 16 colors (4-bit) are used for text and foreground.
 | Color Number | Name | Description |
 | ------------ | ---- | ----------- |
 |-1 | default | regular text, variable
-| 0 | black | unused
+| 0 | black | whitespace icons
 | 1 | red | value type, tag, builtin type
 | 2 | green | string
 | 3 | yellow | type, attribute
@@ -34,7 +34,7 @@ The first 16 colors (4-bit) are used for text and foreground.
 | 5 | magenta | keyword
 | 6 | cyan | medium emphasis, miscellaneous
 | 7 | white | alternative low emphasis
-| 8 | bright black | low emphasis, comment, whitespace indicators
+| 8 | bright black | low emphasis, comment
 | 9 | bright red | high emphasis, constant, number
 | a | bright green | high emphasis
 | b | bright yellow | alternative type
@@ -65,7 +65,7 @@ Here are some suggestions how they could be used.
 | Color Number | Name | Description |
 |--------------|------|-------------|
 |-1 | default | regular text
-| 0 | black | unused
+| 0 | black | whitespace indicators
 | 1 | red | emphasis, tag, bold, header
 | 2 | green | emphasis, underline, string, link
 | 3 | yellow | link title, attribute
@@ -73,7 +73,7 @@ Here are some suggestions how they could be used.
 | 5 | magenta | italic, description
 | 6 | cyan | block quote, table
 | 7 | white | alternative low emphasis
-| 8 | bright black | low emphasis, comment, whitespace indicators, strikethrough
+| 8 | bright black | low emphasis, comment, strikethrough
 | 9 | bright red | high emphasis, bold italic, number, data
 | a | bright green | miscellaneous
 | b | bright yellow | miscellaneous
