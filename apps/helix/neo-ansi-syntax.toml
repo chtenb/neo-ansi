@@ -18,7 +18,7 @@
 # "string.special.path" = "white"
 # "string.special.url" = "white"
 # "string.special.symbol" = "white"
-"comment" = { fg = "black", modifiers = ["dim"] }
+"comment" = { fg = "gray", modifiers = ["dim"] }
 # "comment.line" = "white"
 # "comment.block" = "white"
 # "comment.block.documentation" = "white"
