@@ -59,12 +59,12 @@
 #"markup" = "white"
 "markup.heading" = "red"
 "markup.heading.marker" = "light-red"
-# "markup.heading.1" = "white"
-# "markup.heading.2" = "white"
-# "markup.heading.3" = "white"
-# "markup.heading.4" = "white"
-# "markup.heading.5" = "white"
-# "markup.heading.6" = "white"
+"markup.heading.1" = { fg = "light-red", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "red" }
+"markup.heading.3" = { fg = "light-yellow" }
+"markup.heading.4" = { fg = "yellow" }
+"markup.heading.5" = { fg = "light-magenta" }
+"markup.heading.6" = { fg = "magenta" }
 "markup.list" = "light-yellow"
 # "markup.list.unnumbered" = "white"
 # "markup.list.numbered" = "white"
