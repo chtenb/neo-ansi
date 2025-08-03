@@ -2,7 +2,7 @@
 -- name: 'Classic-neo-ansi'
 
 return {
-  foreground = "#d5a200",
+  foreground = "#f3a50f",
   background = "#000000",
   cursor_bg = "#c7c7c7",
   cursor_border = "#c7c7c7",
@@ -11,24 +11,24 @@ return {
   selection_fg = "#67e000",
 
   ansi = {
-    "#777777",   -- black
-    "#c91b00",     -- red
-    "#00c200",   -- green
-    "#c7c400",  -- yellow
-    "#0071ff",    -- blue
-    "#ca30c7", -- magenta
-    "#00c5c7",    -- cyan
-    "#c7c7c7",   -- white
+    "#888888",   -- black
+    "#ff6e67",     -- red
+    "#5ffa68",   -- green
+    "#fffc67",  -- yellow
+    "#1e90ff",    -- blue
+    "#ff77ff", -- magenta
+    "#60fdff",    -- cyan
+    "#dddddd",   -- white
   },
 
   brights = {
     "#999999",   -- bright black
-    "#ff6e67",     -- bright red
-    "#5ffa68",   -- bright green
-    "#fffc67",  -- bright yellow
-    "#6871ff",    -- bright blue
-    "#ff77ff", -- bright magenta
-    "#60fdff",    -- bright cyan
+    "#ff4444",     -- bright red
+    "#44ff44",   -- bright green
+    "#ffff44",  -- bright yellow
+    "#1e90ff",    -- bright blue
+    "#ff44ff", -- bright magenta
+    "44ffff",    -- bright cyan
     "#ffffff",   -- bright white
   },
 
@@ -47,30 +47,30 @@ return {
     -- Colors 232-255 are UI colors
 
     [232] = "#000000", -- e8
-    [233] = "#0c0c0c", -- e9
-    [234] = "#141414", -- ea
-    [235] = "#1a1a1a", -- eb
-    [236] = "#212121", -- ec
-    [237] = "#272727", -- ed
-    [238] = "#2e2e2e", -- ee
-    [239] = "#353535", -- ef
-    [240] = "#3c3c3c", -- f0
-    [241] = "#434343", -- f1
-    [242] = "#4b4b4b", -- f2
-    [243] = "#525252", -- f3
+    [233] = "#100b04", -- e9
+    [234] = "#1b1307", -- ea
+    [235] = "#23190b", -- eb
+    [236] = "#2b1f0e", -- ec
+    [237] = "#342510", -- ed
+    [238] = "#3d2b11", -- ee
+    [239] = "#473213", -- ef
+    [240] = "#503814", -- f0
+    [241] = "#5a3f14", -- f1
+    [242] = "#644415", -- f2
+    [243] = "#6e4c16", -- f3
 
-    [244] = "#7c7c7c", -- f4
-    [245] = "#888888", -- f5
-    [246] = "#939393", -- f6
-    [247] = "#9e9e9e", -- f7
-    [248] = "#aaaaaa", -- f8
-    [249] = "#b6b6b6", -- f9
-    [250] = "#c2c2c2", -- fa
-    [251] = "#cecece", -- fb
-    [252] = "#dadada", -- fc
-    [253] = "#e6e6e6", -- fd
-    [254] = "#f2f2f2", -- fe
-    [255] = "#ffffff", -- ff
+    [244] = "#795316", -- f4
+    [245] = "#835a17", -- f5
+    [246] = "#8e6117", -- f6
+    [247] = "#986917", -- f7
+    [248] = "#a37017", -- f8
+    [249] = "#ae7717", -- f9
+    [250] = "#ba7e16", -- fa
+    [251] = "#c58715", -- fb
+    [252] = "#d08e14", -- fc
+    [253] = "#dc9613", -- fd
+    [254] = "#e79c11", -- fe
+    [255] = "#f3a30f", -- ff
 
     -- UI variants of base text colors (No readability requirement, optimize for looks)
     [226] = "#c7c400" -- Yellow; warning
