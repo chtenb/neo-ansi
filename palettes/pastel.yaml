@@ -1,0 +1,75 @@
+name: Pastel
+uuid: uuid
+author: Chiel ten Brinke
+semanticClass: theme.dark.pastel
+colorSpaceName: sRGB
+comment: ''
+
+# Enable styles
+bold: 'bold'
+italic: 'italic'
+strike: 'strike'
+underline: 'underline'
+
+background: '#000000'
+foreground: '#bc8f8f'
+cursor_bg: '#c7c7c7'
+cursor_border: '#c7c7c7'
+cursor_fg: '#ffffff'
+selection_bg: '#6b5b02'
+selection_fg: '#67e000'
+
+black: '#888888'
+red: '#ffc0cb'
+green: '#8fbc8f'
+yellow: '#eee8aa'
+blue: '#add8e6'
+magenta: '#d8bfd8'
+cyan: '#afeeee'
+white: '#dddddd'
+
+brightBlack: '#999999'
+brightRed: '#db7093'
+brightGreen: '#2e8b57'
+brightYellow: '#f0e68c'
+brightBlue: '#00bfff'
+brightMagenta: '#dda0dd'
+brightCyan: '#7fffd4'
+brightWhite: '#ffffe0'
+
+gitBgRed: '#330f0f'
+gitBgRedEmph: '#4f1917'
+gitBgGreen: '#0e2f19'
+gitBgGreenEmph: '#174525'
+gitBgPurple: '#330f29'
+gitBgBlue: '#271344'
+gitBgCyan: '#0d3531'
+gitBgYellow: '#222f14'
+
+bg01: '#000000'
+bg02: '#0f0f0e'
+bg03: '#191917'
+bg04: '#22221f'
+bg05: '#2b2b27'
+bg06: '#34342f'
+bg07: '#3e3e37'
+bg08: '#484840'
+bg09: '#525249'
+bg10: '#5c5c52'
+bg11: '#67675b'
+bg12: '#727165'
+ac12: '#7c7c6e'
+ac11: '#888878'
+ac10: '#939382'
+ac09: '#9e9e8c'
+ac08: '#aaaa96'
+ac07: '#b6b6a0'
+ac06: '#c2c2aa'
+ac05: '#ceceb5'
+ac04: '#dadac0'
+ac03: '#e6e6ca'
+ac02: '#f2f2d5'
+ac01: '#ffffe0'
+
+uiYellow: '#c7c400'
+
