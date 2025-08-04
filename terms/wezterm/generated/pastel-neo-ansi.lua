@@ -2,7 +2,7 @@
 -- name: 'Pastel-neo-ansi'
 
 return {
-  foreground = "#bc8f8f",
+  foreground = "#ffdab9",
   background = "#000000",
   cursor_bg = "#c7c7c7",
   cursor_border = "#c7c7c7",
@@ -23,10 +23,10 @@ return {
 
   brights = {
     "#999999",   -- bright black
-    "#db7093",     -- bright red
-    "#2e8b57",   -- bright green
+    "#ed93aa",     -- bright red
+    "#62a372",   -- bright green
     "#f0e68c",  -- bright yellow
-    "#00bfff",    -- bright blue
+    "#87cefa",    -- bright blue
     "#dda0dd", -- bright magenta
     "#7fffd4",    -- bright cyan
     "#ffffe0",   -- bright white
