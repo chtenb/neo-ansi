@@ -1,14 +1,8 @@
-"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
-
-# : Flavor {{{
+#"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
 [flavor]
 dark  = ""
 light = ""
-
-# : }}}
-
-# : Manager {{{
 
 [mgr]
 cwd = { fg = "cyan" }
@@ -27,29 +21,23 @@ marker_cut      = { fg = "lightred",    bg = "lightred" }
 marker_marked   = { fg = "lightcyan",   bg = "lightcyan" }
 marker_selected = { fg = "lightyellow", bg = "lightyellow" }
 
-# Tab
-tab_active   = { reversed = true }
-tab_inactive = {}
-tab_width    = 1
-
 # Count
 count_copied   = { fg = "white", bg = "green" }
 count_cut      = { fg = "white", bg = "red" }
 count_selected = { fg = "white", bg = "yellow" }
 
 # Border
+border_symbol = "│"
 border_style  = { fg = "gray" }
 
 # Highlighting
 syntect_theme = ""
 
-# : }}}
-
-
-# : Mode {{{
+[tabs]
+active   = { reversed = true }
+inactive = {}
 
 [mode]
-
 normal_main = { fg = "250", bg = "236", bold = true }
 normal_alt  = { fg = "236", bg = "250" }
 
@@ -60,11 +48,6 @@ select_alt  = { fg = "236", bg = "250" }
 # Unset mode
 unset_main = { fg = "236", bg = "red", bold = true }
 unset_alt  = { fg = "236", bg = "250" }
-
-# : }}}
-
-
-# : Status bar {{{
 
 [status]
 separator_open  = ""
@@ -84,31 +67,16 @@ perm_read  = { fg = "yellow" }
 perm_write = { fg = "red" }
 perm_exec  = { fg = "cyan" }
 
-# : }}}
-
-
-# : Pick {{{
-
 [pick]
 border   = { fg = "blue" }
 active   = { fg = "magenta", bold = true }
 inactive = {}
-
-# : }}}
-
-
-# : Input {{{
 
 [input]
 border   = { fg = "blue" }
 title    = {}
 value    = {}
 selected = { reversed = true }
-
-# : }}}
-
-
-# : Confirm {{{
 
 [confirm]
 border     = { fg = "blue" }
@@ -119,30 +87,15 @@ btn_yes    = { reversed = true }
 btn_no     = {}
 btn_labels = [ "  [Y]es  ", "  (N)o  " ]
 
-# : }}}
-
-
-# : Completion {{{
-
-[completion]
+[cmp]
 border   = { fg = "blue" }
 active   = { reversed = true }
 inactive = {}
-
-# : }}}
-
-
-# : Tasks {{{
 
 [tasks]
 border  = { fg = "blue" }
 title   = {}
 hovered = { fg = "magenta", underline = true }
-
-# : }}}
-
-
-# : Which {{{
 
 [which]
 cols            = 3
@@ -153,11 +106,6 @@ desc            = { fg = "lightmagenta" }
 separator       = "  "
 separator_style = { fg = "darkgray" }
 
-# : }}}
-
-
-# : Help {{{
-
 [help]
 on      = { fg = "cyan" }
 run     = { fg = "magenta" }
@@ -165,23 +113,18 @@ desc    = {}
 hovered = { reversed = true, bold = true }
 footer  = { fg = "234", bg = "250" }
 
-# : }}}
-
-
-# : Notify {{{
+[spot]
+border   = { fg = "blue" }
+title    = { fg = "blue" }
+tbl_col  = { fg = "gray" }
+tbl_cell = {}
 
 [notify]
 title_info  = { fg = "green" }
 title_warn  = { fg = "yellow" }
 title_error = { fg = "red" }
 
-# : }}}
-
-
-# : File-specific styles {{{
-
 [filetype]
-
 rules = [
 	# Images
 	{ mime = "image/*", fg = "yellow" },
@@ -197,20 +140,37 @@ rules = [
 	{ mime = "application/{pdf,doc,rtf}", fg = "cyan" },
 
 	# Empty files
-	# { mime = "inode/empty", fg = "red" },
+	{ mime = "inode/empty", fg = "gray" },
 
 	# Special files
-	{ name = "*", is = "orphan", fg = "red", reversed = true },
-	{ name = "*", is = "exec"  , fg = "green" },
+	{ url = "*", is = "orphan", fg = "red", reversed = true },
+	{ url = "*", is = "exec"  , fg = "green" },
 
 	# Dummy files
-	{ name = "*", is = "dummy", fg = "red", reversed = true },
-	{ name = "*/", is = "dummy", fg = "red", reversed = true },
+	{ url = "*", is = "dummy", fg = "red", reversed = true },
+	{ url = "*/", is = "dummy", fg = "red", reversed = true },
 
 	# Fallback
-	# { name = "*", fg = "white" },
-	{ name = "*/", fg = "blue" }
+	# { url = "*", fg = "white" },
+	{ url = "*/", fg = "blue" }
 ]
 
 # : }}}
 
+[icon]
+conds = [
+	# Special files
+	{ if = "orphan", text = "", fg = "blue" },
+	{ if = "link", text = "", fg = "blue" },
+	{ if = "block", text = "", fg = "blue" },
+	{ if = "char", text = "", fg = "blue" },
+	{ if = "fifo", text = "", fg = "blue" },
+	{ if = "sock", text = "", fg = "blue" },
+	{ if = "sticky", text = "", fg = "blue" },
+	{ if = "dummy", text = "", fg = "blue" },
+
+	# Fallback
+	{ if = "dir", text = "", fg = "gray" },
+	{ if = "exec", text = "", fg = "green" },
+	{ if = "!dir", text = "", fg = "gray" },
+]
