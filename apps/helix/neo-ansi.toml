@@ -3,12 +3,12 @@ inherits = "neo-ansi-syntax"
 
 "ui.background" = { } # 
 "ui.background.separator" = { fg = "244" } # Picker separator below input line
-"ui.cursor" = { fg = "default", bg = "default", modifiers = ["reversed"] } # 
+"ui.cursor" = { fg = "244", bg = "default", modifiers = ["reversed"] } # 
 #"ui.cursor.normal" = { } # 
 #"ui.cursor.insert" = { } # 
 #"ui.cursor.select" = { } # 
 "ui.cursor.match" = { underline = { color = "light-cyan", style = "line" }, modifiers = [] } # Matching bracket etc.
-"ui.cursor.primary" = { fg = "white", bg = "default", modifiers = ["reversed"] } # Cursor with primary selection
+"ui.cursor.primary" = { fg = "255", bg = "default", modifiers = ["reversed"] } # Cursor with primary selection
 #"ui.cursor.primary.normal" = { } # 
 #"ui.cursor.primary.insert" = { } # 
 #"ui.cursor.primary.select" = { } # 
