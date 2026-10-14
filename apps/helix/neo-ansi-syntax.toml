@@ -1,62 +1,82 @@
+# | Helix name    | ANSI index | Usual terminal name          |
+# |---------------|------------|------------------------------|
+# | black         | 0          | black                        |
+# | red           | 1          | red                          |
+# | green         | 2          | green                        |
+# | yellow        | 3          | yellow                       |
+# | blue          | 4          | blue                         |
+# | magenta       | 5          | magenta                      |
+# | cyan          | 6          | cyan                         |
+# | light-gray    | 7          | white                        |
+# | gray          | 8          | bright black                 |
+# | light-red     | 9          | bright red                   |
+# | light-green   | 10         | bright green                 |
+# | light-yellow  | 11         | bright yellow                |
+# | light-blue    | 12         | bright blue                  |
+# | light-magenta | 13         | bright magenta               |
+# | light-cyan    | 14         | bright cyan                  |
+# | white         | 15         | bright white                 |
+# | default       | none       | the terminal's default fg/bg |
+
 "attribute" = "yellow"
 "type" = "yellow"
 "type.builtin" = "red"
-#"type.enum" = "white"
-#"type.enum.variant" = "white"
+#"type.enum" = "default"
+#"type.enum.variant" = "default"
 "constructor" = "light-blue"
 "constant" = "light-red"
-# "constant.builtin" = "white"
-# "constant.builtin.boolean" = "white"
-# "constant.character" = "white"
-# "constant.character.escape" = "white"
-# "constant.numeric" = "white"
-# "constant.numeric.integer" = "white"
-# "constant.numeric.float" = "white"
+# "constant.builtin" = "default"
+# "constant.builtin.boolean" = "default"
+# "constant.character" = "default"
+# "constant.character.escape" = "default"
+# "constant.numeric" = "default"
+# "constant.numeric.integer" = "default"
+# "constant.numeric.float" = "default"
 "string" = "green"
 "string.regexp" = "cyan"
 "string.special" = "cyan"
-# "string.special.path" = "white"
-# "string.special.url" = "white"
-# "string.special.symbol" = "white"
+# "string.special.path" = "default"
+# "string.special.url" = "default"
+# "string.special.symbol" = "default"
 "comment" = { fg = "gray", modifiers = ["dim"] }
-# "comment.line" = "white"
-# "comment.block" = "white"
-# "comment.block.documentation" = "white"
-"variable" = "white"
+# "comment.line" = "default"
+# "comment.block" = "default"
+# "comment.block.documentation" = "default"
+"variable" = "default"
 "variable.builtin" = "light-blue"
-# "variable.parameter" = "white"
-# "variable.other" = "white"
-# "variable.other.member" = "white"
+# "variable.parameter" = "default"
+"variable.other" = "white"
+"variable.other.member" = "light-yellow"
 "label" = "white"
 "punctuation" = "light-cyan"
-# "punctuation.delimiter" = "white"
-# "punctuation.bracket" = "white"
-# "punctuation.special" = "white"
+# "punctuation.delimiter" = "default"
+# "punctuation.bracket" = "default"
+# "punctuation.special" = "default"
 "keyword" = { fg = "magenta", modifiers = ["bold"] }
-# "keyword.control" = "white"
-# "keyword.control.conditional" = "white"
-# "keyword.control.repeat" = "white"
-# "keyword.control.import" = "white"
-# "keyword.control.export" = "white"
-# "keyword.control.return" = "white"
-# "keyword.control.exception" = "white"
-# "keyword.operator" = "white"
-# "keyword.directive" = "white"
-# "keyword.function" = "white"
-# "keyword.storage" = "white"
-# "keyword.storage.type" = "white"
-# "keyword.storage.modifier" = "white"
+# "keyword.control" = "default"
+# "keyword.control.conditional" = "default"
+# "keyword.control.repeat" = "default"
+# "keyword.control.import" = "default"
+# "keyword.control.export" = "default"
+# "keyword.control.return" = "default"
+# "keyword.control.exception" = "default"
+# "keyword.operator" = "default"
+# "keyword.directive" = "default"
+# "keyword.function" = "default"
+# "keyword.storage" = "default"
+# "keyword.storage.type" = "default"
+# "keyword.storage.modifier" = "default"
 "operator" = "blue"
 "function" = "blue"
 "function.builtin" = "light-blue"
-# "function.method" = "white"
+# "function.method" = "default"
 "function.macro" = "cyan"
 "function.special" = "cyan"
 "tag" = "red"
 "tag.builtin" = { fg = "magenta", modifiers = ["bold"] }
-"namespace" = "white"
+"namespace" = "default"
 "special" = "white"
-#"markup" = "white"
+#"markup" = "default"
 "markup.heading" = { fg = "red", modifiers = [] }
 "markup.heading.marker" = { fg = "light-red", modifiers = ["bold"] }
 "markup.heading.1" = { fg = "red", modifiers = ["bold"] }
@@ -66,10 +86,10 @@
 "markup.heading.5" = { fg = "default", modifiers = [] }
 "markup.heading.6" = { fg = "default", modifiers = [] }
 "markup.list" = "light-yellow"
-# "markup.list.unnumbered" = "white"
-# "markup.list.numbered" = "white"
-# "markup.list.checked" = "white"
-# "markup.list.unchecked" = "white"
+# "markup.list.unnumbered" = "default"
+# "markup.list.numbered" = "default"
+# "markup.list.checked" = "default"
+# "markup.list.unchecked" = "default"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { fg = "gray", modifiers = ["crossed_out"] }
@@ -79,5 +99,5 @@
 "markup.link.text" = "yellow"
 "markup.quote" = "cyan"
 "markup.raw" = "blue"
-# "markup.raw.inline" = "white"
-# "markup.raw.block" = "white"
+# "markup.raw.inline" = "default"
+# "markup.raw.block" = "default"
