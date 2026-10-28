@@ -14,7 +14,7 @@ return {
     "#cbd7d7",   -- black
     "#e64100",     -- red
     "#00b368",   -- green
-    "#fa8900",  -- yellow
+    "#f08000",  -- yellow
     "#0095a8",    -- blue
     "#ff5792", -- magenta
     "#00bdd6",    -- cyan
